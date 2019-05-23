@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/jquery.flipster.min.css">
+    <link rel="stylesheet" href="./css/jquery.flipster.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <title>Insertar</title>
+</head>
+<body>
+    <script src="./js/sweetalert.min.js"></script>
+    <script src="./js/sweetalert2@8.js"></script>
+
+    <h1 style="text-align:center;" class="mt-5">Insertar</h1>
+    <form class="p-4">
+        <div class="form-group">
+            <input type="text" id = nombre class="form-control" placeholder="Nombre" autofocus><br><br>
+            <button class="btn btn-primary btn-block">Registrar</button>
+        </div>
+    </form>
+
+    <script>
+        //------------------------insert-----------------------//
+        const { ipcRenderer } = require('electron')
+        const form = document.querySelector('form');
+        form.addEventListener('submit',e => {
+        
+        const name = document.querySelector('#nombre').value;
+        console.log(name);
+
+        const all ={
+            info: name
+        };
+
+         //-----------------------Sweet Alert-----------------//
+         let timerInterval
+          Swal.fire({
+            title: 'Agregar',
+            html: 'Insertando '+all.info,
+            timer: 1000,
+            onBeforeOpen: () => {
+              Swal.showLoading()
+              timerInterval = setInterval(() => {
+                Swal.getContent().querySelector('strong')
+                  .textContent = Swal.getTimerLeft()
+              }, 100)
+            },
+            onClose: () => {
+              clearInterval(timerInterval)
+              ipcRenderer.send('insert',all);
+            }
+          }).then((result) => {
+            if (
+              result.dismiss === Swal.DismissReason.timer
+            ) {
+              
+            }
+          })
+          //------------------------------------------//
+        e.preventDefault();
+
+    });
+    </script>
+
+    <script>window.$ = window.jQuery = require('./js/jquery-3.4.1.min.js');</script>
+    <script src="./js/jquery.flipster.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <!-- <script>$('.my-flipster').flipster();</script> -->
+</body>
+</html>

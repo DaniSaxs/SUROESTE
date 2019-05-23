@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/jquery.flipster.min.css">
+    <link rel="stylesheet" href="./css/jquery.flipster.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+		<link rel="stylesheet" href="./css/animate.css">
+		<link rel="stylesheet" href="./css/icon.css">
+		<link rel="stylesheet" href="./css/estilos.css">
+    <title>Suroeste</title>
+  </head>
+  <body>
+		<!-- -------------MODAL EDITAR--------------- -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 80% !important;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle" style="text-align: center; width:100%;">Editar</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+				<form>
+					<div class="c">
+					<ul class="container-fluid">
+						<div class="row w-100">
+						<li class="col-md-2"><p class="float-right subtitle">Primer nombre:*</p></li>
+						<li class="col-md-4"><input class="form-control" type="text" name="nombre" maxlength="20"></li> 
+						<li class="col-md-2"><p class="float-right subtitle">Segundo nombre:</p></li> 
+						<li class="col-md-4"><input class="form-control" type="text" maxlength="20" name="nombre2"></li>
+						</div>
+					</ul>
+					<ul class="container-fluid">
+						<div class="row w-100">
+						<li class="col-md-2"><p class="float-right subtitle"> Primer apellido:*</p></li>
+						<li class="col-md-4"><input class="form-control" type="text" name="apellido" maxlength="20"></li>
+						<li class="col-md-2"><p class="float-right subtitle"> Segundo apellido:</p></li>
+						<li class="col-md-4"><input class="form-control" type="text" maxlength="20" name="apellido2"></li>
+						</div>
+					</ul>
+				</div>
+				<div class="c2">
+					<ul class="container-fluid">
+						<div class="row w-100">
+							<li class="col-md-2"><p class="float-right subtitle">Identificación:*</p></li>
+							<li class="col-md-4">
+								<div class="row">
+									<div class="col-md-3">
+										<select name="sel_tipo_id" class="form-control">
+											<option value="CC">CC</option>
+											<option value="CE">CE</option>
+											<option value="NIT">NIT</option>
+										</select>							
+									</div>
+									<div class="col-md-9">
+										<input class="form-control" type="text" name="identificacion" maxlength="20">
+									</div>
+								</div>
+							</li>
+							<li class="col-md-2"><p class="float-right subtitle">Celular:*</p></li>
+							<li class="col-md-4"><input class="form-control" type="text" name="celular" maxlength="10"></li>
+						</div>
+					</ul>
+					<ul class="container-fluid">
+						<div class="row w-100">
+						<li class="col-md-2"><p class="float-right subtitle">Empresa:</p></li>
+						<li class="col-md-4"><input class="form-control" type="text" name="empresa" maxlength="20" id=""></li>
+						<li class="col-md-2"><p class="float-right subtitle">Cargo:</p></li>
+						<li class="col-md-4"><input class="form-control" type="text" name="cargo" maxlength="20" id=""></li>
+						</div>
+					</ul>
+					<ul class="container-fluid">
+						<div class="row w-100">
+						<li class="col-md-2"><p class="float-right subtitle">Departamento:</p></li>
+						<!-- <li class="col-md-4"><input class="form-control" type="text" name="ciudad" id=""></li> -->
+						<li class="col-md-4"><select name="departamento" id="sel_departamentos" class="form-control">
+							<option value="-1">Seleccione...</option>
+						</select></li>
+						<li class="col-md-2"><p class="float-right subtitle">Ciudad: *</p></li>
+						<li class="col-md-4"><select class="form-control" name="ciudad" id="sel_ciudades">
+							<option value="-1">Seleccione...</option>
+						</select></li>
+						</div>
+					</ul>
+					<ul class="container-fluid">
+						<div class="row w-100">
+							<li class="col-md-2"><p class="float-right subtitle">Sector:</p></li>
+						<li class="col-md-4"><select name="sector" class="form-control" id="">
+							<option value="-1">Seleccione..</option>
+							<option value="gubernamental">Gubernamental</option>
+							<option value="institucional">Institucional</option>
+							<option value="empresarial">Empresarial</option>
+							<option value="social">Social</option>
+							<option value="general">General</option>
+						</select></li>
+						<li class="col-md-2"><p class="float-right subtitle">Correo:</p></li>
+						<li class="col-md-4"><input class="form-control" type="email" name="correo" maxlength="40" id=""></li>
+						</div>
+					</ul>
+					<div class="container-fluid" style="display: flex; justify-content: center;">
+						<div class="row w-50" style=" margin-top: 5px;">
+					<a class="col-md-12 btn btn-danger" style=" color: white; margin-bottom: 20px; display: flex; justify-content: center;" type="button" data-toggle="modal" data-target="#exampleModalCenter"
+					>Actualizar</a>
+						</div>
+					</div>
+				</div>
+			</form>
+
+		</div>
+    </div>
+  </div>
+</div>
+		<!-- -------------MODAL EDITAR--------------- -->
+    <header>
+      <ul class="container-fluid" >
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Nombre Usuario
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Cerrar Sesion</a>
+            </div>
+          </li>
+      </ul>
+		</header>
+		<div>
+			<ul class="menu">
+				<a href="#">
+				<li class="item-menu menu-activate">
+						<i class="material-icons">person_pin</i>
+						<h5>Personas</h5>
+				</li>
+				</a>
+				<a href="#">
+				<li class="item-menu">
+						<i class="material-icons">assignment_late</i>
+						<h5>Reportes</h5>
+				</li>
+				</a>
+				<a href="verificacion.html">
+				<li class="item-menu">
+						<i class="material-icons">done_all</i>
+						<h5>Verificación</h5>
+				</li>
+				</a>
+			</ul>
+		</div>
+		<div class="container info">
+			<h1>Personas registradas</h1>
+			<div class="header-registros">
+				<form class="form-inline my-2 my-lg-0">
+						<input class="form-control mr-sm-2" type="search" placeholder="Nombre" aria-label="Search">
+					<input class="form-control mr-sm-2" type="search" placeholder="Departamento" aria-label="Search">
+					<input class="form-control mr-sm-2" type="search" placeholder="Ciudad" aria-label="Search">
+					<button class="btn btn-outline-danger my-2 my-sm-0 material-icons" type="submit">search</button>
+				</form>
+				<div class="btn-datos">
+					<button class="btn" onclick="descarga()"><i class="material-icons">cloud_download</i>Descargar Datos</button>
+					<button class="btn"><i class="material-icons">cloud_upload</i>Sinctronizar Datos</button>
+				</div>
+			</div>
+			<table class="table">
+				<thead>
+					<tr>
+						<th scope="col">Identificación</th>
+						<th scope="col">Nombre</th>
+						<th scope="col">Celular</th>
+						<th scope="col">Acciones</th>
+					</tr>
+				</thead>
+				<tbody id="result">
+
+				</tbody>
+			</table>
+		</div>
+
+
+		<script src="./js/sweetalert.min.js"></script>
+		<script src="./js/sweetalert2@8.js"></script>
+		<!--  <script src="./scripts.js"></script> -->
+    <!-- <h1>Hello World!</h1>
+
+    We are using node <script>document.write(process.versions.node)</script>,
+    Chrome <script>document.write(process.versions.chrome)</script>,
+    and Electron <script>document.write(process.versions.electron)</script>. -->
+    <script>window.$ = window.jQuery = require('./js/jquery-3.4.1.min.js');</script>
+    <script src="./js/jquery.flipster.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+		<script src="./js/bootstrap.min.js"></script>
+		<script src="./scripts.js"></script>
+		<!-- <script>$('.my-flipster').flipster();</script> -->
+		<script>
+			function descarga() {
+				$.ajax({
+					url: 'https://encuentrodelsuroeste.herokuapp.com/personas',
+					success: function(respuesta) {
+						console.log(respuesta.lista);
+						
+						//ipcRenderer.send('insert',respuesta);
+					},
+					error: function() {
+								console.log("No se ha podido obtener la información");
+					}
+					
+				});
+				let timerInterval
+				Swal.fire({
+					title: 'Descargando',
+					html: 'I will close in <strong></strong> seconds.',
+					timer: 2000,
+					onBeforeOpen: () => {
+						Swal.showLoading()
+						timerInterval = setInterval(() => {
+							Swal.getContent().querySelector('strong')
+								.textContent = Swal.getTimerLeft()
+						}, 100)
+					},
+					onClose: () => {
+						clearInterval(timerInterval)
+					}
+				}).then((result) => {
+					if (
+						// Read more about handling dismissals
+						result.dismiss === Swal.DismissReason.timer
+					) {
+						console.log('I was closed by the timer')
+					}
+				})
+			}
+		</script>
+  </body>
+</html>
