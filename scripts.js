@@ -27,10 +27,10 @@ knex
               row["apellido1"]}</td>
               <td class='card-title'>${row["celular"]}</td>
             <td><button class='btn btn-info' onclick='actualizar(this,${
-              row["id"]
-            })' texto='${row["nombre1"]}' id = 'botonAct' data-toggle='modal' data-target='#exampleModalCenter'>Editar</button>
+              row["_id"]
+            })' nombre1='${row["nombre1"]}' nombre2='${row["nombre2"]}' apellido='${row["apellido1"]}' apellido2='${row["apellido2"]}' id = 'botonAct' data-toggle='modal' data-target='#exampleModalCenter'>Editar</button>
             <button class='btn btn-danger' onclick='actualizar(this,${
-              row["id"]
+              row["_id"]
             })' texto='${row["nombre1"]}' id = 'botonAct'>Ver Info</button></td>
         </tr>`;
       seleccion.innerHTML += cont;
@@ -94,10 +94,18 @@ function actualizar(elemento, infoE) {
     ipcRenderer
   } = require('electron')
   const botonAct = elemento;
-  const texto = botonAct.getAttribute('texto');
-  console.log(texto);
+  const nombre1 = botonAct.getAttribute('nombre1');
+  const nombre2 = botonAct.getAttribute('nombre2');
   const nameText = document.getElementById('nombre');
-  nameText.setAttribute('value', texto);
+  const nameText2 = document.getElementById('nombre2');
+  const ape = botonAct.getAttribute('apellido');
+  const ape2 = botonAct.getAttribute('apellido2');
+  const apellido = document.getElementById('apellido');
+  const apellido2 = document.getElementById('apellido2');
+  nameText.setAttribute('value', nombre1);
+  nameText2.setAttribute('value', nombre2);
+  apellido.setAttribute('value', ape);
+  apellido2.setAttribute('value', ape2);
 
   const form = document.querySelector('form');
   form.addEventListener('submit', e => {
