@@ -51,27 +51,27 @@
 							<li class="col-md-4">
 								<div class="row">
 									<div class="col-md-3">
-										<select name="sel_tipo_id" class="form-control">
-											<option value="CC">CC</option>
-											<option value="CE">CE</option>
-											<option value="NIT">NIT</option>
+										<select id="sel_tipo_id" class="form-control">
+											<option value="CC" id="CC">CC</option>
+											<option value="CE" id="CE">CE</option>
+											<option value="NIT" id="NIT">NIT</option>
 										</select>							
 									</div>
 									<div class="col-md-9">
-										<input class="form-control" type="text" name="identificacion" maxlength="20">
+										<input class="form-control" type="text" id="identificacion" maxlength="20" value="">
 									</div>
 								</div>
 							</li>
 							<li class="col-md-2"><p class="float-right subtitle">Celular:*</p></li>
-							<li class="col-md-4"><input class="form-control" type="text" name="celular" maxlength="10"></li>
+							<li class="col-md-4"><input class="form-control" type="text" id="celular" maxlength="10" value=""></li>
 						</div>
 					</ul>
 					<ul class="container-fluid">
 						<div class="row w-100">
 						<li class="col-md-2"><p class="float-right subtitle">Empresa:</p></li>
-						<li class="col-md-4"><input class="form-control" type="text" name="empresa" maxlength="20" id=""></li>
+						<li class="col-md-4"><input class="form-control" type="text" id="empresa" maxlength="20" value=""></li>
 						<li class="col-md-2"><p class="float-right subtitle">Cargo:</p></li>
-						<li class="col-md-4"><input class="form-control" type="text" name="cargo" maxlength="20" id=""></li>
+						<li class="col-md-4"><input class="form-control" type="text" id="cargo" maxlength="20" value=""></li>
 						</div>
 					</ul>
 					<ul class="container-fluid">
@@ -90,16 +90,16 @@
 					<ul class="container-fluid">
 						<div class="row w-100">
 							<li class="col-md-2"><p class="float-right subtitle">Sector:</p></li>
-						<li class="col-md-4"><select name="sector" class="form-control" id="">
+						<li class="col-md-4"><select id="sector" class="form-control">
 							<option value="-1">Seleccione..</option>
-							<option value="gubernamental">Gubernamental</option>
-							<option value="institucional">Institucional</option>
-							<option value="empresarial">Empresarial</option>
-							<option value="social">Social</option>
-							<option value="general">General</option>
+							<option value="gubernamental" id="gubernamental">Gubernamental</option>
+							<option value="institucional" id="institucional">Institucional</option>
+							<option value="empresarial" id="empresarial">Empresarial</option>
+							<option value="social" id="social">Social</option>
+							<option value="general" id="general">General</option>
 						</select></li>
 						<li class="col-md-2"><p class="float-right subtitle">Correo:</p></li>
-						<li class="col-md-4"><input class="form-control" type="email" name="correo" maxlength="40" id=""></li>
+						<li class="col-md-4"><input class="form-control" type="email" id="correo" maxlength="40" value=""></li>
 						</div>
 					</ul>
 					<div class="container-fluid" style="display: flex; justify-content: center;">

@@ -28,7 +28,7 @@ knex
               <td class='card-title'>${row["celular"]}</td>
             <td><button class='btn btn-info' onclick='actualizar(this,${
               row["_id"]
-            })' nombre1='${row["nombre1"]}' nombre2='${row["nombre2"]}' apellido='${row["apellido1"]}' apellido2='${row["apellido2"]}' id = 'botonAct' data-toggle='modal' data-target='#exampleModalCenter'>Editar</button>
+            })' nombre1='${row["nombre1"]}' nombre2='${row["nombre2"]}' apellido='${row["apellido1"]}' apellido2='${row["apellido2"]}' tipoI='${row["tipo_iden"]}' iden='${row["identificacion"]}' cel='${row["celular"]}' empresa='${row["empresa"]}' cargo='${row["cargo"]}' departamento='${row["departamento"]}' ciudad='${row["ciudad"]}' sector='${row["sector"]}' correo='${row["correo"]}' id = 'botonAct' data-toggle='modal' data-target='#exampleModalCenter'>Editar</button>
             <button class='btn btn-danger' onclick='actualizar(this,${
               row["_id"]
             })' texto='${row["nombre1"]}' id = 'botonAct'>Ver Info</button></td>
@@ -106,6 +106,72 @@ function actualizar(elemento, infoE) {
   nameText2.setAttribute('value', nombre2);
   apellido.setAttribute('value', ape);
   apellido2.setAttribute('value', ape2);
+  const tipoI = botonAct.getAttribute('tipoI');
+  const tipo = document.getElementById('sel_tipo_id');
+  tipo.setAttribute('value',tipoI);
+  const tipF = tipo.getAttribute('value');
+  const a = document.createAttribute('selected');
+  const a2 = document.createAttribute('selected');
+  if(tipF == "CE"){
+    const CEa = document.getElementById('CE');
+    a.value = "selected";
+    CEa.setAttributeNode(a);
+  }
+  if(tipF == "CC"){
+    const CCa = document.getElementById('CC');
+    a.value = "selected";
+    CCa.setAttributeNode(a);
+  }
+  if(tipF == "NIT"){
+    const NITa = document.getElementById('NIT');
+    a.value = "selected";
+    NITa.setAttributeNode(a);
+  }
+  const iden = botonAct.getAttribute('iden');
+  const cedula = document.getElementById('identificacion');
+  cedula.setAttribute('value',iden);
+  const cel = botonAct.getAttribute('cel');
+  const celu = document.getElementById('celular');
+  celu.setAttribute('value',cel);
+  const empresa = botonAct.getAttribute('empresa');
+  const empre = document.getElementById('empresa');
+  empre.setAttribute('value',empresa);
+  const cargo = botonAct.getAttribute('cargo');
+  const carg = document.getElementById('cargo');
+  carg.setAttribute('value', cargo);
+  const sector = botonAct.getAttribute('sector');
+  const sec = document.getElementById('sector');
+  sec.setAttribute('value', sector);
+  const secF = sec.getAttribute('value');
+  if(secF == "gubernamental"){
+    const inst = document.getElementById('gubernamental');
+    a2.value = "selected";
+    inst.setAttributeNode(a2);
+  }
+  if(secF == "institucional"){
+    const inst = document.getElementById('institucional');
+    a2.value = "selected";
+    inst.setAttributeNode(a2);
+  }
+  if(secF == "empresarial"){
+    const inst = document.getElementById('empresarial');
+    a2.value = "selected";
+    inst.setAttributeNode(a2);
+  }
+  if(secF == "social"){
+    const inst = document.getElementById('social');
+    a2.value = "selected";
+    inst.setAttributeNode(a2);
+  }
+  if(secF == "general"){
+    const inst = document.getElementById('general');
+    a2.value = "selected";
+    inst.setAttributeNode(a2);
+  }
+  
+  const correo = botonAct.getAttribute('correo');
+  const corre = document.getElementById('correo');
+  corre.setAttribute('value', correo);
 
   const form = document.querySelector('form');
   form.addEventListener('submit', e => {
@@ -114,7 +180,7 @@ function actualizar(elemento, infoE) {
     console.log(name);
 
     const allE = {
-      info: nombre1
+      nombre1: nombre1
     };
     //-----------------------Sweet Alert-----------------//
     let timerInterval
