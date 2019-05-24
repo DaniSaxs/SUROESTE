@@ -86,3 +86,53 @@ h1{
     background: #dc3545;
     color: #ffffff
 }
+.verificacion{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.iconos-verificacion{
+    width: 100%;
+
+}
+.iconos-verificacion div{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center
+}
+.iconos-verificacion div i{
+    font-size: 6rem;
+}
+.iconos-verificacion div p{
+    font-size: 2rem;
+}
+.cedula{
+    display: none !important;
+}
+.carga{
+     display: none !important; 
+     
+}
+.carga i{
+    animation: cargar 3s ease-in-out infinite forwards;
+}
+@keyframes cargar{
+    0%{
+        transform: rotate(0deg)
+    }
+    100%{
+        transform: rotate(720deg)
+    }
+}
+.rechazado{
+    display: none !important;
+}
+.verificado{
+    /* display: none !important; */
+}
+.verificador{
+    width: 100%
+}

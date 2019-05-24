@@ -15,11 +15,81 @@ ipcRenderer.on("insert", (e, all) => {
 
 let seleccion = document.getElementById("result");
 
-knex
+/* ================ Buscar ============================== */
+function ce(c){
+  if(c.value != ""){
+    var atributo = document.createAttribute('disabled');
+    var atributo2 = document.createAttribute('disabled');
+
+    var inputCiu = document.querySelector('#bCiu')
+    var inputNom = document.querySelector('#bNom')
+
+    inputCiu.setAttributeNode(atributo);
+    inputNom.setAttributeNode(atributo2);
+  }
+}
+
+function no(c){
+  if(c.value != ""){
+    var atributo = document.createAttribute('disabled');
+    var atributo2 = document.createAttribute('disabled');
+
+    var inputCiu = document.querySelector('#bCiu')
+    var inputNom = document.querySelector('#bCed')
+
+    inputCiu.setAttributeNode(atributo);
+    inputNom.setAttributeNode(atributo2);
+  }
+}
+function ci(c){
+  var atributo = document.createAttribute('disabled');
+  var atributo2 = document.createAttribute('disabled');
+  var inputCiu = document.querySelector('#bCed')
+  var inputNom = document.querySelector('#bNom')
+  if(c.value != ""){
+    inputCiu.setAttributeNode(atributo);
+    inputNom.setAttributeNode(atributo2);
+  }else{
+  }
+}
+
+
+function buscar(form) {
+
+  console.log('buscar');
+  console.log(form);
+  let inpCedula = form.bCed;
+  let inpNombre = form.bNom;
+  let inpCiudad = form.bCiu;
+
+  
+  
+  var idTipo = "";
+  var valor = "";
+
+  if(inpCedula.value != ""){
+    idTipo = "identificacion";
+    valor = inpCedula.value;
+  }else if(inpNombre.value != ""){
+    idTipo= "nombre1";
+    valor = inpNombre.value;
+  }
+  else if(inpCiudad.value != ""){
+    idTipo= "ciudad";
+    valor = inpCiudad.value;
+  }
+  cargar(idTipo,valor)
+}
+
+
+
+function cargar(idTipo,valor) {
+  knex
   .from("suroeste")
   .select("*")
   .then(rows => {
     for (row of rows) {
+
       let cont = `<tr>
             <td>${row["identificacion"]}</td>
             <td class='card-title'>${row["nombre1"] +
@@ -44,6 +114,9 @@ knex
     knex.destroy();
   });
   
+}
+
+cargar("","")
 
 // function Insertar() {
 //   ipcRenderer.send('insertNew');
