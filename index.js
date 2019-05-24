@@ -38,29 +38,48 @@ app.on("ready", () => {
     mainWindow.show();
   });
 
-  ipcMain.on("insert", (e, respuesta) => {
-    // var knex = require("knex")({
-    //   client: "sqlite3",
-    //   connection: {
-    //     filename: "./database.sqlite3"
-    //   },
-    //   useNullAsDefault: true
-    // });
+  ipcMain.on("insert", (e, lista) => {
 
-    // knex("suroeste").insert([{respuesta.lista}])
-    //   .then(() => console.log(respuesta + " Insertado"))
-    //   .catch(err => {
-    //     console.log(err);
-    //     throw err;
-    //   })
-    //   .finally(() => {
-    //     knex.destroy();
-    //   });
+    for(let i=0; i < lista.length; i++){
 
-    console.log(respuesta.lista);
+      var knex = require("knex")({
+        client: "sqlite3",
+        connection: {
+          filename: "./database.sqlite3"
+        },
+        useNullAsDefault: true
+      });
 
-    // newWin.close();
-    // mainWindow.reload();g
+    knex("suroeste").insert([{
+      gen: lista[i].gen,
+      estado: lista[i].estado,
+      tipo_iden: lista[i].tipo_iden,
+      identificacion: lista[i].identificacion,
+      nombre1: lista[i].nombre1,
+      nombre2: lista[i].nombre2,
+      apellido1: lista[i].apellido1,
+      apellido2: lista[i].apellido2,
+      correo: lista[i].correo,
+      celular: lista[i].celular,
+      ciudad: lista[i].ciudad.nombre_ciudad,
+      departamento: lista[i].departamento,
+      empresa: lista[i].empresa,
+      cargo: lista[i].cargo,
+      sector: lista[i].sector,
+      __v: lista[i].__v
+    }])
+      .then(() => console.log("Insertado"))
+      .catch(err => {
+        console.log(err);
+        throw err;
+      })
+      .finally(() => {
+        knex.destroy();
+      });
+
+    }
+    mainWindow.reload();
+    
   });
 
   ipcMain.on("deleteAll", e => {
@@ -123,14 +142,24 @@ app.on("ready", () => {
       useNullAsDefault: true
     });
 
-    knex("lorem")
+    knex("suroeste")
       .where({
-        id: infoE.toString()
+        _id: infoE.toString()
       })
       .update({
-        info: allE.info
+        nombre1: allE.nombre1,
+        nombre2: allE.nombre2,
+        apellido1: allE.apellido1,
+        apellido2: allE.apellido2,
+        tipo_iden: allE.tipo_iden,
+        identificacion: allE.identificacion,
+        celular: allE.celular,
+        empresa: allE.empresa,
+        cargo: allE.cargo,
+        sector: allE.sector,
+        correo: allE.correo
       })
-      .then(() => console.log(allE.info + " Actualizado"))
+      .then(() => console.log(" Actualizado"))
       .catch(err => {
         console.log(err);
         throw err;

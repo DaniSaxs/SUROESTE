@@ -88,7 +88,6 @@ knex
 // }
 
 function actualizar(elemento, infoE) {
-  console.log(infoE.toString())
   //------------------------update-----------------------//
   const {
     ipcRenderer
@@ -143,27 +142,27 @@ function actualizar(elemento, infoE) {
   const sec = document.getElementById('sector');
   sec.setAttribute('value', sector);
   const secF = sec.getAttribute('value');
-  if(secF == "gubernamental"){
+  if(secF == "Gubernamental"){
     const inst = document.getElementById('gubernamental');
     a2.value = "selected";
     inst.setAttributeNode(a2);
   }
-  if(secF == "institucional"){
+  if(secF == "Institucional"){
     const inst = document.getElementById('institucional');
     a2.value = "selected";
     inst.setAttributeNode(a2);
   }
-  if(secF == "empresarial"){
+  if(secF == "Empresarial"){
     const inst = document.getElementById('empresarial');
     a2.value = "selected";
     inst.setAttributeNode(a2);
   }
-  if(secF == "social"){
+  if(secF == "Social"){
     const inst = document.getElementById('social');
     a2.value = "selected";
     inst.setAttributeNode(a2);
   }
-  if(secF == "general"){
+  if(secF == "General"){
     const inst = document.getElementById('general');
     a2.value = "selected";
     inst.setAttributeNode(a2);
@@ -173,26 +172,48 @@ function actualizar(elemento, infoE) {
   const corre = document.getElementById('correo');
   corre.setAttribute('value', correo);
 
-  const form = document.querySelector('form');
-  form.addEventListener('submit', e => {
+  const form2 = document.querySelector('#formUpd');
+  form2.addEventListener('submit', e => {
 
-    const name = document.querySelector('#nombre').value;
-    console.log(name);
+    const name1 = document.querySelector('#nombre').value;
+    const name2 = document.querySelector('#nombre2').value;
+    const apell1 = document.querySelector('#apellido').value;
+    const apell2 = document.querySelector('#apellido2').value;
+    const tipoiden = document.querySelector('#sel_tipo_id').value;
+    const idnt = document.querySelector('#identificacion').value;
+    const cell = document.querySelector('#celular').value;
+    const empr = document.querySelector('#empresa').value;
+    const car = document.querySelector('#cargo').value;
+    const depar = document.querySelector('#sel_departamentos').value;
+    const ciu = document.querySelector('#sel_ciudades').value;
+    const sect = document.querySelector('#sector').value;
+    const corr = document.querySelector('#correo').value;
 
     const allE = {
-      nombre1: nombre1
+      nombre1: name1,
+      nombre2: name2,
+      apellido1: apell1,
+      apellido2: apell2,
+      tipo_iden: tipoiden,
+      identificacion: idnt,
+      celular: cell,
+      empresa: empr,
+      cargo: car,
+      departamento: depar,
+      ciudad: ciu,
+      sector: sect,
+      correo: corr
     };
     //-----------------------Sweet Alert-----------------//
     let timerInterval
     Swal.fire({
       title: 'Editar',
-      html: 'Actualizando ' + allE.info,
+      html: 'Actualizando',
       timer: 1000,
       onBeforeOpen: () => {
         Swal.showLoading()
         timerInterval = setInterval(() => {
           Swal.getContent().querySelector('strong')
-            .textContent = Swal.getTimerLeft()
         }, 100)
       },
       onClose: () => {

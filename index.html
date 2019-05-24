@@ -25,12 +25,12 @@
         </button>
       </div>
       <div class="modal-body">
-				<form>
+				<form id="formUpd">
 					<div class="c">
 					<ul class="container-fluid">
 						<div class="row w-100">
 						<li class="col-md-2"><p class="float-right subtitle">Primer nombre:*</p></li>
-						<li class="col-md-4"><input class="form-control" type="text" id="nombre" maxlength="20" value=""</li> 
+						<li class="col-md-4"><input class="form-control" type="text" id="nombre" maxlength="20" value=""></li> 
 						<li class="col-md-2"><p class="float-right subtitle">Segundo nombre:</p></li> 
 						<li class="col-md-4"><input class="form-control" type="text" maxlength="20" id="nombre2" value=""></li>
 						</div>
@@ -92,11 +92,11 @@
 							<li class="col-md-2"><p class="float-right subtitle">Sector:</p></li>
 						<li class="col-md-4"><select id="sector" class="form-control">
 							<option value="-1">Seleccione..</option>
-							<option value="gubernamental" id="gubernamental">Gubernamental</option>
-							<option value="institucional" id="institucional">Institucional</option>
-							<option value="empresarial" id="empresarial">Empresarial</option>
-							<option value="social" id="social">Social</option>
-							<option value="general" id="general">General</option>
+							<option value="Gubernamental" id="gubernamental">Gubernamental</option>
+							<option value="Institucional" id="institucional">Institucional</option>
+							<option value="Empresarial" id="empresarial">Empresarial</option>
+							<option value="Social" id="social">Social</option>
+							<option value="General" id="general">General</option>
 						</select></li>
 						<li class="col-md-2"><p class="float-right subtitle">Correo:</p></li>
 						<li class="col-md-4"><input class="form-control" type="email" id="correo" maxlength="40" value=""></li>
@@ -104,8 +104,8 @@
 					</ul>
 					<div class="container-fluid" style="display: flex; justify-content: center;">
 						<div class="row w-50" style=" margin-top: 5px;">
-					<a class="col-md-12 btn btn-danger" style=" color: white; margin-bottom: 20px; display: flex; justify-content: center;" type="button" data-toggle="modal" data-target="#exampleModalCenter"
-					>Actualizar</a>
+					<button class="col-md-12 btn btn-danger" style=" color: white; margin-bottom: 20px; display: flex; justify-content: center;" data-toggle="modal" data-target="#exampleModalCenter"
+					>Actualizar</button>
 						</div>
 					</div>
 				</div>
@@ -154,8 +154,8 @@
 			<h1>Personas registradas</h1>
 			<div class="header-registros">
 				<form class="form-inline my-2 my-lg-0">
-						<input class="form-control mr-sm-2" type="search" placeholder="Nombre" aria-label="Search">
-					<input class="form-control mr-sm-2" type="search" placeholder="Departamento" aria-label="Search">
+					<input class="form-control mr-sm-2" type="search" placeholder="Identificacion" aria-label="Search">
+					<input class="form-control mr-sm-2" type="search" placeholder="Nombre" aria-label="Search">
 					<input class="form-control mr-sm-2" type="search" placeholder="Ciudad" aria-label="Search">
 					<button class="btn btn-outline-danger my-2 my-sm-0 material-icons" type="submit">search</button>
 				</form>
@@ -199,8 +199,8 @@
 				$.ajax({
 					url: 'https://encuentrodelsuroeste.herokuapp.com/personas',
 					success: function(respuesta) {
-						
-						ipcRenderer.send('insert',respuesta);
+						const lista = respuesta.lista;
+						ipcRenderer.send('insert',lista);
 					},
 					error: function() {
 								console.log("No se ha podido obtener la información");
