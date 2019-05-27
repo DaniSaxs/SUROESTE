@@ -156,6 +156,8 @@ app.on("ready", () => {
         celular: allE.celular,
         empresa: allE.empresa,
         cargo: allE.cargo,
+        departamento: allE.departamento,
+        ciudad: allE.ciudad,
         sector: allE.sector,
         correo: allE.correo
       })

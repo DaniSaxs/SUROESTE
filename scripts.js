@@ -211,6 +211,12 @@ function actualizar(elemento, infoE) {
   const cargo = botonAct.getAttribute('cargo');
   const carg = document.getElementById('cargo');
   carg.setAttribute('value', cargo);
+  const dept = botonAct.getAttribute('departamento');
+  const dept2 = document.getElementById('sel_departamentos');
+  dept2.setAttribute('value', dept);
+  const city = botonAct.getAttribute('ciudad');
+  const city2 = document.getElementById('sel_ciudades');
+  city2.setAttribute('value', city);
   const sector = botonAct.getAttribute('sector');
   const sec = document.getElementById('sector');
   sec.setAttribute('value', sector);
