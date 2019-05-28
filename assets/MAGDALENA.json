@@ -1,0 +1,152 @@
+[
+    {
+        "codigo": "47001",
+        "nombre": "SANTA MARTA",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47030",
+        "nombre": "ALGARROBO",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47053",
+        "nombre": "ARACATACA",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47058",
+        "nombre": "ARIGUANÍ",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47161",
+        "nombre": "CERRO SAN ANTONIO",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47170",
+        "nombre": "CHIVOLO",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47189",
+        "nombre": "CIÉNAGA",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47205",
+        "nombre": "CONCORDIA",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47245",
+        "nombre": "EL BANCO",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47258",
+        "nombre": "EL PIÑON",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47268",
+        "nombre": "EL RETÉN",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47288",
+        "nombre": "FUNDACIÓN",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47318",
+        "nombre": "GUAMAL",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47460",
+        "nombre": "NUEVA GRANADA",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47541",
+        "nombre": "PEDRAZA",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47545",
+        "nombre": "PIJIÑO DEL CARMEN",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47551",
+        "nombre": "PIVIJAY",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47555",
+        "nombre": "PLATO",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47570",
+        "nombre": "PUEBLOVIEJO",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47605",
+        "nombre": "REMOLINO",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47660",
+        "nombre": "SABANAS DE SAN ANGEL",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47675",
+        "nombre": "SALAMINA",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47692",
+        "nombre": "SAN SEBASTIÁN DE BUENAVISTA",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47703",
+        "nombre": "SAN ZENÓN",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47707",
+        "nombre": "SANTA ANA",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47720",
+        "nombre": "SANTA BÁRBARA DE PINTO",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47745",
+        "nombre": "SITIONUEVO",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47798",
+        "nombre": "TENERIFE",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47960",
+        "nombre": "ZAPAYÁN",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47980",
+        "nombre": "ZONA BANANERA",
+        "cod_depto": "47"
+    }
+]

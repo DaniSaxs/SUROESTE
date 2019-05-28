@@ -1,0 +1,152 @@
+[
+    {
+        "codigo": "23682",
+        "nombre": "SAN JOSÉ DE URÉ",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23001",
+        "nombre": "MONTERÍA",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23068",
+        "nombre": "AYAPEL",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23079",
+        "nombre": "BUENAVISTA",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23090",
+        "nombre": "CANALETE",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23162",
+        "nombre": "CERETÉ",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23168",
+        "nombre": "CHIMÁ",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23182",
+        "nombre": "CHINÚ",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23189",
+        "nombre": "CIÉNAGA DE ORO",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23300",
+        "nombre": "COTORRA",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23350",
+        "nombre": "LA APARTADA",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23417",
+        "nombre": "LORICA",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23419",
+        "nombre": "LOS CÓRDOBAS",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23464",
+        "nombre": "MOMIL",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23466",
+        "nombre": "MONTELÍBANO",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23500",
+        "nombre": "MOÑITOS",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23555",
+        "nombre": "PLANETA RICA",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23570",
+        "nombre": "PUEBLO NUEVO",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23574",
+        "nombre": "PUERTO ESCONDIDO",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23580",
+        "nombre": "PUERTO LIBERTADOR",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23586",
+        "nombre": "PURÍSIMA",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23660",
+        "nombre": "SAHAGÚN",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23670",
+        "nombre": "SAN ANDRÉS DE SOTAVENTO",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23672",
+        "nombre": "SAN ANTERO",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23675",
+        "nombre": "SAN BERNARDO DEL VIENTO",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23678",
+        "nombre": "SAN CARLOS",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23686",
+        "nombre": "SAN PELAYO",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23807",
+        "nombre": "TIERRALTA",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23815",
+        "nombre": "TUCHÍN",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23855",
+        "nombre": "VALENCIA",
+        "cod_depto": "23"
+    }
+]

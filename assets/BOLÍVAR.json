@@ -1,0 +1,232 @@
+[
+    {
+        "codigo": "13001",
+        "nombre": "CARTAGENA",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13006",
+        "nombre": "ACHÍ",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13030",
+        "nombre": "ALTOS DEL ROSARIO",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13042",
+        "nombre": "ARENAL",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13052",
+        "nombre": "ARJONA",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13062",
+        "nombre": "ARROYOHONDO",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13074",
+        "nombre": "BARRANCO DE LOBA",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13140",
+        "nombre": "CALAMAR",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13160",
+        "nombre": "CANTAGALLO",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13188",
+        "nombre": "CICUCO",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13212",
+        "nombre": "CÓRDOBA",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13222",
+        "nombre": "CLEMENCIA",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13244",
+        "nombre": "EL CARMEN DE BOLÍVAR",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13248",
+        "nombre": "EL GUAMO",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13268",
+        "nombre": "EL PEÑÓN",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13300",
+        "nombre": "HATILLO DE LOBA",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13430",
+        "nombre": "MAGANGUÉ",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13433",
+        "nombre": "MAHATES",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13440",
+        "nombre": "MARGARITA",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13442",
+        "nombre": "MARÍA LA BAJA",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13458",
+        "nombre": "MONTECRISTO",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13468",
+        "nombre": "MOMPÓS",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13473",
+        "nombre": "MORALES",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13490",
+        "nombre": "NOROSÍ",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13549",
+        "nombre": "PINILLOS",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13580",
+        "nombre": "REGIDOR",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13600",
+        "nombre": "RÍO VIEJO",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13620",
+        "nombre": "SAN CRISTÓBAL",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13647",
+        "nombre": "SAN ESTANISLAO",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13650",
+        "nombre": "SAN FERNANDO",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13654",
+        "nombre": "SAN JACINTO",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13655",
+        "nombre": "SAN JACINTO DEL CAUCA",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13657",
+        "nombre": "SAN JUAN NEPOMUCENO",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13667",
+        "nombre": "SAN MARTÍN DE LOBA",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13670",
+        "nombre": "SAN PABLO",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13673",
+        "nombre": "SANTA CATALINA",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13683",
+        "nombre": "SANTA ROSA",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13688",
+        "nombre": "SANTA ROSA DEL SUR",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13744",
+        "nombre": "SIMITÍ",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13760",
+        "nombre": "SOPLAVIENTO",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13780",
+        "nombre": "TALAIGUA NUEVO",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13810",
+        "nombre": "TIQUISIO",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13836",
+        "nombre": "TURBACO",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13838",
+        "nombre": "TURBANÁ",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13873",
+        "nombre": "VILLANUEVA",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13894",
+        "nombre": "ZAMBRANO",
+        "cod_depto": "13"
+    }
+]

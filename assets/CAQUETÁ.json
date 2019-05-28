@@ -1,0 +1,82 @@
+[
+    {
+        "codigo": "18001",
+        "nombre": "FLORENCIA",
+        "cod_depto": "18"
+    },
+    {
+        "codigo": "18029",
+        "nombre": "ALBANIA",
+        "cod_depto": "18"
+    },
+    {
+        "codigo": "18094",
+        "nombre": "BELÉN DE LOS ANDAQUÍES",
+        "cod_depto": "18"
+    },
+    {
+        "codigo": "18150",
+        "nombre": "CARTAGENA DEL CHAIRÁ",
+        "cod_depto": "18"
+    },
+    {
+        "codigo": "18205",
+        "nombre": "CURILLO",
+        "cod_depto": "18"
+    },
+    {
+        "codigo": "18247",
+        "nombre": "EL DONCELLO",
+        "cod_depto": "18"
+    },
+    {
+        "codigo": "18256",
+        "nombre": "EL PAUJIL",
+        "cod_depto": "18"
+    },
+    {
+        "codigo": "18410",
+        "nombre": "LA MONTAÑITA",
+        "cod_depto": "18"
+    },
+    {
+        "codigo": "18460",
+        "nombre": "MILÁN",
+        "cod_depto": "18"
+    },
+    {
+        "codigo": "18479",
+        "nombre": "MORELIA",
+        "cod_depto": "18"
+    },
+    {
+        "codigo": "18592",
+        "nombre": "PUERTO RICO",
+        "cod_depto": "18"
+    },
+    {
+        "codigo": "18610",
+        "nombre": "SAN JOSÉ DEL FRAGUA",
+        "cod_depto": "18"
+    },
+    {
+        "codigo": "18753",
+        "nombre": "SAN VICENTE DEL CAGUÁN",
+        "cod_depto": "18"
+    },
+    {
+        "codigo": "18756",
+        "nombre": "SOLANO",
+        "cod_depto": "18"
+    },
+    {
+        "codigo": "18785",
+        "nombre": "SOLITA",
+        "cod_depto": "18"
+    },
+    {
+        "codigo": "18860",
+        "nombre": "VALPARAÍSO",
+        "cod_depto": "18"
+    }
+]

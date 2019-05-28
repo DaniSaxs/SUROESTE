@@ -1,4 +1,8 @@
-const { app, BrowserWindow, ipcMain } = require("electron");
+const {
+  app,
+  BrowserWindow,
+  ipcMain
+} = require("electron");
 const path = require("path");
 const url = require("url");
 
@@ -38,48 +42,51 @@ app.on("ready", () => {
     mainWindow.show();
   });
 
-  ipcMain.on("insert", (e, lista) => {
+  ipcMain.on("insert", async (e, lista) => {
 
-    for(let i=0; i < lista.length; i++){
+    var knex = require("knex")({
+      client: "sqlite3",
+      connection: {
+        filename: "./database.sqlite3"
+      },
+      useNullAsDefault: true
+    });
 
-      var knex = require("knex")({
-        client: "sqlite3",
-        connection: {
-          filename: "./database.sqlite3"
-        },
-        useNullAsDefault: true
-      });
-
-    knex("suroeste").insert([{
-      gen: lista[i].gen,
-      estado: lista[i].estado,
-      tipo_iden: lista[i].tipo_iden,
-      identificacion: lista[i].identificacion,
-      nombre1: lista[i].nombre1,
-      nombre2: lista[i].nombre2,
-      apellido1: lista[i].apellido1,
-      apellido2: lista[i].apellido2,
-      correo: lista[i].correo,
-      celular: lista[i].celular,
-      ciudad: lista[i].ciudad.nombre_ciudad,
-      departamento: lista[i].departamento,
-      empresa: lista[i].empresa,
-      cargo: lista[i].cargo,
-      sector: lista[i].sector,
-      __v: lista[i].__v
-    }])
-      .then(() => console.log("Insertado"))
-      .catch(err => {
-        console.log(err);
-        throw err;
+    let cantidad = Math.ceil(lista.length / 20);
+    let data = [];
+    for(dato of lista){
+      data.push({
+        gen: dato.gen,
+        estado: dato.estado,
+        tipo_iden: dato.tipo_iden,
+        identificacion: dato.identificacion,
+        nombre1: dato.nombre1,
+        nombre2: dato.nombre2,
+        apellido1: dato.apellido1,
+        apellido2: dato.apellido2,
+        correo: dato.correo,
+        celular: dato.celular,
+        ciudad: dato.ciudad.nombre_ciudad,
+        departamento: dato.departamento,
+        empresa: dato.empresa,
+        cargo: dato.cargo,
+        sector: dato.sector,
+        __v: dato.__v
       })
-      .finally(() => {
-        knex.destroy();
-      });
-
     }
+
+    let datos = [];
+    for (let i = 0; i < 20; i++) {
+      datos.push(data.slice(i * cantidad, (i + 1) * cantidad));
+    }
+
+    for (let f = 0 ; f < datos.length; f++) {
+   
+      await knex("suroeste").insert(datos[f]);
+      console.log("Insertado")
+    }
+    knex.destroy();
     mainWindow.reload();
-    
   });
 
   ipcMain.on("deleteAll", e => {

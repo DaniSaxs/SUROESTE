@@ -1,0 +1,97 @@
+[
+    {
+        "codigo": "85001",
+        "nombre": "YOPAL",
+        "cod_depto": "85"
+    },
+    {
+        "codigo": "85010",
+        "nombre": "AGUAZUL",
+        "cod_depto": "85"
+    },
+    {
+        "codigo": "85015",
+        "nombre": "CHAMEZA",
+        "cod_depto": "85"
+    },
+    {
+        "codigo": "85125",
+        "nombre": "HATO COROZAL",
+        "cod_depto": "85"
+    },
+    {
+        "codigo": "85136",
+        "nombre": "LA SALINA",
+        "cod_depto": "85"
+    },
+    {
+        "codigo": "85139",
+        "nombre": "MANÍ",
+        "cod_depto": "85"
+    },
+    {
+        "codigo": "85162",
+        "nombre": "MONTERREY",
+        "cod_depto": "85"
+    },
+    {
+        "codigo": "85225",
+        "nombre": "NUNCHÍA",
+        "cod_depto": "85"
+    },
+    {
+        "codigo": "85230",
+        "nombre": "OROCUÉ",
+        "cod_depto": "85"
+    },
+    {
+        "codigo": "85250",
+        "nombre": "PAZ DE ARIPORO",
+        "cod_depto": "85"
+    },
+    {
+        "codigo": "85263",
+        "nombre": "PORE",
+        "cod_depto": "85"
+    },
+    {
+        "codigo": "85279",
+        "nombre": "RECETOR",
+        "cod_depto": "85"
+    },
+    {
+        "codigo": "85300",
+        "nombre": "SABANALARGA",
+        "cod_depto": "85"
+    },
+    {
+        "codigo": "85315",
+        "nombre": "SÁCAMA",
+        "cod_depto": "85"
+    },
+    {
+        "codigo": "85325",
+        "nombre": "SAN LUIS DE PALENQUE",
+        "cod_depto": "85"
+    },
+    {
+        "codigo": "85400",
+        "nombre": "TÁMARA",
+        "cod_depto": "85"
+    },
+    {
+        "codigo": "85410",
+        "nombre": "TAURAMENA",
+        "cod_depto": "85"
+    },
+    {
+        "codigo": "85430",
+        "nombre": "TRINIDAD",
+        "cod_depto": "85"
+    },
+    {
+        "codigo": "85440",
+        "nombre": "VILLANUEVA",
+        "cod_depto": "85"
+    }
+]

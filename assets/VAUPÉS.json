@@ -1,0 +1,32 @@
+[
+    {
+        "codigo": "97001",
+        "nombre": "MITÚ",
+        "cod_depto": "97"
+    },
+    {
+        "codigo": "97161",
+        "nombre": "CARURU",
+        "cod_depto": "97"
+    },
+    {
+        "codigo": "97511",
+        "nombre": "PACOA",
+        "cod_depto": "97"
+    },
+    {
+        "codigo": "97666",
+        "nombre": "TARAIRA",
+        "cod_depto": "97"
+    },
+    {
+        "codigo": "97777",
+        "nombre": "PAPUNAUA",
+        "cod_depto": "97"
+    },
+    {
+        "codigo": "97889",
+        "nombre": "YAVARATÉ",
+        "cod_depto": "97"
+    }
+]

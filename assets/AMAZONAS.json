@@ -1,0 +1,57 @@
+[
+    {
+        "codigo": "91001",
+        "nombre": "LETICIA",
+        "cod_depto": "91"
+    },
+    {
+        "codigo": "91263",
+        "nombre": "EL ENCANTO",
+        "cod_depto": "91"
+    },
+    {
+        "codigo": "91405",
+        "nombre": "LA CHORRERA",
+        "cod_depto": "91"
+    },
+    {
+        "codigo": "91407",
+        "nombre": "LA PEDRERA",
+        "cod_depto": "91"
+    },
+    {
+        "codigo": "91430",
+        "nombre": "LA VICTORIA",
+        "cod_depto": "91"
+    },
+    {
+        "codigo": "91460",
+        "nombre": "MIRITI - PARANÁ",
+        "cod_depto": "91"
+    },
+    {
+        "codigo": "91530",
+        "nombre": "PUERTO ALEGRÍA",
+        "cod_depto": "91"
+    },
+    {
+        "codigo": "91536",
+        "nombre": "PUERTO ARICA",
+        "cod_depto": "91"
+    },
+    {
+        "codigo": "91540",
+        "nombre": "PUERTO NARIÑO",
+        "cod_depto": "91"
+    },
+    {
+        "codigo": "91669",
+        "nombre": "PUERTO SANTANDER",
+        "cod_depto": "91"
+    },
+    {
+        "codigo": "91798",
+        "nombre": "TARAPACÁ",
+        "cod_depto": "91"
+    }
+]

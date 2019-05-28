@@ -1,0 +1,117 @@
+[
+    {
+        "codigo": "08001",
+        "nombre": "BARRANQUILLA",
+        "cod_depto": "08"
+    },
+    {
+        "codigo": "08078",
+        "nombre": "BARANOA",
+        "cod_depto": "08"
+    },
+    {
+        "codigo": "08137",
+        "nombre": "CAMPO DE LA CRUZ",
+        "cod_depto": "08"
+    },
+    {
+        "codigo": "08141",
+        "nombre": "CANDELARIA",
+        "cod_depto": "08"
+    },
+    {
+        "codigo": "08296",
+        "nombre": "GALAPA",
+        "cod_depto": "08"
+    },
+    {
+        "codigo": "08372",
+        "nombre": "JUAN DE ACOSTA",
+        "cod_depto": "08"
+    },
+    {
+        "codigo": "08421",
+        "nombre": "LURUACO",
+        "cod_depto": "08"
+    },
+    {
+        "codigo": "08433",
+        "nombre": "MALAMBO",
+        "cod_depto": "08"
+    },
+    {
+        "codigo": "08436",
+        "nombre": "MANATÍ",
+        "cod_depto": "08"
+    },
+    {
+        "codigo": "08520",
+        "nombre": "PALMAR DE VARELA",
+        "cod_depto": "08"
+    },
+    {
+        "codigo": "08549",
+        "nombre": "PIOJÓ",
+        "cod_depto": "08"
+    },
+    {
+        "codigo": "08558",
+        "nombre": "POLONUEVO",
+        "cod_depto": "08"
+    },
+    {
+        "codigo": "08560",
+        "nombre": "PONEDERA",
+        "cod_depto": "08"
+    },
+    {
+        "codigo": "08573",
+        "nombre": "PUERTO COLOMBIA",
+        "cod_depto": "08"
+    },
+    {
+        "codigo": "08606",
+        "nombre": "REPELÓN",
+        "cod_depto": "08"
+    },
+    {
+        "codigo": "08634",
+        "nombre": "SABANAGRANDE",
+        "cod_depto": "08"
+    },
+    {
+        "codigo": "08638",
+        "nombre": "SABANALARGA",
+        "cod_depto": "08"
+    },
+    {
+        "codigo": "08675",
+        "nombre": "SANTA LUCÍA",
+        "cod_depto": "08"
+    },
+    {
+        "codigo": "08685",
+        "nombre": "SANTO TOMÁS",
+        "cod_depto": "08"
+    },
+    {
+        "codigo": "08758",
+        "nombre": "SOLEDAD",
+        "cod_depto": "08"
+    },
+    {
+        "codigo": "08770",
+        "nombre": "SUAN",
+        "cod_depto": "08"
+    },
+    {
+        "codigo": "08832",
+        "nombre": "TUBARÁ",
+        "cod_depto": "08"
+    },
+    {
+        "codigo": "08849",
+        "nombre": "USIACURÍ",
+        "cod_depto": "08"
+    }
+]

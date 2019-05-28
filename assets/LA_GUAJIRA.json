@@ -1,0 +1,77 @@
+[
+    {
+        "codigo": "44001",
+        "nombre": "RIOHACHA",
+        "cod_depto": "44"
+    },
+    {
+        "codigo": "44035",
+        "nombre": "ALBANIA",
+        "cod_depto": "44"
+    },
+    {
+        "codigo": "44078",
+        "nombre": "BARRANCAS",
+        "cod_depto": "44"
+    },
+    {
+        "codigo": "44090",
+        "nombre": "DIBULLA",
+        "cod_depto": "44"
+    },
+    {
+        "codigo": "44098",
+        "nombre": "DISTRACCIÓN",
+        "cod_depto": "44"
+    },
+    {
+        "codigo": "44110",
+        "nombre": "EL MOLINO",
+        "cod_depto": "44"
+    },
+    {
+        "codigo": "44279",
+        "nombre": "FONSECA",
+        "cod_depto": "44"
+    },
+    {
+        "codigo": "44378",
+        "nombre": "HATONUEVO",
+        "cod_depto": "44"
+    },
+    {
+        "codigo": "44420",
+        "nombre": "LA JAGUA DEL PILAR",
+        "cod_depto": "44"
+    },
+    {
+        "codigo": "44430",
+        "nombre": "MAICAO",
+        "cod_depto": "44"
+    },
+    {
+        "codigo": "44560",
+        "nombre": "MANAURE",
+        "cod_depto": "44"
+    },
+    {
+        "codigo": "44650",
+        "nombre": "SAN JUAN DEL CESAR",
+        "cod_depto": "44"
+    },
+    {
+        "codigo": "44847",
+        "nombre": "URIBIA",
+        "cod_depto": "44"
+    },
+    {
+        "codigo": "44855",
+        "nombre": "URUMITA",
+        "cod_depto": "44"
+    },
+    {
+        "codigo": "44874",
+        "nombre": "VILLANUEVA",
+        "cod_depto": "44"
+    }
+]

@@ -1,0 +1,72 @@
+[
+    {
+        "codigo": "66001",
+        "nombre": "PEREIRA",
+        "cod_depto": "66"
+    },
+    {
+        "codigo": "66045",
+        "nombre": "APÍA",
+        "cod_depto": "66"
+    },
+    {
+        "codigo": "66075",
+        "nombre": "BALBOA",
+        "cod_depto": "66"
+    },
+    {
+        "codigo": "66088",
+        "nombre": "BELÉN DE UMBRÍA",
+        "cod_depto": "66"
+    },
+    {
+        "codigo": "66170",
+        "nombre": "DOSQUEBRADAS",
+        "cod_depto": "66"
+    },
+    {
+        "codigo": "66318",
+        "nombre": "GUÁTICA",
+        "cod_depto": "66"
+    },
+    {
+        "codigo": "66383",
+        "nombre": "LA CELIA",
+        "cod_depto": "66"
+    },
+    {
+        "codigo": "66400",
+        "nombre": "LA VIRGINIA",
+        "cod_depto": "66"
+    },
+    {
+        "codigo": "66440",
+        "nombre": "MARSELLA",
+        "cod_depto": "66"
+    },
+    {
+        "codigo": "66456",
+        "nombre": "MISTRATÓ",
+        "cod_depto": "66"
+    },
+    {
+        "codigo": "66572",
+        "nombre": "PUEBLO RICO",
+        "cod_depto": "66"
+    },
+    {
+        "codigo": "66594",
+        "nombre": "QUINCHÍA",
+        "cod_depto": "66"
+    },
+    {
+        "codigo": "66682",
+        "nombre": "SANTA ROSA DE CABAL",
+        "cod_depto": "66"
+    },
+    {
+        "codigo": "66687",
+        "nombre": "SANTUARIO",
+        "cod_depto": "66"
+    }
+]

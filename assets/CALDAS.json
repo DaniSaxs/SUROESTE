@@ -1,0 +1,137 @@
+[
+    {
+        "codigo": "17001",
+        "nombre": "MANIZALES",
+        "cod_depto": "17"
+    },
+    {
+        "codigo": "17013",
+        "nombre": "AGUADAS",
+        "cod_depto": "17"
+    },
+    {
+        "codigo": "17042",
+        "nombre": "ANSERMA",
+        "cod_depto": "17"
+    },
+    {
+        "codigo": "17050",
+        "nombre": "ARANZAZU",
+        "cod_depto": "17"
+    },
+    {
+        "codigo": "17088",
+        "nombre": "BELALCÁZAR",
+        "cod_depto": "17"
+    },
+    {
+        "codigo": "17174",
+        "nombre": "CHINCHINÁ",
+        "cod_depto": "17"
+    },
+    {
+        "codigo": "17272",
+        "nombre": "FILADELFIA",
+        "cod_depto": "17"
+    },
+    {
+        "codigo": "17380",
+        "nombre": "LA DORADA",
+        "cod_depto": "17"
+    },
+    {
+        "codigo": "17388",
+        "nombre": "LA MERCED",
+        "cod_depto": "17"
+    },
+    {
+        "codigo": "17433",
+        "nombre": "MANZANARES",
+        "cod_depto": "17"
+    },
+    {
+        "codigo": "17442",
+        "nombre": "MARMATO",
+        "cod_depto": "17"
+    },
+    {
+        "codigo": "17444",
+        "nombre": "MARQUETALIA",
+        "cod_depto": "17"
+    },
+    {
+        "codigo": "17446",
+        "nombre": "MARULANDA",
+        "cod_depto": "17"
+    },
+    {
+        "codigo": "17486",
+        "nombre": "NEIRA",
+        "cod_depto": "17"
+    },
+    {
+        "codigo": "17495",
+        "nombre": "NORCASIA",
+        "cod_depto": "17"
+    },
+    {
+        "codigo": "17513",
+        "nombre": "PÁCORA",
+        "cod_depto": "17"
+    },
+    {
+        "codigo": "17524",
+        "nombre": "PALESTINA",
+        "cod_depto": "17"
+    },
+    {
+        "codigo": "17541",
+        "nombre": "PENSILVANIA",
+        "cod_depto": "17"
+    },
+    {
+        "codigo": "17614",
+        "nombre": "RIOSUCIO",
+        "cod_depto": "17"
+    },
+    {
+        "codigo": "17616",
+        "nombre": "RISARALDA",
+        "cod_depto": "17"
+    },
+    {
+        "codigo": "17653",
+        "nombre": "SALAMINA",
+        "cod_depto": "17"
+    },
+    {
+        "codigo": "17662",
+        "nombre": "SAMANÁ",
+        "cod_depto": "17"
+    },
+    {
+        "codigo": "17665",
+        "nombre": "SAN JOSÉ",
+        "cod_depto": "17"
+    },
+    {
+        "codigo": "17777",
+        "nombre": "SUPÍA",
+        "cod_depto": "17"
+    },
+    {
+        "codigo": "17867",
+        "nombre": "VICTORIA",
+        "cod_depto": "17"
+    },
+    {
+        "codigo": "17873",
+        "nombre": "VILLAMARÍA",
+        "cod_depto": "17"
+    },
+    {
+        "codigo": "17877",
+        "nombre": "VITERBO",
+        "cod_depto": "17"
+    }
+]

@@ -1,0 +1,47 @@
+[
+    {
+        "codigo": "94001",
+        "nombre": "INÍRIDA",
+        "cod_depto": "94"
+    },
+    {
+        "codigo": "94343",
+        "nombre": "BARRANCO MINAS",
+        "cod_depto": "94"
+    },
+    {
+        "codigo": "94663",
+        "nombre": "MAPIRIPANA",
+        "cod_depto": "94"
+    },
+    {
+        "codigo": "94883",
+        "nombre": "SAN FELIPE",
+        "cod_depto": "94"
+    },
+    {
+        "codigo": "94884",
+        "nombre": "PUERTO COLOMBIA",
+        "cod_depto": "94"
+    },
+    {
+        "codigo": "94885",
+        "nombre": "LA GUADALUPE",
+        "cod_depto": "94"
+    },
+    {
+        "codigo": "94886",
+        "nombre": "CACAHUAL",
+        "cod_depto": "94"
+    },
+    {
+        "codigo": "94887",
+        "nombre": "PANA PANA",
+        "cod_depto": "94"
+    },
+    {
+        "codigo": "94888",
+        "nombre": "MORICHAL",
+        "cod_depto": "94"
+    }
+]

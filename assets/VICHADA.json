@@ -1,0 +1,23 @@
+[
+    
+    {
+        "codigo": "99001",
+        "nombre": "PUERTO CARREÑO",
+        "cod_depto": "99"
+    },
+    {
+        "codigo": "99524",
+        "nombre": "LA PRIMAVERA",
+        "cod_depto": "99"
+    },
+    {
+        "codigo": "99624",
+        "nombre": "SANTA ROSALÍA",
+        "cod_depto": "99"
+    },
+    {
+        "codigo": "99773",
+        "nombre": "CUMARIBO",
+        "cod_depto": "99"
+    }
+]

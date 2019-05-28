@@ -1,0 +1,132 @@
+[
+    {
+        "codigo": "70001",
+        "nombre": "SINCELEJO",
+        "cod_depto": "70"
+    },
+    {
+        "codigo": "70110",
+        "nombre": "BUENAVISTA",
+        "cod_depto": "70"
+    },
+    {
+        "codigo": "70124",
+        "nombre": "CAIMITO",
+        "cod_depto": "70"
+    },
+    {
+        "codigo": "70204",
+        "nombre": "COLOSO",
+        "cod_depto": "70"
+    },
+    {
+        "codigo": "70215",
+        "nombre": "COROZAL",
+        "cod_depto": "70"
+    },
+    {
+        "codigo": "70221",
+        "nombre": "COVEÑAS",
+        "cod_depto": "70"
+    },
+    {
+        "codigo": "70230",
+        "nombre": "CHALÁN",
+        "cod_depto": "70"
+    },
+    {
+        "codigo": "70233",
+        "nombre": "EL ROBLE",
+        "cod_depto": "70"
+    },
+    {
+        "codigo": "70235",
+        "nombre": "GALERAS",
+        "cod_depto": "70"
+    },
+    {
+        "codigo": "70265",
+        "nombre": "GUARANDA",
+        "cod_depto": "70"
+    },
+    {
+        "codigo": "70400",
+        "nombre": "LA UNIÓN",
+        "cod_depto": "70"
+    },
+    {
+        "codigo": "70418",
+        "nombre": "LOS PALMITOS",
+        "cod_depto": "70"
+    },
+    {
+        "codigo": "70429",
+        "nombre": "MAJAGUAL",
+        "cod_depto": "70"
+    },
+    {
+        "codigo": "70473",
+        "nombre": "MORROA",
+        "cod_depto": "70"
+    },
+    {
+        "codigo": "70508",
+        "nombre": "OVEJAS",
+        "cod_depto": "70"
+    },
+    {
+        "codigo": "70523",
+        "nombre": "PALMITO",
+        "cod_depto": "70"
+    },
+    {
+        "codigo": "70670",
+        "nombre": "SAMPUÉS",
+        "cod_depto": "70"
+    },
+    {
+        "codigo": "70678",
+        "nombre": "SAN BENITO ABAD",
+        "cod_depto": "70"
+    },
+    {
+        "codigo": "70702",
+        "nombre": "SAN JUAN DE BETULIA",
+        "cod_depto": "70"
+    },
+    {
+        "codigo": "70708",
+        "nombre": "SAN MARCOS",
+        "cod_depto": "70"
+    },
+    {
+        "codigo": "70713",
+        "nombre": "SAN ONOFRE",
+        "cod_depto": "70"
+    },
+    {
+        "codigo": "70717",
+        "nombre": "SAN PEDRO",
+        "cod_depto": "70"
+    },
+    {
+        "codigo": "70742",
+        "nombre": "SAN LUIS DE SINCÉ",
+        "cod_depto": "70"
+    },
+    {
+        "codigo": "70771",
+        "nombre": "SUCRE",
+        "cod_depto": "70"
+    },
+    {
+        "codigo": "70820",
+        "nombre": "SANTIAGO DE TOLÚ",
+        "cod_depto": "70"
+    },
+    {
+        "codigo": "70823",
+        "nombre": "TOLÚ VIEJO",
+        "cod_depto": "70"
+    }
+]

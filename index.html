@@ -180,26 +180,32 @@
 				<tbody id="result">
 
 				</tbody>
+				
 			</table>
+			<nav aria-label="...">
+				<ul class="pagination">
+					<li class="page-item active">
+						<a class="page-link" href="#" onclick="cargar(0)">1</a>
+					</li>
+					<li class="page-item" aria-current="page">
+						<a class="page-link" href="#" onclick="cargar(10)">2</a>
+					</li>
+					<li class="page-item"><a class="page-link" href="#">3</a></li>
+				</ul>
+			</nav>
 		</div>
 
 
 		<script src="./js/sweetalert.min.js"></script>
 		<script src="./js/sweetalert2@8.js"></script>
-		<!--  <script src="./scripts.js"></script> -->
-    <!-- <h1>Hello World!</h1>
-
-    We are using node <script>document.write(process.versions.node)</script>,
-    Chrome <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>. -->
     <script>window.$ = window.jQuery = require('./js/jquery-3.4.1.min.js');</script>
     <script src="./js/jquery.flipster.min.js"></script>
     <script src="./js/popper.min.js"></script>
 		<script src="./js/bootstrap.min.js"></script>
 		<script src="./scripts.js"></script>
 		<script src="./colombia.js"></script>
-		<!-- <script>$('.my-flipster').flipster();</script> -->
 		<script>
+			
 			function descarga() {
 				$.ajax({
 					url: 'https://encuentrodelsuroeste.herokuapp.com/personas',

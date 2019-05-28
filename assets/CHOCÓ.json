@@ -1,0 +1,152 @@
+[
+    {
+        "codigo": "27001",
+        "nombre": "QUIBDÓ",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27006",
+        "nombre": "ACANDÍ",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27025",
+        "nombre": "ALTO BAUDÓ",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27050",
+        "nombre": "ATRATO",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27073",
+        "nombre": "BAGADÓ",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27075",
+        "nombre": "BAHÍA SOLANO",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27077",
+        "nombre": "BAJO BAUDÓ",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27099",
+        "nombre": "BOJAYA",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27135",
+        "nombre": "EL CANTÓN DEL SAN PABLO",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27150",
+        "nombre": "CARMEN DEL DARIÉN",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27160",
+        "nombre": "CÉRTEGUI",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27205",
+        "nombre": "CONDOTO",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27245",
+        "nombre": "EL CARMEN DE ATRATO",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27250",
+        "nombre": "EL LITORAL DEL SAN JUAN",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27361",
+        "nombre": "ISTMINA",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27372",
+        "nombre": "JURADÓ",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27413",
+        "nombre": "LLORÓ",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27425",
+        "nombre": "MEDIO ATRATO",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27430",
+        "nombre": "MEDIO BAUDÓ",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27450",
+        "nombre": "MEDIO SAN JUAN",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27491",
+        "nombre": "NÓVITA",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27495",
+        "nombre": "NUQUÍ",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27580",
+        "nombre": "RÍO IRÓ",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27600",
+        "nombre": "RÍO QUITO",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27615",
+        "nombre": "RIOSUCIO",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27660",
+        "nombre": "SAN JOSÉ DEL PALMAR",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27745",
+        "nombre": "SIPÍ",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27787",
+        "nombre": "TADÓ",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27800",
+        "nombre": "UNGUÍA",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27810",
+        "nombre": "UNIÓN PANAMERICANA",
+        "cod_depto": "27"
+    }
+]

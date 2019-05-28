@@ -1,0 +1,237 @@
+[
+    {
+        "codigo": "73001",
+        "nombre": "IBAGUÉ",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73024",
+        "nombre": "ALPUJARRA",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73026",
+        "nombre": "ALVARADO",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73030",
+        "nombre": "AMBALEMA",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73043",
+        "nombre": "ANZOÁTEGUI",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73055",
+        "nombre": "ARMERO",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73067",
+        "nombre": "ATACO",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73124",
+        "nombre": "CAJAMARCA",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73148",
+        "nombre": "CARMEN DE APICALÁ",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73152",
+        "nombre": "CASABIANCA",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73168",
+        "nombre": "CHAPARRAL",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73200",
+        "nombre": "COELLO",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73217",
+        "nombre": "COYAIMA",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73226",
+        "nombre": "CUNDAY",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73236",
+        "nombre": "DOLORES",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73268",
+        "nombre": "ESPINAL",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73270",
+        "nombre": "FALAN",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73275",
+        "nombre": "FLANDES",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73283",
+        "nombre": "FRESNO",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73319",
+        "nombre": "GUAMO",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73347",
+        "nombre": "HERVEO",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73349",
+        "nombre": "HONDA",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73352",
+        "nombre": "ICONONZO",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73408",
+        "nombre": "LÉRIDA",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73411",
+        "nombre": "LÍBANO",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73443",
+        "nombre": "SAN SEBASTIÁN DE MARIQUITA",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73449",
+        "nombre": "MELGAR",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73461",
+        "nombre": "MURILLO",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73483",
+        "nombre": "NATAGAIMA",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73504",
+        "nombre": "ORTEGA",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73520",
+        "nombre": "PALOCABILDO",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73547",
+        "nombre": "PIEDRAS",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73555",
+        "nombre": "PLANADAS",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73563",
+        "nombre": "PRADO",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73585",
+        "nombre": "PURIFICACIÓN",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73616",
+        "nombre": "RIOBLANCO",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73622",
+        "nombre": "RONCESVALLES",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73624",
+        "nombre": "ROVIRA",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73671",
+        "nombre": "SALDAÑA",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73675",
+        "nombre": "SAN ANTONIO",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73678",
+        "nombre": "SAN LUIS",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73686",
+        "nombre": "SANTA ISABEL",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73770",
+        "nombre": "SUÁREZ",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73854",
+        "nombre": "VALLE DE SAN JUAN",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73861",
+        "nombre": "VENADILLO",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73870",
+        "nombre": "VILLAHERMOSA",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73873",
+        "nombre": "VILLARRICA",
+        "cod_depto": "73"
+    }
+]

@@ -1,0 +1,67 @@
+[
+    {
+        "codigo": "86001",
+        "nombre": "MOCOA",
+        "cod_depto": "86"
+    },
+    {
+        "codigo": "86219",
+        "nombre": "COLÓN",
+        "cod_depto": "86"
+    },
+    {
+        "codigo": "86320",
+        "nombre": "ORITO",
+        "cod_depto": "86"
+    },
+    {
+        "codigo": "86568",
+        "nombre": "PUERTO ASÍS",
+        "cod_depto": "86"
+    },
+    {
+        "codigo": "86569",
+        "nombre": "PUERTO CAICEDO",
+        "cod_depto": "86"
+    },
+    {
+        "codigo": "86571",
+        "nombre": "PUERTO GUZMÁN",
+        "cod_depto": "86"
+    },
+    {
+        "codigo": "86573",
+        "nombre": "PUERTO LEGUÍZAMO",
+        "cod_depto": "86"
+    },
+    {
+        "codigo": "86749",
+        "nombre": "SIBUNDOY",
+        "cod_depto": "86"
+    },
+    {
+        "codigo": "86755",
+        "nombre": "SAN FRANCISCO",
+        "cod_depto": "86"
+    },
+    {
+        "codigo": "86757",
+        "nombre": "SAN MIGUEL",
+        "cod_depto": "86"
+    },
+    {
+        "codigo": "86760",
+        "nombre": "SANTIAGO",
+        "cod_depto": "86"
+    },
+    {
+        "codigo": "86865",
+        "nombre": "VALLE DEL GUAMUEZ",
+        "cod_depto": "86"
+    },
+    {
+        "codigo": "86885",
+        "nombre": "VILLAGARZÓN",
+        "cod_depto": "86"
+    }
+]

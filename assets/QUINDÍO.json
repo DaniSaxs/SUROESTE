@@ -1,0 +1,62 @@
+[
+    {
+        "codigo": "63001",
+        "nombre": "ARMENIA",
+        "cod_depto": "63"
+    },
+    {
+        "codigo": "63111",
+        "nombre": "BUENAVISTA",
+        "cod_depto": "63"
+    },
+    {
+        "codigo": "63130",
+        "nombre": "CALARCÁ",
+        "cod_depto": "63"
+    },
+    {
+        "codigo": "63190",
+        "nombre": "CIRCASIA",
+        "cod_depto": "63"
+    },
+    {
+        "codigo": "63212",
+        "nombre": "CÓRDOBA",
+        "cod_depto": "63"
+    },
+    {
+        "codigo": "63272",
+        "nombre": "FILANDIA",
+        "cod_depto": "63"
+    },
+    {
+        "codigo": "63302",
+        "nombre": "GÉNOVA",
+        "cod_depto": "63"
+    },
+    {
+        "codigo": "63401",
+        "nombre": "LA TEBAIDA",
+        "cod_depto": "63"
+    },
+    {
+        "codigo": "63470",
+        "nombre": "MONTENEGRO",
+        "cod_depto": "63"
+    },
+    {
+        "codigo": "63548",
+        "nombre": "PIJAO",
+        "cod_depto": "63"
+    },
+    {
+        "codigo": "63594",
+        "nombre": "QUIMBAYA",
+        "cod_depto": "63"
+    },
+    {
+        "codigo": "63690",
+        "nombre": "SALENTO",
+        "cod_depto": "63"
+    }
+]

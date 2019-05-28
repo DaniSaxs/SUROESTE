@@ -1,0 +1,127 @@
+[
+    {
+        "codigo": "20001",
+        "nombre": "VALLEDUPAR",
+        "cod_depto": "20"
+    },
+    {
+        "codigo": "20011",
+        "nombre": "AGUACHICA",
+        "cod_depto": "20"
+    },
+    {
+        "codigo": "20013",
+        "nombre": "AGUSTÍN CODAZZI",
+        "cod_depto": "20"
+    },
+    {
+        "codigo": "20032",
+        "nombre": "ASTREA",
+        "cod_depto": "20"
+    },
+    {
+        "codigo": "20045",
+        "nombre": "BECERRIL",
+        "cod_depto": "20"
+    },
+    {
+        "codigo": "20060",
+        "nombre": "BOSCONIA",
+        "cod_depto": "20"
+    },
+    {
+        "codigo": "20175",
+        "nombre": "CHIMICHAGUA",
+        "cod_depto": "20"
+    },
+    {
+        "codigo": "20178",
+        "nombre": "CHIRIGUANÁ",
+        "cod_depto": "20"
+    },
+    {
+        "codigo": "20228",
+        "nombre": "CURUMANÍ",
+        "cod_depto": "20"
+    },
+    {
+        "codigo": "20238",
+        "nombre": "EL COPEY",
+        "cod_depto": "20"
+    },
+    {
+        "codigo": "20250",
+        "nombre": "EL PASO",
+        "cod_depto": "20"
+    },
+    {
+        "codigo": "20295",
+        "nombre": "GAMARRA",
+        "cod_depto": "20"
+    },
+    {
+        "codigo": "20310",
+        "nombre": "GONZÁLEZ",
+        "cod_depto": "20"
+    },
+    {
+        "codigo": "20383",
+        "nombre": "LA GLORIA",
+        "cod_depto": "20"
+    },
+    {
+        "codigo": "20400",
+        "nombre": "LA JAGUA DE IBIRICO",
+        "cod_depto": "20"
+    },
+    {
+        "codigo": "20443",
+        "nombre": "MANAURE",
+        "cod_depto": "20"
+    },
+    {
+        "codigo": "20517",
+        "nombre": "PAILITAS",
+        "cod_depto": "20"
+    },
+    {
+        "codigo": "20550",
+        "nombre": "PELAYA",
+        "cod_depto": "20"
+    },
+    {
+        "codigo": "20570",
+        "nombre": "PUEBLO BELLO",
+        "cod_depto": "20"
+    },
+    {
+        "codigo": "20614",
+        "nombre": "RÍO DE ORO",
+        "cod_depto": "20"
+    },
+    {
+        "codigo": "20621",
+        "nombre": "LA PAZ",
+        "cod_depto": "20"
+    },
+    {
+        "codigo": "20710",
+        "nombre": "SAN ALBERTO",
+        "cod_depto": "20"
+    },
+    {
+        "codigo": "20750",
+        "nombre": "SAN DIEGO",
+        "cod_depto": "20"
+    },
+    {
+        "codigo": "20770",
+        "nombre": "SAN MARTÍN",
+        "cod_depto": "20"
+    },
+    {
+        "codigo": "20787",
+        "nombre": "TAMALAMEQUE",
+        "cod_depto": "20"
+    }
+]

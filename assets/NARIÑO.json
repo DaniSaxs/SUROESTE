@@ -1,0 +1,323 @@
+[
+    
+    {
+        "codigo": "52001",
+        "nombre": "PASTO",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52019",
+        "nombre": "ALBÁN",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52022",
+        "nombre": "ALDANA",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52036",
+        "nombre": "ANCUYÁ",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52051",
+        "nombre": "ARBOLEDA",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52079",
+        "nombre": "BARBACOAS",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52083",
+        "nombre": "BELÉN",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52110",
+        "nombre": "BUESACO",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52203",
+        "nombre": "COLÓN",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52207",
+        "nombre": "CONSACÁ",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52210",
+        "nombre": "CONTADERO",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52215",
+        "nombre": "CÓRDOBA",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52224",
+        "nombre": "CUASPUD",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52227",
+        "nombre": "CUMBAL",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52233",
+        "nombre": "CUMBITARA",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52240",
+        "nombre": "CHACHAGÜÍ",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52250",
+        "nombre": "EL CHARCO",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52254",
+        "nombre": "EL PEÑOL",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52256",
+        "nombre": "EL ROSARIO",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52258",
+        "nombre": "EL TABLÓN DE GÓMEZ",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52260",
+        "nombre": "EL TAMBO",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52287",
+        "nombre": "FUNES",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52317",
+        "nombre": "GUACHUCAL",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52320",
+        "nombre": "GUAITARILLA",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52323",
+        "nombre": "GUALMATÁN",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52352",
+        "nombre": "ILES",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52354",
+        "nombre": "IMUÉS",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52356",
+        "nombre": "IPIALES",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52378",
+        "nombre": "LA CRUZ",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52381",
+        "nombre": "LA FLORIDA",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52385",
+        "nombre": "LA LLANADA",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52390",
+        "nombre": "LA TOLA",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52399",
+        "nombre": "LA UNIÓN",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52405",
+        "nombre": "LEIVA",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52411",
+        "nombre": "LINARES",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52418",
+        "nombre": "LOS ANDES",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52427",
+        "nombre": "MAGÜI",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52435",
+        "nombre": "MALLAMA",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52473",
+        "nombre": "MOSQUERA",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52480",
+        "nombre": "NARIÑO",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52490",
+        "nombre": "OLAYA HERRERA",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52506",
+        "nombre": "OSPINA",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52520",
+        "nombre": "FRANCISCO PIZARRO",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52540",
+        "nombre": "POLICARPA",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52560",
+        "nombre": "POTOSÍ",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52565",
+        "nombre": "PROVIDENCIA",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52573",
+        "nombre": "PUERRES",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52585",
+        "nombre": "PUPIALES",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52612",
+        "nombre": "RICAURTE",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52621",
+        "nombre": "ROBERTO PAYÁN",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52678",
+        "nombre": "SAMANIEGO",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52683",
+        "nombre": "SANDONÁ",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52685",
+        "nombre": "SAN BERNARDO",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52687",
+        "nombre": "SAN LORENZO",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52693",
+        "nombre": "SAN PABLO",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52694",
+        "nombre": "SAN PEDRO DE CARTAGO",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52696",
+        "nombre": "SANTA BÁRBARA",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52699",
+        "nombre": "SANTACRUZ",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52720",
+        "nombre": "SAPUYES",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52786",
+        "nombre": "TAMINANGO",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52788",
+        "nombre": "TANGUA",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52835",
+        "nombre": "SAN ANDRES DE TUMACO",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52838",
+        "nombre": "TÚQUERRES",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52885",
+        "nombre": "YACUANQUER",
+        "cod_depto": "52"
+    }
+]

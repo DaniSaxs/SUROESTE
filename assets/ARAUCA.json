@@ -1,0 +1,37 @@
+[
+    {
+        "codigo": "81001",
+        "nombre": "ARAUCA",
+        "cod_depto": "81"
+    },
+    {
+        "codigo": "81065",
+        "nombre": "ARAUQUITA",
+        "cod_depto": "81"
+    },
+    {
+        "codigo": "81220",
+        "nombre": "CRAVO NORTE",
+        "cod_depto": "81"
+    },
+    {
+        "codigo": "81300",
+        "nombre": "FORTUL",
+        "cod_depto": "81"
+    },
+    {
+        "codigo": "81591",
+        "nombre": "PUERTO RONDÓN",
+        "cod_depto": "81"
+    },
+    {
+        "codigo": "81736",
+        "nombre": "SARAVENA",
+        "cod_depto": "81"
+    },
+    {
+        "codigo": "81794",
+        "nombre": "TAME",
+        "cod_depto": "81"
+    }
+]

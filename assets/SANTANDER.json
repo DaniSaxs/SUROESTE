@@ -1,0 +1,437 @@
+[
+    {
+        "codigo": "68001",
+        "nombre": "BUCARAMANGA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68013",
+        "nombre": "AGUADA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68020",
+        "nombre": "ALBANIA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68051",
+        "nombre": "ARATOCA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68077",
+        "nombre": "BARBOSA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68079",
+        "nombre": "BARICHARA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68081",
+        "nombre": "BARRANCABERMEJA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68092",
+        "nombre": "BETULIA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68101",
+        "nombre": "BOLÍVAR",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68121",
+        "nombre": "CABRERA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68132",
+        "nombre": "CALIFORNIA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68147",
+        "nombre": "CAPITANEJO",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68152",
+        "nombre": "CARCASÍ",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68160",
+        "nombre": "CEPITÁ",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68162",
+        "nombre": "CERRITO",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68167",
+        "nombre": "CHARALÁ",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68169",
+        "nombre": "CHARTA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68176",
+        "nombre": "CHIMA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68179",
+        "nombre": "CHIPATÁ",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68190",
+        "nombre": "CIMITARRA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68207",
+        "nombre": "CONCEPCIÓN",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68209",
+        "nombre": "CONFINES",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68211",
+        "nombre": "CONTRATACIÓN",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68217",
+        "nombre": "COROMORO",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68229",
+        "nombre": "CURITÍ",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68235",
+        "nombre": "EL CARMEN DE CHUCURÍ",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68245",
+        "nombre": "EL GUACAMAYO",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68250",
+        "nombre": "EL PEÑÓN",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68255",
+        "nombre": "EL PLAYÓN",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68264",
+        "nombre": "ENCINO",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68266",
+        "nombre": "ENCISO",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68271",
+        "nombre": "FLORIÁN",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68276",
+        "nombre": "FLORIDABLANCA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68296",
+        "nombre": "GALÁN",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68298",
+        "nombre": "GAMBITA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68307",
+        "nombre": "GIRÓN",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68318",
+        "nombre": "GUACA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68320",
+        "nombre": "GUADALUPE",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68322",
+        "nombre": "GUAPOTÁ",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68324",
+        "nombre": "GUAVATÁ",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68327",
+        "nombre": "GÜEPSA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68344",
+        "nombre": "HATO",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68368",
+        "nombre": "JESÚS MARÍA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68370",
+        "nombre": "JORDÁN",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68377",
+        "nombre": "LA BELLEZA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68385",
+        "nombre": "LANDÁZURI",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68397",
+        "nombre": "LA PAZ",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68406",
+        "nombre": "LEBRIJA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68418",
+        "nombre": "LOS SANTOS",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68425",
+        "nombre": "MACARAVITA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68432",
+        "nombre": "MÁLAGA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68444",
+        "nombre": "MATANZA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68464",
+        "nombre": "MOGOTES",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68468",
+        "nombre": "MOLAGAVITA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68498",
+        "nombre": "OCAMONTE",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68500",
+        "nombre": "OIBA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68502",
+        "nombre": "ONZAGA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68522",
+        "nombre": "PALMAR",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68524",
+        "nombre": "PALMAS DEL SOCORRO",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68533",
+        "nombre": "PÁRAMO",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68547",
+        "nombre": "PIEDECUESTA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68549",
+        "nombre": "PINCHOTE",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68572",
+        "nombre": "PUENTE NACIONAL",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68573",
+        "nombre": "PUERTO PARRA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68575",
+        "nombre": "PUERTO WILCHES",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68615",
+        "nombre": "RIONEGRO",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68655",
+        "nombre": "SABANA DE TORRES",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68669",
+        "nombre": "SAN ANDRÉS",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68673",
+        "nombre": "SAN BENITO",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68679",
+        "nombre": "SAN GIL",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68682",
+        "nombre": "SAN JOAQUÍN",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68684",
+        "nombre": "SAN JOSÉ DE MIRANDA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68686",
+        "nombre": "SAN MIGUEL",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68689",
+        "nombre": "SAN VICENTE DE CHUCURÍ",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68705",
+        "nombre": "SANTA BÁRBARA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68720",
+        "nombre": "SANTA HELENA DEL OPÓN",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68745",
+        "nombre": "SIMACOTA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68755",
+        "nombre": "SOCORRO",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68770",
+        "nombre": "SUAITA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68773",
+        "nombre": "SUCRE",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68780",
+        "nombre": "SURATÁ",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68820",
+        "nombre": "TONA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68855",
+        "nombre": "VALLE DE SAN JOSÉ",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68861",
+        "nombre": "VÉLEZ",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68867",
+        "nombre": "VETAS",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68872",
+        "nombre": "VILLANUEVA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68895",
+        "nombre": "ZAPATOCA",
+        "cod_depto": "68"
+    }
+]

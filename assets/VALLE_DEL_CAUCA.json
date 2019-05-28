@@ -1,0 +1,212 @@
+[
+    {
+        "codigo": "76001",
+        "nombre": "CALI",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76020",
+        "nombre": "ALCALÁ",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76036",
+        "nombre": "ANDALUCÍA",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76041",
+        "nombre": "ANSERMANUEVO",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76054",
+        "nombre": "ARGELIA",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76100",
+        "nombre": "BOLÍVAR",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76109",
+        "nombre": "BUENAVENTURA",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76111",
+        "nombre": "GUADALAJARA DE BUGA",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76113",
+        "nombre": "BUGALAGRANDE",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76122",
+        "nombre": "CAICEDONIA",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76126",
+        "nombre": "CALIMA",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76130",
+        "nombre": "CANDELARIA",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76147",
+        "nombre": "CARTAGO",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76233",
+        "nombre": "DAGUA",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76243",
+        "nombre": "EL ÁGUILA",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76246",
+        "nombre": "EL CAIRO",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76248",
+        "nombre": "EL CERRITO",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76250",
+        "nombre": "EL DOVIO",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76275",
+        "nombre": "FLORIDA",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76306",
+        "nombre": "GINEBRA",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76318",
+        "nombre": "GUACARÍ",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76364",
+        "nombre": "JAMUNDÍ",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76377",
+        "nombre": "LA CUMBRE",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76400",
+        "nombre": "LA UNIÓN",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76403",
+        "nombre": "LA VICTORIA",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76497",
+        "nombre": "OBANDO",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76520",
+        "nombre": "PALMIRA",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76563",
+        "nombre": "PRADERA",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76606",
+        "nombre": "RESTREPO",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76616",
+        "nombre": "RIOFRÍO",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76622",
+        "nombre": "ROLDANILLO",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76670",
+        "nombre": "SAN PEDRO",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76736",
+        "nombre": "SEVILLA",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76823",
+        "nombre": "TORO",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76828",
+        "nombre": "TRUJILLO",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76834",
+        "nombre": "TULUÁ",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76845",
+        "nombre": "ULLOA",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76863",
+        "nombre": "VERSALLES",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76869",
+        "nombre": "VIJES",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76890",
+        "nombre": "YOTOCO",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76892",
+        "nombre": "YUMBO",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76895",
+        "nombre": "ZARZAL",
+        "cod_depto": "76"
+    }
+]

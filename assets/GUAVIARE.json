@@ -1,0 +1,22 @@
+[
+    {
+        "codigo": "95001",
+        "nombre": "SAN JOSÉ DEL GUAVIARE",
+        "cod_depto": "95"
+    },
+    {
+        "codigo": "95015",
+        "nombre": "CALAMAR",
+        "cod_depto": "95"
+    },
+    {
+        "codigo": "95025",
+        "nombre": "EL RETORNO",
+        "cod_depto": "95"
+    },
+    {
+        "codigo": "95200",
+        "nombre": "MIRAFLORES",
+        "cod_depto": "95"
+    }
+]

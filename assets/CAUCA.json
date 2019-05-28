@@ -1,0 +1,212 @@
+[
+    {
+        "codigo": "19001",
+        "nombre": "POPAYÁN",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19022",
+        "nombre": "ALMAGUER",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19050",
+        "nombre": "ARGELIA",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19075",
+        "nombre": "BALBOA",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19100",
+        "nombre": "BOLÍVAR",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19110",
+        "nombre": "BUENOS AIRES",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19130",
+        "nombre": "CAJIBÍO",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19137",
+        "nombre": "CALDONO",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19142",
+        "nombre": "CALOTO",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19212",
+        "nombre": "CORINTO",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19256",
+        "nombre": "EL TAMBO",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19290",
+        "nombre": "FLORENCIA",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19300",
+        "nombre": "GUACHENÉ",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19318",
+        "nombre": "GUAPI",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19355",
+        "nombre": "INZÁ",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19364",
+        "nombre": "JAMBALÓ",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19392",
+        "nombre": "LA SIERRA",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19397",
+        "nombre": "LA VEGA",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19418",
+        "nombre": "LÓPEZ",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19450",
+        "nombre": "MERCADERES",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19455",
+        "nombre": "MIRANDA",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19473",
+        "nombre": "MORALES",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19513",
+        "nombre": "PADILLA",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19517",
+        "nombre": "PAEZ",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19532",
+        "nombre": "PATÍA",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19533",
+        "nombre": "PIAMONTE",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19548",
+        "nombre": "PIENDAMÓ",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19573",
+        "nombre": "PUERTO TEJADA",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19585",
+        "nombre": "PURACÉ",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19622",
+        "nombre": "ROSAS",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19693",
+        "nombre": "SAN SEBASTIÁN",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19698",
+        "nombre": "SANTANDER DE QUILICHAO",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19701",
+        "nombre": "SANTA ROSA",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19743",
+        "nombre": "SILVIA",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19760",
+        "nombre": "SOTARA",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19780",
+        "nombre": "SUÁREZ",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19785",
+        "nombre": "SUCRE",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19807",
+        "nombre": "TIMBÍO",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19809",
+        "nombre": "TIMBIQUÍ",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19821",
+        "nombre": "TORIBIO",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19824",
+        "nombre": "TOTORÓ",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19845",
+        "nombre": "VILLA RICA",
+        "cod_depto": "19"
+    }
+]

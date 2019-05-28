@@ -17,15 +17,18 @@ let seleccion = document.getElementById("result");
 
 /* ================ Buscar ============================== */
 function ce(c){
+  var inputCiu = document.querySelector('#bCiu')
+  var inputNom = document.querySelector('#bNom')
   if(c.value != ""){
     var atributo = document.createAttribute('disabled');
     var atributo2 = document.createAttribute('disabled');
 
-    var inputCiu = document.querySelector('#bCiu')
-    var inputNom = document.querySelector('#bNom')
-
     inputCiu.setAttributeNode(atributo);
     inputNom.setAttributeNode(atributo2);
+  }else{
+
+    inputCiu.removeAttribute('disabled');
+    inputNom.removeAttribute('disabled');
   }
 }
 
@@ -79,14 +82,37 @@ function buscar(form) {
     valor = inpCiudad.value;
   }
   cargar(idTipo,valor)
+  console.log(idTipo,valor);
+
 }
 
+var paginacion = 0;
+// function pag(number){
+//   console.log("hola")
+//   paginacion = number;
+//   cargar(paginacion);
+// }
 
 
-function cargar(idTipo,valor) {
+function cargar(number) {
+  // if(idTipo == ""){
+  //   idTipo = "__v";
+  //   valor = "0"
+  // }
+  var knex = require("knex")({
+    client: "sqlite3",
+    connection: {
+      filename: "./database.sqlite3"
+    },
+    useNullAsDefault: true
+  });
+
+  console.log("hola")
+  paginacion = number;
+  
   knex
   .from("suroeste")
-  .select("*")
+  .select("*").limit(10).offset(paginacion)
   .then(rows => {
     for (row of rows) {
 
@@ -113,6 +139,12 @@ function cargar(idTipo,valor) {
   .finally(() => {
     knex.destroy();
   });
+
+  // if (idTipo!="") {
+  //   return false
+  // }else{
+
+  // }
   
 }
 

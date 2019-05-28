@@ -1,0 +1,187 @@
+[
+    {
+        "codigo": "41001",
+        "nombre": "NEIVA",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41006",
+        "nombre": "ACEVEDO",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41013",
+        "nombre": "AGRADO",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41016",
+        "nombre": "AIPE",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41020",
+        "nombre": "ALGECIRAS",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41026",
+        "nombre": "ALTAMIRA",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41078",
+        "nombre": "BARAYA",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41132",
+        "nombre": "CAMPOALEGRE",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41206",
+        "nombre": "COLOMBIA",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41244",
+        "nombre": "ELÍAS",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41298",
+        "nombre": "GARZÓN",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41306",
+        "nombre": "GIGANTE",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41319",
+        "nombre": "GUADALUPE",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41349",
+        "nombre": "HOBO",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41357",
+        "nombre": "IQUIRA",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41359",
+        "nombre": "ISNOS",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41378",
+        "nombre": "LA ARGENTINA",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41396",
+        "nombre": "LA PLATA",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41483",
+        "nombre": "NÁTAGA",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41503",
+        "nombre": "OPORAPA",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41518",
+        "nombre": "PAICOL",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41524",
+        "nombre": "PALERMO",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41530",
+        "nombre": "PALESTINA",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41548",
+        "nombre": "PITAL",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41551",
+        "nombre": "PITALITO",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41615",
+        "nombre": "RIVERA",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41660",
+        "nombre": "SALADOBLANCO",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41668",
+        "nombre": "SAN AGUSTÍN",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41676",
+        "nombre": "SANTA MARÍA",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41770",
+        "nombre": "SUAZA",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41791",
+        "nombre": "TARQUI",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41797",
+        "nombre": "TESALIA",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41799",
+        "nombre": "TELLO",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41801",
+        "nombre": "TERUEL",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41807",
+        "nombre": "TIMANÁ",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41872",
+        "nombre": "VILLAVIEJA",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41885",
+        "nombre": "YAGUARÁ",
+        "cod_depto": "41"
+    }
+]

@@ -1,0 +1,617 @@
+[
+    {
+        "codigo": "15001",
+        "nombre": "TUNJA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15022",
+        "nombre": "ALMEIDA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15047",
+        "nombre": "AQUITANIA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15051",
+        "nombre": "ARCABUCO",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15087",
+        "nombre": "BELÉN",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15090",
+        "nombre": "BERBEO",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15092",
+        "nombre": "BETÉITIVA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15097",
+        "nombre": "BOAVITA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15104",
+        "nombre": "BOYACÁ",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15106",
+        "nombre": "BRICEÑO",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15109",
+        "nombre": "BUENAVISTA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15114",
+        "nombre": "BUSBANZÁ",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15131",
+        "nombre": "CALDAS",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15135",
+        "nombre": "CAMPOHERMOSO",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15162",
+        "nombre": "CERINZA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15172",
+        "nombre": "CHINAVITA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15176",
+        "nombre": "CHIQUINQUIRÁ",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15180",
+        "nombre": "CHISCAS",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15183",
+        "nombre": "CHITA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15185",
+        "nombre": "CHITARAQUE",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15187",
+        "nombre": "CHIVATÁ",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15189",
+        "nombre": "CIÉNEGA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15204",
+        "nombre": "CÓMBITA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15212",
+        "nombre": "COPER",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15215",
+        "nombre": "CORRALES",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15218",
+        "nombre": "COVARACHÍA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15223",
+        "nombre": "CUBARÁ",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15224",
+        "nombre": "CUCAITA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15226",
+        "nombre": "CUÍTIVA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15232",
+        "nombre": "CHÍQUIZA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15236",
+        "nombre": "CHIVOR",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15238",
+        "nombre": "DUITAMA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15244",
+        "nombre": "EL COCUY",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15248",
+        "nombre": "EL ESPINO",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15272",
+        "nombre": "FIRAVITOBA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15276",
+        "nombre": "FLORESTA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15293",
+        "nombre": "GACHANTIVÁ",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15296",
+        "nombre": "GAMEZA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15299",
+        "nombre": "GARAGOA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15317",
+        "nombre": "GUACAMAYAS",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15322",
+        "nombre": "GUATEQUE",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15325",
+        "nombre": "GUAYATÁ",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15332",
+        "nombre": "GÜICÁN",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15362",
+        "nombre": "IZA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15367",
+        "nombre": "JENESANO",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15368",
+        "nombre": "JERICÓ",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15377",
+        "nombre": "LABRANZAGRANDE",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15380",
+        "nombre": "LA CAPILLA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15401",
+        "nombre": "LA VICTORIA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15403",
+        "nombre": "LA UVITA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15407",
+        "nombre": "VILLA DE LEYVA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15425",
+        "nombre": "MACANAL",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15442",
+        "nombre": "MARIPÍ",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15455",
+        "nombre": "MIRAFLORES",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15464",
+        "nombre": "MONGUA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15466",
+        "nombre": "MONGUÍ",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15469",
+        "nombre": "MONIQUIRÁ",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15476",
+        "nombre": "MOTAVITA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15480",
+        "nombre": "MUZO",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15491",
+        "nombre": "NOBSA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15494",
+        "nombre": "NUEVO COLÓN",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15500",
+        "nombre": "OICATÁ",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15507",
+        "nombre": "OTANCHE",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15511",
+        "nombre": "PACHAVITA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15514",
+        "nombre": "PÁEZ",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15516",
+        "nombre": "PAIPA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15518",
+        "nombre": "PAJARITO",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15522",
+        "nombre": "PANQUEBA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15531",
+        "nombre": "PAUNA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15533",
+        "nombre": "PAYA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15537",
+        "nombre": "PAZ DE RÍO",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15542",
+        "nombre": "PESCA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15550",
+        "nombre": "PISBA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15572",
+        "nombre": "PUERTO BOYACÁ",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15580",
+        "nombre": "QUÍPAMA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15599",
+        "nombre": "RAMIRIQUÍ",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15600",
+        "nombre": "RÁQUIRA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15621",
+        "nombre": "RONDÓN",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15632",
+        "nombre": "SABOYÁ",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15638",
+        "nombre": "SÁCHICA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15646",
+        "nombre": "SAMACÁ",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15660",
+        "nombre": "SAN EDUARDO",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15664",
+        "nombre": "SAN JOSÉ DE PARE",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15667",
+        "nombre": "SAN LUIS DE GACENO",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15673",
+        "nombre": "SAN MATEO",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15676",
+        "nombre": "SAN MIGUEL DE SEMA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15681",
+        "nombre": "SAN PABLO DE BORBUR",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15686",
+        "nombre": "SANTANA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15690",
+        "nombre": "SANTA MARÍA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15693",
+        "nombre": "SANTA ROSA DE VITERBO",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15696",
+        "nombre": "SANTA SOFÍA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15720",
+        "nombre": "SATIVANORTE",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15723",
+        "nombre": "SATIVASUR",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15740",
+        "nombre": "SIACHOQUE",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15753",
+        "nombre": "SOATÁ",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15755",
+        "nombre": "SOCOTÁ",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15757",
+        "nombre": "SOCHA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15759",
+        "nombre": "SOGAMOSO",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15761",
+        "nombre": "SOMONDOCO",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15762",
+        "nombre": "SORA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15763",
+        "nombre": "SOTAQUIRÁ",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15764",
+        "nombre": "SORACÁ",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15774",
+        "nombre": "SUSACÓN",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15776",
+        "nombre": "SUTAMARCHÁN",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15778",
+        "nombre": "SUTATENZA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15790",
+        "nombre": "TASCO",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15798",
+        "nombre": "TENZA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15804",
+        "nombre": "TIBANÁ",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15806",
+        "nombre": "TIBASOSA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15808",
+        "nombre": "TINJACÁ",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15810",
+        "nombre": "TIPACOQUE",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15814",
+        "nombre": "TOCA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15816",
+        "nombre": "TOGÜÍ",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15820",
+        "nombre": "TÓPAGA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15822",
+        "nombre": "TOTA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15832",
+        "nombre": "TUNUNGUÁ",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15835",
+        "nombre": "TURMEQUÉ",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15837",
+        "nombre": "TUTA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15839",
+        "nombre": "TUTAZÁ",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15842",
+        "nombre": "UMBITA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15861",
+        "nombre": "VENTAQUEMADA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15879",
+        "nombre": "VIRACACHÁ",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15897",
+        "nombre": "ZETAQUIRA",
+        "cod_depto": "15"
+    }
+]

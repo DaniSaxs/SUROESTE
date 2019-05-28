@@ -1,0 +1,147 @@
+[
+    {
+        "codigo": "50001",
+        "nombre": "VILLAVICENCIO",
+        "cod_depto": "50"
+    },
+    {
+        "codigo": "50006",
+        "nombre": "ACACÍAS",
+        "cod_depto": "50"
+    },
+    {
+        "codigo": "50110",
+        "nombre": "BARRANCA DE UPÍA",
+        "cod_depto": "50"
+    },
+    {
+        "codigo": "50124",
+        "nombre": "CABUYARO",
+        "cod_depto": "50"
+    },
+    {
+        "codigo": "50150",
+        "nombre": "CASTILLA LA NUEVA",
+        "cod_depto": "50"
+    },
+    {
+        "codigo": "50223",
+        "nombre": "SAN LUIS DE CUBARRAL",
+        "cod_depto": "50"
+    },
+    {
+        "codigo": "50226",
+        "nombre": "CUMARAL",
+        "cod_depto": "50"
+    },
+    {
+        "codigo": "50245",
+        "nombre": "EL CALVARIO",
+        "cod_depto": "50"
+    },
+    {
+        "codigo": "50251",
+        "nombre": "EL CASTILLO",
+        "cod_depto": "50"
+    },
+    {
+        "codigo": "50270",
+        "nombre": "EL DORADO",
+        "cod_depto": "50"
+    },
+    {
+        "codigo": "50287",
+        "nombre": "FUENTE DE ORO",
+        "cod_depto": "50"
+    },
+    {
+        "codigo": "50313",
+        "nombre": "GRANADA",
+        "cod_depto": "50"
+    },
+    {
+        "codigo": "50318",
+        "nombre": "GUAMAL",
+        "cod_depto": "50"
+    },
+    {
+        "codigo": "50325",
+        "nombre": "MAPIRIPÁN",
+        "cod_depto": "50"
+    },
+    {
+        "codigo": "50330",
+        "nombre": "MESETAS",
+        "cod_depto": "50"
+    },
+    {
+        "codigo": "50350",
+        "nombre": "LA MACARENA",
+        "cod_depto": "50"
+    },
+    {
+        "codigo": "50370",
+        "nombre": "URIBE",
+        "cod_depto": "50"
+    },
+    {
+        "codigo": "50400",
+        "nombre": "LEJANÍAS",
+        "cod_depto": "50"
+    },
+    {
+        "codigo": "50450",
+        "nombre": "PUERTO CONCORDIA",
+        "cod_depto": "50"
+    },
+    {
+        "codigo": "50568",
+        "nombre": "PUERTO GAITÁN",
+        "cod_depto": "50"
+    },
+    {
+        "codigo": "50573",
+        "nombre": "PUERTO LÓPEZ",
+        "cod_depto": "50"
+    },
+    {
+        "codigo": "50577",
+        "nombre": "PUERTO LLERAS",
+        "cod_depto": "50"
+    },
+    {
+        "codigo": "50590",
+        "nombre": "PUERTO RICO",
+        "cod_depto": "50"
+    },
+    {
+        "codigo": "50606",
+        "nombre": "RESTREPO",
+        "cod_depto": "50"
+    },
+    {
+        "codigo": "50680",
+        "nombre": "SAN CARLOS DE GUAROA",
+        "cod_depto": "50"
+    },
+    {
+        "codigo": "50683",
+        "nombre": "SAN JUAN DE ARAMA",
+        "cod_depto": "50"
+    },
+    {
+        "codigo": "50686",
+        "nombre": "SAN JUANITO",
+        "cod_depto": "50"
+    },
+    {
+        "codigo": "50689",
+        "nombre": "SAN MARTÍN",
+        "cod_depto": "50"
+    },
+    {
+        "codigo": "50711",
+        "nombre": "VISTAHERMOSA",
+        "cod_depto": "50"
+    }
+]

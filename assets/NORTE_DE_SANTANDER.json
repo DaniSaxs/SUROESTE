@@ -1,0 +1,202 @@
+[
+    {
+        "codigo": "54001",
+        "nombre": "CÚCUTA",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54003",
+        "nombre": "ABREGO",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54051",
+        "nombre": "ARBOLEDAS",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54099",
+        "nombre": "BOCHALEMA",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54109",
+        "nombre": "BUCARASICA",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54125",
+        "nombre": "CÁCOTA",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54128",
+        "nombre": "CACHIRÁ",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54172",
+        "nombre": "CHINÁCOTA",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54174",
+        "nombre": "CHITAGÁ",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54206",
+        "nombre": "CONVENCIÓN",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54223",
+        "nombre": "CUCUTILLA",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54239",
+        "nombre": "DURANIA",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54245",
+        "nombre": "EL CARMEN",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54250",
+        "nombre": "EL TARRA",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54261",
+        "nombre": "EL ZULIA",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54313",
+        "nombre": "GRAMALOTE",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54344",
+        "nombre": "HACARÍ",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54347",
+        "nombre": "HERRÁN",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54377",
+        "nombre": "LABATECA",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54385",
+        "nombre": "LA ESPERANZA",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54398",
+        "nombre": "LA PLAYA",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54405",
+        "nombre": "LOS PATIOS",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54418",
+        "nombre": "LOURDES",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54480",
+        "nombre": "MUTISCUA",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54498",
+        "nombre": "OCAÑA",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54518",
+        "nombre": "PAMPLONA",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54520",
+        "nombre": "PAMPLONITA",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54553",
+        "nombre": "PUERTO SANTANDER",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54599",
+        "nombre": "RAGONVALIA",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54660",
+        "nombre": "SALAZAR",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54670",
+        "nombre": "SAN CALIXTO",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54673",
+        "nombre": "SAN CAYETANO",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54680",
+        "nombre": "SANTIAGO",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54720",
+        "nombre": "SARDINATA",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54743",
+        "nombre": "SILOS",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54800",
+        "nombre": "TEORAMA",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54810",
+        "nombre": "TIBÚ",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54820",
+        "nombre": "TOLEDO",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54871",
+        "nombre": "VILLA CARO",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54874",
+        "nombre": "VILLA DEL ROSARIO",
+        "cod_depto": "54"
+    }
+]
