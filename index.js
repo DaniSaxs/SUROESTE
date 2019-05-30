@@ -6,6 +6,7 @@ const {
 const path = require("path");
 const url = require("url");
 
+
 var knex = require("knex")({
   client: "sqlite3",
   connection: {
@@ -42,7 +43,7 @@ app.on("ready", () => {
     mainWindow.show();
   });
 
-  ipcMain.on("insert", async (e, lista) => {
+  ipcMain.on("insert", async (e, lista, contPag) => {
 
     var knex = require("knex")({
       client: "sqlite3",
@@ -55,7 +56,24 @@ app.on("ready", () => {
     let cantidad = Math.ceil(lista.length / 20);
     let data = [];
     for(dato of lista){
+        if(dato.identificacion == null){dato.identificacion = ""}
+        if(dato.gen == null){dato.gen = ""}
+        if(dato.estado == null){dato.estado = ""}
+        if(dato.tipo_iden == null){dato.tipo_iden = ""}
+        if(dato.nombre1 == null){dato.nombre1 = ""}
+        if(dato.nombre2 == null){dato.nombre2 = ""}
+        if(dato.apellido1 == null){dato.apellido1 = ""}
+        if(dato.apellido2 == null){dato.apellido2 = ""}
+        if(dato.correo == null){dato.correo = ""}
+        if(dato.celular == null){dato.celular = ""}
+        if(dato.ciudad == null){dato.ciudad = ""}
+        if(dato.departamento == null){dato.departamento = ""}
+        if(dato.empresa == null){dato.empresa = ""}
+        if(dato.cargo == null){dato.cargo = ""}
+        if(dato.sector == null){dato.sector = ""}
+        if(dato.__v == null){dato.__v = ""}
       data.push({
+        id_Mongo: dato._id,
         gen: dato.gen,
         estado: dato.estado,
         tipo_iden: dato.tipo_iden,
@@ -73,7 +91,9 @@ app.on("ready", () => {
         sector: dato.sector,
         __v: dato.__v
       })
-    }
+
+      
+  }
 
     let datos = [];
     for (let i = 0; i < 20; i++) {
@@ -85,7 +105,12 @@ app.on("ready", () => {
       await knex("suroeste").insert(datos[f]);
       console.log("Insertado")
     }
+
     knex.destroy();
+
+       
+        
+
     mainWindow.reload();
   });
 
@@ -178,6 +203,7 @@ app.on("ready", () => {
       });
     mainWindow.reload();
   });
+
 });
 
 app.on("window-all-closed", () => {

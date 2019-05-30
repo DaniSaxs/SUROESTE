@@ -10,6 +10,7 @@
 		<link rel="stylesheet" href="./css/animate.css">
 		<link rel="stylesheet" href="./css/icon.css">
 		<link rel="stylesheet" href="./css/estilos.css">
+		<link rel="stylesheet" href="./css/burbujas.css">
     <title>Suroeste</title>
   </head>
   <body>
@@ -120,18 +121,93 @@
   </div>
 </div>
 		<!-- -------------MODAL EDITAR--------------- -->
-    <header>
-      <ul class="container-fluid" >
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Nombre Usuario
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Cerrar Sesion</a>
-            </div>
-          </li>
-      </ul>
-		</header>
+		<!-- -------------MODAL INFO--------------- -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 80% !important;">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalCenterTitle" style="text-align: center; width:100%;">Ver información</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form id="formUpd">
+						<div class="c">
+						<ul class="container-fluid">
+							<div class="row w-100">
+							<li class="col-md-2"><p class="float-right subtitle">Primer nombre:*</p></li>
+							<li class="col-md-4"><input class="form-control" type="text" id="nombreI" maxlength="20" value="" disabled></li> 
+							<li class="col-md-2"><p class="float-right subtitle">Segundo nombre:</p></li> 
+							<li class="col-md-4"><input class="form-control" type="text" maxlength="20" id="nombre2I" value="" disabled></li>
+							</div>
+						</ul>
+						<ul class="container-fluid">
+							<div class="row w-100">
+							<li class="col-md-2"><p class="float-right subtitle"> Primer apellido:*</p></li>
+							<li class="col-md-4"><input class="form-control" type="text" id="apellidoI" maxlength="20" value="" disabled></li>
+							<li class="col-md-2"><p class="float-right subtitle"> Segundo apellido:</p></li>
+							<li class="col-md-4"><input class="form-control" type="text" maxlength="20" id="apellido2I" value="" disabled></li>
+							</div>
+						</ul>
+					</div>
+					<div class="c2">
+						<ul class="container-fluid">
+							<div class="row w-100">
+								<li class="col-md-2"><p class="float-right subtitle">Identificación:*</p></li>
+								<li class="col-md-4">
+									<div class="row">
+										<div class="col-md-3">
+												<input class="form-control" type="text" maxlength="20" id="sel_tipo_idI" value="" disabled>						
+										</div>
+										<div class="col-md-9">
+											<input class="form-control" type="text" id="identificacionI" maxlength="20" value="" disabled>
+										</div>
+									</div>
+								</li>
+								<li class="col-md-2"><p class="float-right subtitle">Celular:*</p></li>
+								<li class="col-md-4"><input class="form-control" type="text" id="celularI" maxlength="10" value="" disabled></li>
+							</div>
+						</ul>
+						<ul class="container-fluid">
+							<div class="row w-100">
+							<li class="col-md-2"><p class="float-right subtitle">Empresa:</p></li>
+							<li class="col-md-4"><input class="form-control" type="text" id="empresaI" maxlength="20" value="" disabled></li>
+							<li class="col-md-2"><p class="float-right subtitle">Cargo:</p></li>
+							<li class="col-md-4"><input class="form-control" type="text" id="cargoI" maxlength="20" value="" disabled></li>
+							</div>
+						</ul>
+						<ul class="container-fluid">
+							<div class="row w-100">
+							<li class="col-md-2"><p class="float-right subtitle">Departamento:</p></li>
+							<li class="col-md-4">
+									<input class="form-control" type="text" id="sel_departamentosI" maxlength="20" value="" disabled>
+							</li>
+							<li class="col-md-2"><p class="float-right subtitle">Ciudad: *</p></li>
+							<li class="col-md-4">
+								<input class="form-control" type="text" id="sel_ciudadesI" maxlength="20" value="" disabled>
+							</li>
+							</div>
+						</ul>
+						<ul class="container-fluid">
+							<div class="row w-100">
+								<li class="col-md-2"><p class="float-right subtitle">Sector:</p></li>
+							<li class="col-md-4">
+								<input class="form-control" type="text" id="sectorI" maxlength="20" value="" disabled>
+							</li>
+							<li class="col-md-2"><p class="float-right subtitle">Correo:</p></li>
+							<li class="col-md-4"><input class="form-control" type="email" id="correoI" maxlength="40" value="" disabled></li>
+							</div>
+						</ul>
+					</div>
+				</form>
+	
+			</div>
+			</div>
+		</div>
+	</div>
+			<!-- -------------MODAL INFO--------------- -->
 		<div>
 			<ul class="menu">
 				<a href="#">
@@ -158,14 +234,15 @@
 			<h1>Personas registradas</h1>
 			<div class="header-registros">
 				<form class="form-inline my-2 my-lg-0" onsubmit="return buscar(this)">
-					<input class="form-control mr-sm-2" type="search" placeholder="Identificacion" aria-label="Search" id="bCed" onkeypress="ce(this)">
-					<input class="form-control mr-sm-2" type="search" placeholder="Nombre" aria-label="Search" id="bNom" onkeypress="no(this)">
-					<input class="form-control mr-sm-2" type="search" placeholder="Ciudad" aria-label="Search" id="bCiu" onkeypress="ci(this)">
-					<button class="btn btn-outline-danger my-2 my-sm-0 material-icons">search</button>
+					<input class="form-control mr-sm-2" type="search" placeholder="Identificacion" aria-label="Search" id="bCed" onkeypress="ce(this)" maxlength="15">
+					<input class="form-control mr-sm-2" type="search" placeholder="Nombre" aria-label="Search" id="bNom" onkeypress="no(this)" maxlength="20">
+					<input class="form-control mr-sm-2" type="search" placeholder="Ciudad" aria-label="Search" id="bCiu" onkeypress="ci(this)" maxlength="20">
+					<button type="submit" tooltip="Buscar" class="btn btn-outline-danger my-2 my-sm-0 material-icons">search</button>
+					<button type="button" tooltip="Ver Todos" class="btn btn-outline-success ml-2 my-2 my-sm-0 material-icons" onclick="cargar(0)"><i class="material-icons"></i>autorenew</button>
 				</form>
 				<div class="btn-datos">
 					<button class="btn" onclick="descarga()"><i class="material-icons">cloud_download</i>Descargar Datos</button>
-					<button class="btn"><i class="material-icons">cloud_upload</i>Sinctronizar Datos</button>
+					<button class="btn"><i class="material-icons">cloud_upload</i>Sincronizar Datos</button>
 				</div>
 			</div>
 			<table class="table">
@@ -173,7 +250,7 @@
 					<tr>
 						<th scope="col">Identificación</th>
 						<th scope="col">Nombre</th>
-						<th scope="col">Celular</th>
+						<th scope="col">Ciudad</th>
 						<th scope="col">Acciones</th>
 					</tr>
 				</thead>
@@ -184,13 +261,47 @@
 			</table>
 			<nav aria-label="...">
 				<ul class="pagination">
-					<li class="page-item active">
-						<a class="page-link" href="#" onclick="cargar(0)">1</a>
-					</li>
-					<li class="page-item" aria-current="page">
-						<a class="page-link" href="#" onclick="cargar(10)">2</a>
-					</li>
-					<li class="page-item"><a class="page-link" href="#">3</a></li>
+					<script>
+						var knex = require("knex")({
+							client: "sqlite3",
+							connection: {
+								filename: "./database.sqlite3"
+							},
+							useNullAsDefault: true
+						});
+
+					knex
+					.from("suroeste")
+					.select("*")
+					.then(rows => {
+						const contPag = document.querySelector(".pagination");
+						var listado = Math.ceil(rows.length/50);
+						var pagitem ;
+						for (let i = 0; i < listado; i++) {
+							if(i == 0){
+								pagitem = `
+							<li class=" page-item active" onclick="pagination(this)" style="cursor:pointer;">
+								<a class="page-link" onclick="cargar(${i*50})">${i+1}</a>
+							</li>`;
+							}else{
+								pagitem = `
+							<li class=" page-item" onclick="pagination(this)" style="cursor:pointer;">
+								<a class="page-link" onclick="cargar(${i*50})">${i+1}</a>
+							</li>`;
+							}
+							
+							contPag.innerHTML += pagitem;
+							
+						}	
+							})
+							.catch(err => {
+								console.log(err);
+								throw err;
+							})
+							.finally(() => {
+								knex.destroy();
+							});
+					</script>
 				</ul>
 			</nav>
 		</div>
@@ -207,41 +318,38 @@
 		<script>
 			
 			function descarga() {
+				Swal.fire({
+				title: 'Descargando...',
+				showConfirmButton: false,
+				allowOutsideClick: false
+
+			})
+				Swal.showLoading();
 				$.ajax({
 					url: 'https://encuentrodelsuroeste.herokuapp.com/personas',
 					success: function(respuesta) {
 						const lista = respuesta.lista;
 						ipcRenderer.send('insert',lista);
+						// ipcRenderer.send('pagina',lista);
+						setTimeout(()=>{
+							Swal.close()
+						},2500)
 					},
 					error: function() {
 								console.log("No se ha podido obtener la información");
 					}
 					
 				});
-				let timerInterval
+				
 				Swal.fire({
-					title: 'Descargando',
-					html: 'I will close in <strong></strong> seconds.',
-					timer: 2000,
-					onBeforeOpen: () => {
-						Swal.showLoading()
-						timerInterval = setInterval(() => {
-							Swal.getContent().querySelector('strong')
-								.textContent = Swal.getTimerLeft()
-						}, 100)
-					},
-					onClose: () => {
-						clearInterval(timerInterval)
-					}
-				}).then((result) => {
-					if (
-						// Read more about handling dismissals
-						result.dismiss === Swal.DismissReason.timer
-					) {
-						console.log('I was closed by the timer')
-					}
-				})
+				title: 'Descargando...',
+				showConfirmButton: false,
+				allowOutsideClick: false
+
+			})
+				Swal.showLoading();
 			}
+
 		</script>
   </body>
 </html>

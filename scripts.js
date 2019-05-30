@@ -16,19 +16,24 @@ ipcRenderer.on("insert", (e, all) => {
 let seleccion = document.getElementById("result");
 
 /* ================ Buscar ============================== */
+var inputCiu = document.querySelector('#bCiu')
+var inputNom = document.querySelector('#bNom')
+var inputCed = document.querySelector('#bCed')
 function ce(c){
-  var inputCiu = document.querySelector('#bCiu')
-  var inputNom = document.querySelector('#bNom')
-  if(c.value != ""){
+  if(c.value == ""){
+    console.log("entró");
+    
+    inputCiu.removeAttribute('disabled');
+    inputNom.removeAttribute('disabled');
+
+  }else{
+    console.log("SALIÓ");
+   
     var atributo = document.createAttribute('disabled');
     var atributo2 = document.createAttribute('disabled');
 
     inputCiu.setAttributeNode(atributo);
     inputNom.setAttributeNode(atributo2);
-  }else{
-
-    inputCiu.removeAttribute('disabled');
-    inputNom.removeAttribute('disabled');
   }
 }
 
@@ -36,35 +41,31 @@ function no(c){
   if(c.value != ""){
     var atributo = document.createAttribute('disabled');
     var atributo2 = document.createAttribute('disabled');
-
-    var inputCiu = document.querySelector('#bCiu')
-    var inputNom = document.querySelector('#bCed')
+    
 
     inputCiu.setAttributeNode(atributo);
-    inputNom.setAttributeNode(atributo2);
+    inputCed.setAttributeNode(atributo2);
   }
 }
 function ci(c){
   var atributo = document.createAttribute('disabled');
   var atributo2 = document.createAttribute('disabled');
-  var inputCiu = document.querySelector('#bCed')
-  var inputNom = document.querySelector('#bNom')
   if(c.value != ""){
-    inputCiu.setAttributeNode(atributo);
+    inputCed.setAttributeNode(atributo);
     inputNom.setAttributeNode(atributo2);
   }else{
   }
 }
 
+var contPagone = document.getElementsByClassName("pagination")[0];
 
 function buscar(form) {
-
-  console.log('buscar');
-  console.log(form);
+  // console.log('buscar');
+  // console.log(form);
   let inpCedula = form.bCed;
   let inpNombre = form.bNom;
   let inpCiudad = form.bCiu;
-
+  
   
   
   var idTipo = "";
@@ -72,33 +73,17 @@ function buscar(form) {
 
   if(inpCedula.value != ""){
     idTipo = "identificacion";
-    valor = inpCedula.value;
+    valor = (inpCedula.value).toUpperCase();
   }else if(inpNombre.value != ""){
     idTipo= "nombre1";
-    valor = inpNombre.value;
+    valor = (inpNombre.value).toUpperCase();
   }
   else if(inpCiudad.value != ""){
     idTipo= "ciudad";
-    valor = inpCiudad.value;
+    valor = (inpCiudad.value).toUpperCase();
   }
-  cargar(idTipo,valor)
-  console.log(idTipo,valor);
 
-}
-
-var paginacion = 0;
-// function pag(number){
-//   console.log("hola")
-//   paginacion = number;
-//   cargar(paginacion);
-// }
-
-
-function cargar(number) {
-  // if(idTipo == ""){
-  //   idTipo = "__v";
-  //   valor = "0"
-  // }
+  seleccion.innerHTML = "";
   var knex = require("knex")({
     client: "sqlite3",
     connection: {
@@ -107,27 +92,97 @@ function cargar(number) {
     useNullAsDefault: true
   });
 
-  console.log("hola")
-  paginacion = number;
-  
   knex
   .from("suroeste")
-  .select("*").limit(10).offset(paginacion)
+  .select("*").where(idTipo,valor)
   .then(rows => {
     for (row of rows) {
 
       let cont = `<tr>
             <td>${row["identificacion"]}</td>
-            <td class='card-title'>${row["nombre1"] +
-              " " +
-              row["apellido1"]}</td>
-              <td class='card-title'>${row["celular"]}</td>
+            <td class='card-title'>${row["nombre1"] + " " + row["nombre2"] + " " + row["apellido1"] + " " + row["apellido2"]}</td>
+              <td class='card-title'>${row["ciudad"]}</td>
             <td><button class='btn btn-info' onclick='actualizar(this,${
               row["_id"]
             })' nombre1='${row["nombre1"]}' nombre2='${row["nombre2"]}' apellido='${row["apellido1"]}' apellido2='${row["apellido2"]}' tipoI='${row["tipo_iden"]}' iden='${row["identificacion"]}' cel='${row["celular"]}' empresa='${row["empresa"]}' cargo='${row["cargo"]}' departamento='${row["departamento"]}' ciudad='${row["ciudad"]}' sector='${row["sector"]}' correo='${row["correo"]}' id = 'botonAct' data-toggle='modal' data-target='#exampleModalCenter'>Editar</button>
-            <button class='btn btn-danger' onclick='actualizar(this,${
+            <button class='btn btn-danger' onclick='ver(this,${
               row["_id"]
-            })' texto='${row["nombre1"]}' id = 'botonAct'>Ver Info</button></td>
+            })' nombre1='${row["nombre1"]}' nombre2='${row["nombre2"]}' apellido='${row["apellido1"]}' apellido2='${row["apellido2"]}' tipoI='${row["tipo_iden"]}' iden='${row["identificacion"]}' cel='${row["celular"]}' empresa='${row["empresa"]}' cargo='${row["cargo"]}' departamento='${row["departamento"]}' ciudad='${row["ciudad"]}' sector='${row["sector"]}' correo='${row["correo"]}' id = 'botonAct' data-toggle='modal' data-target='#exampleModalCenter2'>Ver Info</button>
+        </tr>`;
+      seleccion.innerHTML += cont;
+    }
+  })
+  .catch(err => {
+    console.log(err);
+    throw err;
+  })
+  .finally(() => {
+    knex.destroy();
+  });
+  inpCedula.value= "";
+  inpCiudad.value = "";
+  inpNombre.value="";
+  inputCiu.removeAttribute('disabled');
+  inputNom.removeAttribute('disabled');
+  inputCed.removeAttribute('disabled');
+  contPagone.style.display = "none";
+  return false
+}
+
+function pagination(elemento1){
+  const elementsPagination = document.getElementsByClassName("page-item");
+  for(let i = 0; i<elementsPagination.length; i++){
+    elementsPagination[i].setAttribute("class","page-item");
+  }
+
+  elemento1.setAttribute("class","page-item active");
+}
+
+var paginacion = 0;
+
+
+function cargar(number) {
+  inputCiu.removeAttribute('disabled');
+  inputNom.removeAttribute('disabled');
+  inputCed.removeAttribute('disabled');
+  inputCiu.value = "";
+  inputNom.value = "";
+  inputCed.value = "";
+  // if(idTipo == ""){
+  //   idTipo = "__v";
+  //   valor = "0"
+  // }
+  //element.setAttribute("class","page-link");
+  contPagone.style.display = "flex";
+
+  
+  seleccion.innerHTML = "";
+  var knex = require("knex")({
+    client: "sqlite3",
+    connection: {
+      filename: "./database.sqlite3"
+    },
+    useNullAsDefault: true
+  });
+  
+  paginacion = number;
+  
+  knex
+  .from("suroeste")
+  .select("*").limit(50).offset(paginacion)
+  .then(rows => {
+    for (row of rows) {
+
+      let cont = `<tr>
+            <td>${row["identificacion"]}</td>
+            <td class='card-title'>${row["nombre1"] + " " + row["nombre2"] + " " + row["apellido1"] + " " + row["apellido2"]}</td>
+              <td class='card-title'>${row["ciudad"]}</td>
+            <td><button class='btn btn-info' onclick='actualizar(this,${
+              row["_id"]
+            })' nombre1='${row["nombre1"]}' nombre2='${row["nombre2"]}' apellido='${row["apellido1"]}' apellido2='${row["apellido2"]}' tipoI='${row["tipo_iden"]}' iden='${row["identificacion"]}' cel='${row["celular"]}' empresa='${row["empresa"]}' cargo='${row["cargo"]}' departamento='${row["departamento"]}' ciudad='${row["ciudad"]}' sector='${row["sector"]}' correo='${row["correo"]}' id = 'botonAct' data-toggle='modal' data-target='#exampleModalCenter'>Editar</button>
+            <button class='btn btn-danger' onclick='ver(this,${
+              row["_id"]
+            })' nombre1='${row["nombre1"]}' nombre2='${row["nombre2"]}' apellido='${row["apellido1"]}' apellido2='${row["apellido2"]}' tipoI='${row["tipo_iden"]}' iden='${row["identificacion"]}' cel='${row["celular"]}' empresa='${row["empresa"]}' cargo='${row["cargo"]}' departamento='${row["departamento"]}' ciudad='${row["ciudad"]}' sector='${row["sector"]}' correo='${row["correo"]}' id = 'botonAct' data-toggle='modal' data-target='#exampleModalCenter2'>Ver Info</button>
         </tr>`;
       seleccion.innerHTML += cont;
     }
@@ -148,7 +203,10 @@ function cargar(number) {
   
 }
 
-cargar("","")
+cargar("")
+buscar()
+
+
 
 // function Insertar() {
 //   ipcRenderer.send('insertNew');
@@ -344,6 +402,150 @@ function actualizar(elemento, infoE) {
 
   });
 
+}
+
+function ver(elemento, infoE) {
+  //------------------------update-----------------------//
+  const botonAct = elemento;
+  const nombre1 = botonAct.getAttribute('nombre1');
+  const nombre2 = botonAct.getAttribute('nombre2');
+  const nameText = document.getElementById('nombreI');
+  const nameText2 = document.getElementById('nombre2I');
+  const ape = botonAct.getAttribute('apellido');
+  const ape2 = botonAct.getAttribute('apellido2');
+  const apellido = document.getElementById('apellidoI');
+  const apellido2 = document.getElementById('apellido2I');
+  nameText.setAttribute('value', nombre1);
+  nameText2.setAttribute('value', nombre2);
+  apellido.setAttribute('value', ape);
+  apellido2.setAttribute('value', ape2);
+  const tipoI = botonAct.getAttribute('tipoI');
+  const tipo = document.getElementById('sel_tipo_idI');
+  tipo.setAttribute('value',tipoI);
+  const tipF = tipo.getAttribute('value');
+  const iden = botonAct.getAttribute('iden');
+  const cedula = document.getElementById('identificacionI');
+  cedula.setAttribute('value',iden);
+  const cel = botonAct.getAttribute('cel');
+  const celu = document.getElementById('celularI');
+  celu.setAttribute('value',cel);
+  const empresa = botonAct.getAttribute('empresa');
+  const empre = document.getElementById('empresaI');
+  empre.setAttribute('value',empresa);
+  const cargo = botonAct.getAttribute('cargo');
+  const carg = document.getElementById('cargoI');
+  carg.setAttribute('value', cargo);
+  const dept = botonAct.getAttribute('departamento');
+  const dept2 = document.getElementById('sel_departamentosI');
+  dept2.setAttribute('value', dept);
+  if(dept2.value == "05"){
+    dept2.value = "ANTIOQUIA";
+  }
+  if(dept2.value == "08"){
+    dept2.value = "ATLÁNTICO";
+  }
+  if(dept2.value == "11"){
+    dept2.value = "BOGOTÁ";
+  }
+  if(dept2.value == "13"){
+    dept2.value = "BOLÍVAR";
+  }
+  if(dept2.value == "15"){
+    dept2.value = "BOYACÁ";
+  }
+  if(dept2.value == "17"){
+    dept2.value = "CALDAS";
+  }
+  if(dept2.value == "18"){
+    dept2.value = "CAQUETÁ";
+  }
+  if(dept2.value == "19"){
+    dept2.value = "CAUCA";
+  }
+  if(dept2.value == "20"){
+    dept2.value = "CESAR";
+  }
+  if(dept2.value == "23"){
+    dept2.value = "CÓRDOBA";
+  }
+  if(dept2.value == "25"){
+    dept2.value = "CUNDINAMARCA";
+  }
+  if(dept2.value == "27"){
+    dept2.value = "CHOCÓ";
+  }
+  if(dept2.value == "41"){
+    dept2.value = "HUILA";
+  }
+  if(dept2.value == "44"){
+    dept2.value = "LA_GUAJIRA";
+  }
+  if(dept2.value == "47"){
+    dept2.value = "MAGDALENA";
+  }
+  if(dept2.value == "50"){
+    dept2.value = "META";
+  }
+  if(dept2.value == "52"){
+    dept2.value = "NARIÑO";
+  }
+  if(dept2.value == "54"){
+    dept2.value = "NORTE_DE_SANTANDER";
+  }
+  if(dept2.value == "63"){
+    dept2.value = "QUINDÍO";
+  }
+  if(dept2.value == "66"){
+    dept2.value = "RISARALDA";
+  }
+  if(dept2.value == "68"){
+    dept2.value = "SANTANDER";
+  }
+  if(dept2.value == "70"){
+    dept2.value = "SUCRE";
+  }
+  if(dept2.value == "73"){
+    dept2.value = "TOLIMA";
+  }
+  if(dept2.value == "76"){
+    dept2.value = "VALLE_DEL_CAUCA";
+  }
+  if(dept2.value == "81"){
+    dept2.value = "ARAUCA";
+  }
+  if(dept2.value == "85"){
+    dept2.value = "CASANARE";
+  }
+  if(dept2.value == "86"){
+    dept2.value = "PUTUMAYO";
+  }
+  if(dept2.value == "88"){
+    dept2.value = "SAN_ANDRÉS_Y_PROVIDENCIA";
+  }
+  if(dept2.value == "91"){
+    dept2.value = "AMAZONAS";
+  }
+  if(dept2.value == "94"){
+    dept2.value = "GUAINÍA";
+  }
+  if(dept2.value == "95"){
+    dept2.value = "GUAVIARE";
+  }
+  if(dept2.value == "97"){
+    dept2.value = "VAUPÉS";
+  }
+  if(dept2.value == "99"){
+    dept2.value = "VICHADA";
+  }
+  const city = botonAct.getAttribute('ciudad');
+  const city2 = document.getElementById('sel_ciudadesI');
+  city2.setAttribute('value', city);
+  const sector = botonAct.getAttribute('sector');
+  const sec = document.getElementById('sectorI');
+  sec.setAttribute('value', sector);
+  const correo = botonAct.getAttribute('correo');
+  const corre = document.getElementById('correoI');
+  corre.setAttribute('value', correo);
 }
 
 //---------------------------------knex---------------------------

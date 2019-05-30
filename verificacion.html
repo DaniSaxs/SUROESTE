@@ -13,18 +13,6 @@
     <title>Suroeste</title>
   </head>
   <body>
-    <header>
-      <ul class="container-fluid" >
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Nombre Usuario
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Cerrar Sesion</a>
-            </div>
-          </li>
-      </ul>
-		</header>
 		<div>
 			<ul class="menu">
 				<a href="index.html">
@@ -51,19 +39,19 @@
 			<h1>Verificación</h1>
 			<div class="verificacion">
 				<div class="iconos-verificacion">
-					<div class="cedula">
+					<div class="cedula" style="display: none !important">
 						<i class="material-icons">credit_card</i>
 						<p>Ingrese la cedula</p>
 					</div>
-					<div class="carga">
+					<div class="carga" style="display: none !important">
 						<i class="material-icons">autorenew</i>
 						<p>Leyendo Cédula</p>
 					</div>
-					<div class="verificado">
+					<div class="verificado" style="display: none !important">
 						<i class="material-icons">check_circle</i>
 						<p>Está registrado, puede seguir</p>
 					</div>
-					<div class="rechazado">
+					<div class="rechazado" style="display: none !important">
 						<i class="material-icons">cancel</i>
 						<p>No se encuentra registrado</p>
 					</div>
@@ -71,15 +59,15 @@
 					
 				</div>
 				<div class="verificador">
-					<input class="form-control" type="text" name="" id="" placeholder="Número de la cédula">
+					<input class="form-control" type="text" name="" id="text" placeholder="Número de la cédula" onkeyup="verifi(this)">
 				</div>
 			</div>
 			
 		</div>
 
 
-		<script src="./js/sweetalert.min.js"></script>
 		<script src="./js/sweetalert2@8.js"></script>
+		<script src="./verificacion.js"></script>
 		<!--  <script src="./scripts.js"></script> -->
     <!-- <h1>Hello World!</h1>
 

@@ -8,8 +8,7 @@
     "knex": "^0.16.5",
     "postinstall": "^0.4.2",
     "sqlite3": "^4.0.8",
-    "sweetalert": "^2.1.2",
-    "sweetalert2": "^8.11.1"
+    "sweetalert2": "^8.11.6"
   },
   "devDependencies": {
     "electron-builder": "^20.40.2",
