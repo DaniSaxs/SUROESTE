@@ -234,9 +234,9 @@
 			<h1>Personas registradas</h1>
 			<div class="header-registros">
 				<form class="form-inline my-2 my-lg-0" onsubmit="return buscar(this)">
-					<input class="form-control mr-sm-2" type="search" placeholder="Identificacion" aria-label="Search" id="bCed" onkeypress="ce(this)" maxlength="15">
-					<input class="form-control mr-sm-2" type="search" placeholder="Nombre" aria-label="Search" id="bNom" onkeypress="no(this)" maxlength="20">
-					<input class="form-control mr-sm-2" type="search" placeholder="Ciudad" aria-label="Search" id="bCiu" onkeypress="ci(this)" maxlength="20">
+					<input class="form-control mr-sm-2" type="search" placeholder="Identificacion" aria-label="Search" id="bCed" onkeyup="ce(this)" maxlength="15">
+					<input class="form-control mr-sm-2" type="search" placeholder="Nombre" aria-label="Search" id="bNom" onkeyup="no(this)" maxlength="20">
+					<input class="form-control mr-sm-2" type="search" placeholder="Ciudad" aria-label="Search" id="bCiu" onkeyup="ci(this)" maxlength="20">
 					<button type="submit" tooltip="Buscar" class="btn btn-outline-danger my-2 my-sm-0 material-icons">search</button>
 					<button type="button" tooltip="Ver Todos" class="btn btn-outline-success ml-2 my-2 my-sm-0 material-icons" onclick="cargar(0)"><i class="material-icons"></i>autorenew</button>
 				</form>
@@ -260,7 +260,7 @@
 				
 			</table>
 			<nav aria-label="...">
-				<ul class="pagination">
+				<ul class=" container pagination" style="flex-flow: row wrap">
 					<script>
 						var knex = require("knex")({
 							client: "sqlite3",

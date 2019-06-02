@@ -21,13 +21,11 @@ var inputNom = document.querySelector('#bNom')
 var inputCed = document.querySelector('#bCed')
 function ce(c){
   if(c.value == ""){
-    console.log("entró");
     
     inputCiu.removeAttribute('disabled');
     inputNom.removeAttribute('disabled');
 
   }else{
-    console.log("SALIÓ");
    
     var atributo = document.createAttribute('disabled');
     var atributo2 = document.createAttribute('disabled');
@@ -38,22 +36,28 @@ function ce(c){
 }
 
 function no(c){
-  if(c.value != ""){
+  if(c.value == ""){
+    inputCiu.removeAttribute('disabled');
+    inputCed.removeAttribute('disabled');
+
+  }else{
     var atributo = document.createAttribute('disabled');
     var atributo2 = document.createAttribute('disabled');
     
-
     inputCiu.setAttributeNode(atributo);
     inputCed.setAttributeNode(atributo2);
   }
 }
 function ci(c){
-  var atributo = document.createAttribute('disabled');
-  var atributo2 = document.createAttribute('disabled');
-  if(c.value != ""){
+  if(c.value == ""){
+    inputNom.removeAttribute('disabled');
+    inputCed.removeAttribute('disabled');
+  }else{
+    var atributo = document.createAttribute('disabled');
+    var atributo2 = document.createAttribute('disabled');
+
     inputCed.setAttributeNode(atributo);
     inputNom.setAttributeNode(atributo2);
-  }else{
   }
 }
 

@@ -53,7 +53,7 @@ app.on("ready", () => {
       useNullAsDefault: true
     });
 
-    let cantidad = Math.ceil(lista.length / 20);
+    let cantidad = Math.ceil(lista.length / 50);
     let data = [];
     for(dato of lista){
         if(dato.identificacion == null){dato.identificacion = ""}
@@ -96,7 +96,7 @@ app.on("ready", () => {
   }
 
     let datos = [];
-    for (let i = 0; i < 20; i++) {
+    for (let i = 0; i < 50; i++) {
       datos.push(data.slice(i * cantidad, (i + 1) * cantidad));
     }
 
