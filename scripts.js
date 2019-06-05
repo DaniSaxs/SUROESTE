@@ -106,12 +106,13 @@ function buscar(form) {
             <td>${row["identificacion"]}</td>
             <td class='card-title'>${row["nombre1"] + " " + row["nombre2"] + " " + row["apellido1"] + " " + row["apellido2"]}</td>
               <td class='card-title'>${row["ciudad"]}</td>
-            <td><button class='btn btn-info' onclick='actualizar(this,${
+            <td><button class='btn btn-primary' onclick='actualizar(this,${
               row["_id"]
             })' nombre1='${row["nombre1"]}' nombre2='${row["nombre2"]}' apellido='${row["apellido1"]}' apellido2='${row["apellido2"]}' tipoI='${row["tipo_iden"]}' iden='${row["identificacion"]}' cel='${row["celular"]}' empresa='${row["empresa"]}' cargo='${row["cargo"]}' departamento='${row["departamento"]}' ciudad='${row["ciudad"]}' sector='${row["sector"]}' correo='${row["correo"]}' id = 'botonAct' data-toggle='modal' data-target='#exampleModalCenter'>Editar</button>
-            <button class='btn btn-danger' onclick='ver(this,${
+            <button class='btn btn-info' onclick='ver(this,${
               row["_id"]
-            })' nombre1='${row["nombre1"]}' nombre2='${row["nombre2"]}' apellido='${row["apellido1"]}' apellido2='${row["apellido2"]}' tipoI='${row["tipo_iden"]}' iden='${row["identificacion"]}' cel='${row["celular"]}' empresa='${row["empresa"]}' cargo='${row["cargo"]}' departamento='${row["departamento"]}' ciudad='${row["ciudad"]}' sector='${row["sector"]}' correo='${row["correo"]}' id = 'botonAct' data-toggle='modal' data-target='#exampleModalCenter2'>Ver Info</button>
+            })' nombre1='${row["nombre1"]}' nombre2='${row["nombre2"]}' apellido='${row["apellido1"]}' apellido2='${row["apellido2"]}' tipoI='${row["tipo_iden"]}' iden='${row["identificacion"]}' cel='${row["celular"]}' empresa='${row["empresa"]}' cargo='${row["cargo"]}' departamento='${row["departamento"]}' ciudad='${row["ciudad"]}' sector='${row["sector"]}' correo='${row["correo"]}' asistencia='${row["asistencia"]}' id = 'botonAct' data-toggle='modal' data-target='#exampleModalCenter2'>Ver Info</button>
+            <button class='btn btn-danger' onclick='eliminar("${row['_id']}","${row['id_Mongo']}")'>Eliminar</button></td>
         </tr>`;
       seleccion.innerHTML += cont;
     }
@@ -181,12 +182,13 @@ function cargar(number) {
             <td>${row["identificacion"]}</td>
             <td class='card-title'>${row["nombre1"] + " " + row["nombre2"] + " " + row["apellido1"] + " " + row["apellido2"]}</td>
               <td class='card-title'>${row["ciudad"]}</td>
-            <td><button class='btn btn-info' onclick='actualizar(this,${
+            <td><button class='btn btn-primary' onclick='actualizar(this,${
               row["_id"]
             })' nombre1='${row["nombre1"]}' nombre2='${row["nombre2"]}' apellido='${row["apellido1"]}' apellido2='${row["apellido2"]}' tipoI='${row["tipo_iden"]}' iden='${row["identificacion"]}' cel='${row["celular"]}' empresa='${row["empresa"]}' cargo='${row["cargo"]}' departamento='${row["departamento"]}' ciudad='${row["ciudad"]}' sector='${row["sector"]}' correo='${row["correo"]}' id = 'botonAct' data-toggle='modal' data-target='#exampleModalCenter'>Editar</button>
-            <button class='btn btn-danger' onclick='ver(this,${
+            <button class='btn btn-info' onclick='ver(this,${
               row["_id"]
-            })' nombre1='${row["nombre1"]}' nombre2='${row["nombre2"]}' apellido='${row["apellido1"]}' apellido2='${row["apellido2"]}' tipoI='${row["tipo_iden"]}' iden='${row["identificacion"]}' cel='${row["celular"]}' empresa='${row["empresa"]}' cargo='${row["cargo"]}' departamento='${row["departamento"]}' ciudad='${row["ciudad"]}' sector='${row["sector"]}' correo='${row["correo"]}' id = 'botonAct' data-toggle='modal' data-target='#exampleModalCenter2'>Ver Info</button>
+            })' nombre1='${row["nombre1"]}' nombre2='${row["nombre2"]}' apellido='${row["apellido1"]}' apellido2='${row["apellido2"]}' tipoI='${row["tipo_iden"]}' iden='${row["identificacion"]}' cel='${row["celular"]}' empresa='${row["empresa"]}' cargo='${row["cargo"]}' departamento='${row["departamento"]}' ciudad='${row["ciudad"]}' sector='${row["sector"]}' correo='${row["correo"]}' asistencia='${row["asistencia"]}' id = 'botonAct' data-toggle='modal' data-target='#exampleModalCenter2'>Ver Info</button>
+            <button class='btn btn-danger' onclick='eliminar("${row['_id']}","${row['id_Mongo']}")'>Eliminar</button></td>
         </tr>`;
       seleccion.innerHTML += cont;
     }
@@ -212,9 +214,124 @@ buscar()
 
 
 
-// function Insertar() {
-//   ipcRenderer.send('insertNew');
-// }
+function Insertar() {
+
+   // -------------------------Seleccion-------------------------
+
+    var knex = require("knex")({
+      client: "sqlite3",
+      connection: {
+        filename: "./database.sqlite3"
+      },
+      useNullAsDefault: true
+    });
+
+    var idens2 = [];
+
+    knex
+    .from("suroeste")
+    .select("*")
+    .then(rows => {
+      for (row of rows) {
+
+          idens2[row['identificacion']] = row['identificacion'];
+      }
+    })
+    .catch(err => {
+      console.log(err);
+      throw err;
+    })
+    .finally(() => {
+      knex.destroy();
+    });
+
+   // -------------------------Seleccion-------------------------
+
+  const form3 = document.querySelector('#formIns');
+  form3.addEventListener('submit', e => {
+
+    const {
+      ipcRenderer
+    } = require('electron')
+  
+    const name1I = document.querySelector('#nombreA').value;
+    const name2I = document.querySelector('#nombre2A').value;
+    const apell1I = document.querySelector('#apellidoA').value;
+    const apell2I = document.querySelector('#apellido2A').value;
+    const tipoidenI = document.querySelector('#sel_tipo_idA').value;
+    const idntI = document.querySelector('#identificacionA').value;
+    const cellI = document.querySelector('#celularA').value;
+    const emprI = document.querySelector('#empresaA').value;
+    const carI = document.querySelector('#cargoA').value;
+    const deparI = document.querySelector('#sel_departamentosA').value;
+    const ciuI = document.querySelector('#sel_ciudadesA').value;
+    const sectI = document.querySelector('#sectorA').value;
+    const corrI = document.querySelector('#correoA').value;
+
+    const allI = {
+      nombre1: name1I,
+      nombre2: name2I,
+      apellido1: apell1I,
+      apellido2: apell2I,
+      tipo_iden: tipoidenI,
+      identificacion: idntI,
+      celular: cellI,
+      empresa: emprI,
+      cargo: carI,
+      departamento: deparI,
+      ciudad: ciuI,
+      sector: sectI,
+      correo: corrI
+    };
+
+    if(idntI == idens2[idntI]){
+        
+        Swal.fire(
+          'Atención',
+          'Esta cédula ya está registrada',
+          'warning'
+        )
+      }
+
+        if(ciuI == "" || ciuI == "-1"){
+        
+          Swal.fire(
+            'Atención',
+            'Debes seleccionar una ciudad',
+            'warning'
+          )
+      }
+
+      if(idntI != idens2[idntI] && ciuI != "" && ciuI != "-1"){
+    //-----------------------Sweet Alert-----------------//
+    let timerInterval
+    Swal.fire({
+      title: 'Insertar Nuevo',
+      html: 'Insertando...',
+      timer: 1000,
+      onBeforeOpen: () => {
+        Swal.showLoading()
+        timerInterval = setInterval(() => {
+          Swal.getContent().querySelector('strong')
+        }, 100)
+      },
+      onClose: () => {
+        clearInterval(timerInterval)
+        ipcRenderer.send('insertN', allI);
+      }
+    }).then((result) => {
+      if (
+        result.dismiss === Swal.DismissReason.timer
+      ) {
+
+      }
+    })
+    //------------------------------------------//
+  }
+
+    e.preventDefault();
+  });
+}
 
 // function EliminarTodos() {
 //   //-----------------------Sweet Alert-----------------//
@@ -235,24 +352,24 @@ buscar()
 //   //----------------------------------------------------//
 // }
 
-// function eliminar(infoD) {
-//   //-----------------------Sweet Alert-----------------//
-//   Swal.fire({
-//     title: '¿Estás seguro?',
-//     text: "No podrás revertir esta acción",
-//     type: 'warning',
-//     showCancelButton: true,
-//     confirmButtonColor: '#d33',
-//     cancelButtonColor: '#3085d6',
-//     confirmButtonText: 'Sí, Eliminar!',
-//     cancelButtonText: 'Cancelar!'
-//   }).then((result) => {
-//     if (result.value) {
-//       ipcRenderer.send('delete', infoD);
-//     }
-//   })
-//   //----------------------------------------------------//
-// }
+function eliminar(infoD,Mongo) {
+  //-----------------------Sweet Alert-----------------//
+  Swal.fire({
+    title: '¿Estás seguro?',
+    text: "No podrás revertir esta acción",
+    type: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#d33',
+    cancelButtonColor: '#3085d6',
+    confirmButtonText: 'Sí, Eliminar!',
+    cancelButtonText: 'Cancelar!'
+  }).then((result) => {
+    if (result.value) {
+      ipcRenderer.send('delete', infoD, Mongo);
+    }
+  })
+  //----------------------------------------------------//
+}
 
 function actualizar(elemento, infoE) {
   //------------------------update-----------------------//
@@ -377,6 +494,15 @@ function actualizar(elemento, infoE) {
       sector: sect,
       correo: corr
     };
+
+    if(ciu == "" || ciu == "-1"){
+        
+      Swal.fire(
+        'Atención',
+        'Debes seleccionar una ciudad',
+        'warning'
+      )
+  }else{
     //-----------------------Sweet Alert-----------------//
     let timerInterval
     Swal.fire({
@@ -401,12 +527,15 @@ function actualizar(elemento, infoE) {
       }
     })
     //------------------------------------------//
+  }
 
     e.preventDefault();
 
   });
 
 }
+
+
 
 function ver(elemento, infoE) {
   //------------------------update-----------------------//
@@ -550,6 +679,15 @@ function ver(elemento, infoE) {
   const correo = botonAct.getAttribute('correo');
   const corre = document.getElementById('correoI');
   corre.setAttribute('value', correo);
+  const asis = botonAct.getAttribute('asistencia');
+  const asisI = document.getElementById('asis');
+  asisI.setAttribute('value', asis);
+  if(asisI.value == "1"){
+    asisI.style.backgroundColor = "rgb(28, 221, 70)";
+  }else{
+    asisI.style.backgroundColor = "rgb(221, 28, 28)";
+    asisI.style.color = "white";
+  }
 }
 
 //---------------------------------knex---------------------------

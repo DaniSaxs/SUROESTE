@@ -31,7 +31,7 @@
 					<ul class="container-fluid">
 						<div class="row w-100">
 						<li class="col-md-2"><p class="float-right subtitle">Primer nombre:*</p></li>
-						<li class="col-md-4"><input class="form-control" type="text" id="nombre" maxlength="20" value=""></li> 
+						<li class="col-md-4"><input class="form-control" type="text" id="nombre" minlength="1" maxlength="20" value="" required></li> 
 						<li class="col-md-2"><p class="float-right subtitle">Segundo nombre:</p></li> 
 						<li class="col-md-4"><input class="form-control" type="text" maxlength="20" id="nombre2" value=""></li>
 						</div>
@@ -39,7 +39,7 @@
 					<ul class="container-fluid">
 						<div class="row w-100">
 						<li class="col-md-2"><p class="float-right subtitle"> Primer apellido:*</p></li>
-						<li class="col-md-4"><input class="form-control" type="text" id="apellido" maxlength="20" value=""></li>
+						<li class="col-md-4"><input class="form-control" type="text" id="apellido" minlength="1" maxlength="20" value="" required></li>
 						<li class="col-md-2"><p class="float-right subtitle"> Segundo apellido:</p></li>
 						<li class="col-md-4"><input class="form-control" type="text" maxlength="20" id="apellido2" value=""></li>
 						</div>
@@ -51,20 +51,20 @@
 							<li class="col-md-2"><p class="float-right subtitle">Identificación:*</p></li>
 							<li class="col-md-4">
 								<div class="row">
-									<div class="col-md-3">
+									<div class="col-md-4">
 										<select id="sel_tipo_id" class="form-control">
 											<option value="CC" id="CC">CC</option>
 											<option value="CE" id="CE">CE</option>
 											<option value="NIT" id="NIT">NIT</option>
 										</select>							
 									</div>
-									<div class="col-md-9">
-										<input class="form-control" type="text" id="identificacion" maxlength="20" value="">
+									<div class="col-md-8">
+										<input class="form-control" type="number" id="identificacion" max="9999999999" value="" required>
 									</div>
 								</div>
 							</li>
 							<li class="col-md-2"><p class="float-right subtitle">Celular:*</p></li>
-							<li class="col-md-4"><input class="form-control" type="text" id="celular" maxlength="10" value=""></li>
+							<li class="col-md-4"><input class="form-control" type="number" id="celular" max="9999999999" value="" required></li>
 						</div>
 					</ul>
 					<ul class="container-fluid">
@@ -77,14 +77,14 @@
 					</ul>
 					<ul class="container-fluid">
 						<div class="row w-100">
-						<li class="col-md-2"><p class="float-right subtitle">Departamento:</p></li>
+						<li class="col-md-2"><p class="float-right subtitle">Departamento:*</p></li>
 						<!-- <li class="col-md-4"><input class="form-control" type="text" name="ciudad" id=""></li> -->
 						<li class="col-md-4">
 							<select name="departamento" id="sel_departamentos" class="form-control">
 				
 							</select>
 						</li>
-						<li class="col-md-2"><p class="float-right subtitle">Ciudad: *</p></li>
+						<li class="col-md-2"><p class="float-right subtitle">Ciudad:*</p></li>
 						<li class="col-md-4">
 							<select class="form-control" name="ciudad" id="sel_ciudades">
 								
@@ -109,7 +109,7 @@
 					</ul>
 					<div class="container-fluid" style="display: flex; justify-content: center;">
 						<div class="row w-50" style=" margin-top: 5px;">
-					<button class="col-md-12 btn btn-danger" style=" color: white; margin-bottom: 20px; display: flex; justify-content: center;" data-toggle="modal" data-target="#exampleModalCenter"
+					<button class="col-md-12 btn btn-danger" style=" color: white; margin-bottom: 20px; display: flex; justify-content: center;"
 					>Actualizar</button>
 						</div>
 					</div>
@@ -137,7 +137,7 @@
 						<div class="c">
 						<ul class="container-fluid">
 							<div class="row w-100">
-							<li class="col-md-2"><p class="float-right subtitle">Primer nombre:*</p></li>
+							<li class="col-md-2"><p class="float-right subtitle">Primer nombre:</p></li>
 							<li class="col-md-4"><input class="form-control" type="text" id="nombreI" maxlength="20" value="" disabled></li> 
 							<li class="col-md-2"><p class="float-right subtitle">Segundo nombre:</p></li> 
 							<li class="col-md-4"><input class="form-control" type="text" maxlength="20" id="nombre2I" value="" disabled></li>
@@ -145,7 +145,7 @@
 						</ul>
 						<ul class="container-fluid">
 							<div class="row w-100">
-							<li class="col-md-2"><p class="float-right subtitle"> Primer apellido:*</p></li>
+							<li class="col-md-2"><p class="float-right subtitle"> Primer apellido:</p></li>
 							<li class="col-md-4"><input class="form-control" type="text" id="apellidoI" maxlength="20" value="" disabled></li>
 							<li class="col-md-2"><p class="float-right subtitle"> Segundo apellido:</p></li>
 							<li class="col-md-4"><input class="form-control" type="text" maxlength="20" id="apellido2I" value="" disabled></li>
@@ -155,7 +155,7 @@
 					<div class="c2">
 						<ul class="container-fluid">
 							<div class="row w-100">
-								<li class="col-md-2"><p class="float-right subtitle">Identificación:*</p></li>
+								<li class="col-md-2"><p class="float-right subtitle">Identificación:</p></li>
 								<li class="col-md-4">
 									<div class="row">
 										<div class="col-md-3">
@@ -166,7 +166,7 @@
 										</div>
 									</div>
 								</li>
-								<li class="col-md-2"><p class="float-right subtitle">Celular:*</p></li>
+								<li class="col-md-2"><p class="float-right subtitle">Celular:</p></li>
 								<li class="col-md-4"><input class="form-control" type="text" id="celularI" maxlength="10" value="" disabled></li>
 							</div>
 						</ul>
@@ -184,7 +184,7 @@
 							<li class="col-md-4">
 									<input class="form-control" type="text" id="sel_departamentosI" maxlength="20" value="" disabled>
 							</li>
-							<li class="col-md-2"><p class="float-right subtitle">Ciudad: *</p></li>
+							<li class="col-md-2"><p class="float-right subtitle">Ciudad:</p></li>
 							<li class="col-md-4">
 								<input class="form-control" type="text" id="sel_ciudadesI" maxlength="20" value="" disabled>
 							</li>
@@ -200,6 +200,19 @@
 							<li class="col-md-4"><input class="form-control" type="email" id="correoI" maxlength="40" value="" disabled></li>
 							</div>
 						</ul>
+						<ul class="container-fluid">
+							<div class="row w-100">
+							<li class="col-md-6">
+
+							</li>
+							<li class="col-md-2">
+								<p class="float-right subtitle">Asistencia</p>
+							</li>
+							<li class="col-md-4">
+								<input type="text" class="form-control" id="asis" value="" disabled>
+							</li>
+							</div>
+						</ul>
 					</div>
 				</form>
 	
@@ -208,6 +221,112 @@
 		</div>
 	</div>
 			<!-- -------------MODAL INFO--------------- -->
+			<!-- -------------MODAL INSERTAR--------------- -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 80% !important;">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" style="text-align: center; width:100%;">Insertar Nuevo</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+				  <form id="formIns">
+					  <div class="c">
+					  <ul class="container-fluid">
+						  <div class="row w-100">
+						  <li class="col-md-2"><p class="float-right subtitle">Primer nombre:*</p></li>
+						  <li class="col-md-4"><input class="form-control" type="text" id="nombreA" minlength="1" maxlength="20" value="" required></li> 
+						  <li class="col-md-2"><p class="float-right subtitle">Segundo nombre:</p></li> 
+						  <li class="col-md-4"><input class="form-control" type="text" maxlength="20" id="nombre2A" value=""></li>
+						  </div>
+					  </ul>
+					  <ul class="container-fluid">
+						  <div class="row w-100">
+						  <li class="col-md-2"><p class="float-right subtitle"> Primer apellido:*</p></li>
+						  <li class="col-md-4"><input class="form-control" type="text" id="apellidoA" minlength="1" maxlength="20" value="" required></li>
+						  <li class="col-md-2"><p class="float-right subtitle"> Segundo apellido:</p></li>
+						  <li class="col-md-4"><input class="form-control" type="text" maxlength="20" id="apellido2A" value=""></li>
+						  </div>
+					  </ul>
+				  </div>
+				  <div class="c2">
+					  <ul class="container-fluid">
+						  <div class="row w-100">
+							  <li class="col-md-2"><p class="float-right subtitle">Identificación:*</p></li>
+							  <li class="col-md-4">
+								  <div class="row">
+									  <div class="col-md-4">
+										  <select id="sel_tipo_idA" class="form-control">
+											  <option value="CC" >CC</option>
+											  <option value="CE" >CE</option>
+											  <option value="NIT" >NIT</option>
+										  </select>							
+									  </div>
+									  <div class="col-md-8">
+										  <input class="form-control" type="number" id="identificacionA" max="9999999999" value="" required>
+									  </div>
+								  </div>
+							  </li>
+							  <li class="col-md-2"><p class="float-right subtitle">Celular:*</p></li>
+							  <li class="col-md-4"><input class="form-control" type="number" id="celularA" max="9999999999" value="" required></li>
+						  </div>
+					  </ul>
+					  <ul class="container-fluid">
+						  <div class="row w-100">
+						  <li class="col-md-2"><p class="float-right subtitle">Empresa:</p></li>
+						  <li class="col-md-4"><input class="form-control" type="text" id="empresaA" maxlength="20" value=""></li>
+						  <li class="col-md-2"><p class="float-right subtitle">Cargo:</p></li>
+						  <li class="col-md-4"><input class="form-control" type="text" id="cargoA" maxlength="20" value=""></li>
+						  </div>
+					  </ul>
+					  <ul class="container-fluid">
+						  <div class="row w-100">
+						  <li class="col-md-2"><p class="float-right subtitle">Departamento:*</p></li>
+						  <li class="col-md-4">
+							  <select name="departamento" id="sel_departamentosA" class="form-control">
+				  
+							  </select>
+						  </li>
+						  <li class="col-md-2"><p class="float-right subtitle">Ciudad:*</p></li>
+						  <li class="col-md-4">
+							  <select class="form-control" name="ciudad" id="sel_ciudadesA">
+								  
+							  </select>
+						  </li>
+						  </div>
+					  </ul>
+					  <ul class="container-fluid">
+						  <div class="row w-100">
+							  <li class="col-md-2"><p class="float-right subtitle">Sector:</p></li>
+						  <li class="col-md-4"><select id="sectorA" class="form-control">
+							  <option value="-1">Seleccione..</option>
+							  <option value="Gubernamental">Gubernamental</option>
+							  <option value="Institucional">Institucional</option>
+							  <option value="Empresarial">Empresarial</option>
+							  <option value="Social">Social</option>
+							  <option value="General">General</option>
+						  </select></li>
+						  <li class="col-md-2"><p class="float-right subtitle">Correo:</p></li>
+						  <li class="col-md-4"><input class="form-control" type="email" id="correoA" maxlength="40" value=""></li>
+						  </div>
+					  </ul>
+					  <div class="container-fluid" style="display: flex; justify-content: center;">
+						  <div class="row w-50" style=" margin-top: 5px;">
+					  <button class="col-md-12 btn btn-primary" style="  margin-bottom: 20px; display: flex; justify-content: center;"
+					  >Insertar</button>
+						  </div>
+					  </div>
+				  </div>
+			  </form>
+  
+		  </div>
+	  </div>
+	</div>
+  </div>
+		  <!-- -------------MODAL INSERTAR--------------- -->
 		<div>
 			<ul class="menu">
 				<a href="#">
@@ -241,8 +360,9 @@
 					<button type="button" tooltip="Ver Todos" class="btn btn-outline-success ml-2 my-2 my-sm-0 material-icons" onclick="cargar(0)"><i class="material-icons"></i>autorenew</button>
 				</form>
 				<div class="btn-datos">
+					<button class="btn" onclick="Insertar()" data-target='#exampleModalCenter3' data-toggle='modal'><i class="material-icons">account_circle</i>Insertar Nuevo</button>
 					<button class="btn" onclick="descarga()"><i class="material-icons">cloud_download</i>Descargar Datos</button>
-					<button class="btn"><i class="material-icons">cloud_upload</i>Sincronizar Datos</button>
+					<button class="btn" onclick="sincronizar()"><i class="material-icons">cloud_upload</i>Sincronizar Datos</button>
 				</div>
 			</div>
 			<table class="table">
@@ -333,7 +453,7 @@
 						// ipcRenderer.send('pagina',lista);
 						setTimeout(()=>{
 							Swal.close()
-						},2500)
+						},7000)
 					},
 					error: function() {
 								console.log("No se ha podido obtener la información");
@@ -349,6 +469,58 @@
 			})
 				Swal.showLoading();
 			}
+
+			// -----------------------Sincronizar---------------------
+
+	function sincronizar(){
+
+		var knex = require("knex")({
+		client: "sqlite3",
+		connection: {
+			filename: "./database.sqlite3"
+		},
+		useNullAsDefault: true
+		});
+
+		knex
+		.from("suroeste")
+		.select("*")
+		.then(rows => {
+			for(row of rows){
+			$.ajax({
+				type: "POST",
+				url: 'datos.txt',
+				data: row, // Adjuntar los campos del formulario enviado.
+				
+				}).done(function(respuesta){
+					// var resultado = $.parseJSON(respuesta);
+					console.log(respuesta);
+					
+				});
+
+		
+			}
+		})
+		.catch(err => {
+		console.log(err);
+		throw err;
+		})
+		.finally(() => {
+			knex.destroy();
+			// setTimeout(()=>{
+			// 	Swal.close()
+			// },7000)
+		});
+			// 	Swal.fire({
+			// 	title: 'Sincronizando...',
+			// 	showConfirmButton: false,
+			// 	allowOutsideClick: false
+
+			// })
+			// 	Swal.showLoading();
+
+				
+	}
 
 		</script>
   </body>

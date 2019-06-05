@@ -15,19 +15,6 @@ var knex = require("knex")({
   useNullAsDefault: true
 });
 
-// let newWinEdit
-// function openWindowEdit(){
-//    newWinEdit = new BrowserWindow({width: 400, height: 400,
-//       webPreferences:{
-//           nodeIntegration: true,
-//       }})
-//   newWinEdit.loadURL(url.format({
-//       pathname: path.join(__dirname, 'editar.html'),
-//       protocol: 'file',
-//       slashes: true
-//   }))
-// }
-
 app.on("ready", () => {
   let mainWindow = new BrowserWindow({
     height: 1080,
@@ -53,7 +40,7 @@ app.on("ready", () => {
       useNullAsDefault: true
     });
 
-    let cantidad = Math.ceil(lista.length / 50);
+    let cantidad = Math.ceil(lista.length / 70);
     let data = [];
     for(dato of lista){
         if(dato.identificacion == null){dato.identificacion = ""}
@@ -72,6 +59,7 @@ app.on("ready", () => {
         if(dato.cargo == null){dato.cargo = ""}
         if(dato.sector == null){dato.sector = ""}
         if(dato.__v == null){dato.__v = ""}
+        if(dato.asistencia == null){dato.asistencia = false}
       data.push({
         id_Mongo: dato._id,
         gen: dato.gen,
@@ -89,14 +77,15 @@ app.on("ready", () => {
         empresa: dato.empresa,
         cargo: dato.cargo,
         sector: dato.sector,
-        __v: dato.__v
+        __v: dato.__v,
+        asistencia: false
       })
 
       
   }
 
     let datos = [];
-    for (let i = 0; i < 50; i++) {
+    for (let i = 0; i < 70; i++) {
       datos.push(data.slice(i * cantidad, (i + 1) * cantidad));
     }
 
@@ -137,7 +126,7 @@ app.on("ready", () => {
     mainWindow.reload();
   });
 
-  ipcMain.on("delete", (e, infoD) => {
+  ipcMain.on("delete", (e, infoD, Mongo) => {
     var knex = require("knex")({
       client: "sqlite3",
       connection: {
@@ -146,12 +135,17 @@ app.on("ready", () => {
       useNullAsDefault: true
     });
 
-    knex("lorem")
+    knex("suroeste")
       .where({
-        id: infoD.toString()
+        _id: infoD
       })
       .del()
-      .then(() => console.log("Eliminado Exitosamente"))
+      .then(() => 
+        knex("eliminados")
+        .insert({
+          id_Mongo: Mongo
+        })
+        .then(() => console.log(" Eliminado e insertado en la tabla de eliminados")))
       .catch(err => {
         console.log(err);
         throw err;
@@ -203,6 +197,71 @@ app.on("ready", () => {
       });
     mainWindow.reload();
   });
+
+  ipcMain.on("insertN", (e, allI) => {
+
+    var knex = require("knex")({
+      client: "sqlite3",
+      connection: {
+        filename: "./database.sqlite3"
+      },
+      useNullAsDefault: true
+    });
+
+    knex("suroeste")
+      .insert({
+        nombre1: allI.nombre1,
+        nombre2: allI.nombre2,
+        apellido1: allI.apellido1,
+        apellido2: allI.apellido2,
+        tipo_iden: allI.tipo_iden,
+        identificacion: allI.identificacion,
+        celular: allI.celular,
+        empresa: allI.empresa,
+        cargo: allI.cargo,
+        departamento: allI.departamento,
+        ciudad: allI.ciudad,
+        sector: allI.sector,
+        correo: allI.correo
+      })
+      .then(() => console.log(" Insertado Correctamente"))
+      .catch(err => {
+        console.log(err);
+        throw err;
+      })
+      .finally(() => {
+        knex.destroy();
+      });
+    mainWindow.reload();
+  });
+
+  ipcMain.on("updateAsis", (e, idenAct, AsisAct) => {
+
+    var knex = require("knex")({
+      client: "sqlite3",
+      connection: {
+        filename: "./database.sqlite3"
+      },
+      useNullAsDefault: true
+    });
+
+    knex("suroeste")
+      .where({
+        identificacion: idenAct
+      })
+      .update({
+        asistencia: true
+      })
+      .then(() => console.log("Asistencia Actualizada"))
+      .catch(err => {
+        console.log(err);
+        throw err;
+      })
+      .finally(() => {
+        knex.destroy();
+      });
+  });
+
 
 });
 

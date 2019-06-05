@@ -48,12 +48,16 @@
 						<p>Leyendo Cédula</p>
 					</div>
 					<div class="verificado" style="display: none !important">
-						<i class="material-icons">check_circle</i>
-						<p>Está registrado, puede seguir</p>
+						<i class="material-icons" style="color: rgb(28, 221, 70)">check_circle</i>
+						<p style="color: rgb(28, 221, 70)">Está registrado, puede seguir</p>
 					</div>
 					<div class="rechazado" style="display: none !important">
-						<i class="material-icons">cancel</i>
-						<p>No se encuentra registrado</p>
+						<i class="material-icons" style="color: rgb(221, 28, 28)">cancel</i>
+						<p style="color: rgb(221, 28, 28)">No se encuentra registrado</p>
+					</div>
+					<div class="noAceptado" style="display: none !important">
+						<i class="material-icons" style="color: rgb(221, 186, 28)">do_not_disturb</i>
+						<p style="color: rgb(221, 186, 28)">Registrado pero no aceptado</p>
 					</div>
 
 					
@@ -61,6 +65,7 @@
 				<div class="verificador">
 					<input class="form-control" type="text" name="" id="text" placeholder="Número de la cédula" onkeyup="verifi(this)">
 				</div>
+				<p class="text-center">Presiona Enter o Espacio para limpiar</p>
 			</div>
 			
 		</div>
