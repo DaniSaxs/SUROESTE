@@ -84,21 +84,36 @@ app.on("ready", () => {
       
   }
 
+    // function comparar(datos){
+    //   // console.log(lista);
+    //   knex("suroeste")
+    //   .where({id_Mongo: datos._id})
+    //   .then(rows =>{
+    //     for(row of rows){
+    //       console.log(row["id_Mongo"]);
+    //     }
+    //   })
+    //   .catch(err => {
+    //     console.log(err);
+    //     throw err;
+    //   })
+    //   return false;
+    // }
+
     let datos = [];
     for (let i = 0; i < 70; i++) {
       datos.push(data.slice(i * cantidad, (i + 1) * cantidad));
     }
 
     for (let f = 0 ; f < datos.length; f++) {
-   
-      await knex("suroeste").insert(datos[f]);
+        await knex("suroeste")
+      .insert(datos[f])
+      .catch(e =>{
+        console.log(e);
+      });
       console.log("Insertado")
     }
-
     knex.destroy();
-
-       
-        
 
     mainWindow.reload();
   });
@@ -112,8 +127,8 @@ app.on("ready", () => {
       useNullAsDefault: true
     });
 
-    knex("lorem")
-      .del()
+    knex("suroeste")
+      .truncate()
       .then(() => console.log("Todos Eliminados"))
       .catch(err => {
         console.log(err);
@@ -210,6 +225,8 @@ app.on("ready", () => {
 
     knex("suroeste")
       .insert({
+        gen: true,
+        estado: true,
         nombre1: allI.nombre1,
         nombre2: allI.nombre2,
         apellido1: allI.apellido1,
@@ -222,7 +239,8 @@ app.on("ready", () => {
         departamento: allI.departamento,
         ciudad: allI.ciudad,
         sector: allI.sector,
-        correo: allI.correo
+        correo: allI.correo,
+        __v: "0"
       })
       .then(() => console.log(" Insertado Correctamente"))
       .catch(err => {

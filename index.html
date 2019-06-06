@@ -1,133 +1,30 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./css/jquery.flipster.min.css">
-    <link rel="stylesheet" href="./css/jquery.flipster.css">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-		<link rel="stylesheet" href="./css/animate.css">
-		<link rel="stylesheet" href="./css/icon.css">
-		<link rel="stylesheet" href="./css/estilos.css">
-		<link rel="stylesheet" href="./css/burbujas.css">
-    <title>Suroeste</title>
-  </head>
-  <body>
-		<!-- -------------MODAL EDITAR--------------- -->
-<!-- Modal -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 80% !important;">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalCenterTitle" style="text-align: center; width:100%;">Editar</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-				<form id="formUpd">
-					<div class="c">
-					<ul class="container-fluid">
-						<div class="row w-100">
-						<li class="col-md-2"><p class="float-right subtitle">Primer nombre:*</p></li>
-						<li class="col-md-4"><input class="form-control" type="text" id="nombre" minlength="1" maxlength="20" value="" required></li> 
-						<li class="col-md-2"><p class="float-right subtitle">Segundo nombre:</p></li> 
-						<li class="col-md-4"><input class="form-control" type="text" maxlength="20" id="nombre2" value=""></li>
-						</div>
-					</ul>
-					<ul class="container-fluid">
-						<div class="row w-100">
-						<li class="col-md-2"><p class="float-right subtitle"> Primer apellido:*</p></li>
-						<li class="col-md-4"><input class="form-control" type="text" id="apellido" minlength="1" maxlength="20" value="" required></li>
-						<li class="col-md-2"><p class="float-right subtitle"> Segundo apellido:</p></li>
-						<li class="col-md-4"><input class="form-control" type="text" maxlength="20" id="apellido2" value=""></li>
-						</div>
-					</ul>
-				</div>
-				<div class="c2">
-					<ul class="container-fluid">
-						<div class="row w-100">
-							<li class="col-md-2"><p class="float-right subtitle">Identificación:*</p></li>
-							<li class="col-md-4">
-								<div class="row">
-									<div class="col-md-4">
-										<select id="sel_tipo_id" class="form-control">
-											<option value="CC" id="CC">CC</option>
-											<option value="CE" id="CE">CE</option>
-											<option value="NIT" id="NIT">NIT</option>
-										</select>							
-									</div>
-									<div class="col-md-8">
-										<input class="form-control" type="number" id="identificacion" max="9999999999" value="" required>
-									</div>
-								</div>
-							</li>
-							<li class="col-md-2"><p class="float-right subtitle">Celular:*</p></li>
-							<li class="col-md-4"><input class="form-control" type="number" id="celular" max="9999999999" value="" required></li>
-						</div>
-					</ul>
-					<ul class="container-fluid">
-						<div class="row w-100">
-						<li class="col-md-2"><p class="float-right subtitle">Empresa:</p></li>
-						<li class="col-md-4"><input class="form-control" type="text" id="empresa" maxlength="20" value=""></li>
-						<li class="col-md-2"><p class="float-right subtitle">Cargo:</p></li>
-						<li class="col-md-4"><input class="form-control" type="text" id="cargo" maxlength="20" value=""></li>
-						</div>
-					</ul>
-					<ul class="container-fluid">
-						<div class="row w-100">
-						<li class="col-md-2"><p class="float-right subtitle">Departamento:*</p></li>
-						<!-- <li class="col-md-4"><input class="form-control" type="text" name="ciudad" id=""></li> -->
-						<li class="col-md-4">
-							<select name="departamento" id="sel_departamentos" class="form-control">
-				
-							</select>
-						</li>
-						<li class="col-md-2"><p class="float-right subtitle">Ciudad:*</p></li>
-						<li class="col-md-4">
-							<select class="form-control" name="ciudad" id="sel_ciudades">
-								
-							</select>
-						</li>
-						</div>
-					</ul>
-					<ul class="container-fluid">
-						<div class="row w-100">
-							<li class="col-md-2"><p class="float-right subtitle">Sector:</p></li>
-						<li class="col-md-4"><select id="sector" class="form-control">
-							<option value="-1">Seleccione..</option>
-							<option value="Gubernamental" id="gubernamental">Gubernamental</option>
-							<option value="Institucional" id="institucional">Institucional</option>
-							<option value="Empresarial" id="empresarial">Empresarial</option>
-							<option value="Social" id="social">Social</option>
-							<option value="General" id="general">General</option>
-						</select></li>
-						<li class="col-md-2"><p class="float-right subtitle">Correo:</p></li>
-						<li class="col-md-4"><input class="form-control" type="email" id="correo" maxlength="40" value=""></li>
-						</div>
-					</ul>
-					<div class="container-fluid" style="display: flex; justify-content: center;">
-						<div class="row w-50" style=" margin-top: 5px;">
-					<button class="col-md-12 btn btn-danger" style=" color: white; margin-bottom: 20px; display: flex; justify-content: center;"
-					>Actualizar</button>
-						</div>
-					</div>
-				</div>
-			</form>
 
-		</div>
-    </div>
-  </div>
-</div>
-		<!-- -------------MODAL EDITAR--------------- -->
-		<!-- -------------MODAL INFO--------------- -->
-<!-- Modal -->
-<div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="./css/jquery.flipster.min.css">
+	<link rel="stylesheet" href="./css/jquery.flipster.css">
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/animate.css">
+	<link rel="stylesheet" href="./css/icon.css">
+	<link rel="stylesheet" href="./css/estilos.css">
+	<link rel="stylesheet" href="./css/burbujas.css">
+	<title>Suroeste</title>
+</head>
+
+<body>
+	<!-- -------------MODAL EDITAR--------------- -->
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 80% !important;">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalCenterTitle" style="text-align: center; width:100%;">Ver información</h5>
+					<h5 class="modal-title" id="exampleModalCenterTitle" style="text-align: center; width:100%;">Editar
+					</h5>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
@@ -135,393 +32,674 @@
 				<div class="modal-body">
 					<form id="formUpd">
 						<div class="c">
-						<ul class="container-fluid">
-							<div class="row w-100">
-							<li class="col-md-2"><p class="float-right subtitle">Primer nombre:</p></li>
-							<li class="col-md-4"><input class="form-control" type="text" id="nombreI" maxlength="20" value="" disabled></li> 
-							<li class="col-md-2"><p class="float-right subtitle">Segundo nombre:</p></li> 
-							<li class="col-md-4"><input class="form-control" type="text" maxlength="20" id="nombre2I" value="" disabled></li>
-							</div>
-						</ul>
-						<ul class="container-fluid">
-							<div class="row w-100">
-							<li class="col-md-2"><p class="float-right subtitle"> Primer apellido:</p></li>
-							<li class="col-md-4"><input class="form-control" type="text" id="apellidoI" maxlength="20" value="" disabled></li>
-							<li class="col-md-2"><p class="float-right subtitle"> Segundo apellido:</p></li>
-							<li class="col-md-4"><input class="form-control" type="text" maxlength="20" id="apellido2I" value="" disabled></li>
-							</div>
-						</ul>
-					</div>
-					<div class="c2">
-						<ul class="container-fluid">
-							<div class="row w-100">
-								<li class="col-md-2"><p class="float-right subtitle">Identificación:</p></li>
-								<li class="col-md-4">
-									<div class="row">
-										<div class="col-md-3">
-												<input class="form-control" type="text" maxlength="20" id="sel_tipo_idI" value="" disabled>						
+							<ul class="container-fluid">
+								<div class="row w-100">
+									<li class="col-md-2">
+										<p class="float-right subtitle">Primer nombre:*</p>
+									</li>
+									<li class="col-md-4"><input class="form-control" type="text" id="nombre"
+											minlength="1" maxlength="20" value="" required></li>
+									<li class="col-md-2">
+										<p class="float-right subtitle">Segundo nombre:</p>
+									</li>
+									<li class="col-md-4"><input class="form-control" type="text" maxlength="20"
+											id="nombre2" value=""></li>
+								</div>
+							</ul>
+							<ul class="container-fluid">
+								<div class="row w-100">
+									<li class="col-md-2">
+										<p class="float-right subtitle"> Primer apellido:*</p>
+									</li>
+									<li class="col-md-4"><input class="form-control" type="text" id="apellido"
+											minlength="1" maxlength="20" value="" required></li>
+									<li class="col-md-2">
+										<p class="float-right subtitle"> Segundo apellido:</p>
+									</li>
+									<li class="col-md-4"><input class="form-control" type="text" maxlength="20"
+											id="apellido2" value=""></li>
+								</div>
+							</ul>
+						</div>
+						<div class="c2">
+							<ul class="container-fluid">
+								<div class="row w-100">
+									<li class="col-md-2">
+										<p class="float-right subtitle">Identificación:*</p>
+									</li>
+									<li class="col-md-4">
+										<div class="row">
+											<div class="col-md-4">
+												<select id="sel_tipo_id" class="form-control">
+													<option value="CC" id="CC">CC</option>
+													<option value="CE" id="CE">CE</option>
+													<option value="NIT" id="NIT">NIT</option>
+												</select>
+											</div>
+											<div class="col-md-8">
+												<input class="form-control" type="number" id="identificacion"
+													max="9999999999" value="" required>
+											</div>
 										</div>
-										<div class="col-md-9">
-											<input class="form-control" type="text" id="identificacionI" maxlength="20" value="" disabled>
-										</div>
-									</div>
-								</li>
-								<li class="col-md-2"><p class="float-right subtitle">Celular:</p></li>
-								<li class="col-md-4"><input class="form-control" type="text" id="celularI" maxlength="10" value="" disabled></li>
-							</div>
-						</ul>
-						<ul class="container-fluid">
-							<div class="row w-100">
-							<li class="col-md-2"><p class="float-right subtitle">Empresa:</p></li>
-							<li class="col-md-4"><input class="form-control" type="text" id="empresaI" maxlength="20" value="" disabled></li>
-							<li class="col-md-2"><p class="float-right subtitle">Cargo:</p></li>
-							<li class="col-md-4"><input class="form-control" type="text" id="cargoI" maxlength="20" value="" disabled></li>
-							</div>
-						</ul>
-						<ul class="container-fluid">
-							<div class="row w-100">
-							<li class="col-md-2"><p class="float-right subtitle">Departamento:</p></li>
-							<li class="col-md-4">
-									<input class="form-control" type="text" id="sel_departamentosI" maxlength="20" value="" disabled>
-							</li>
-							<li class="col-md-2"><p class="float-right subtitle">Ciudad:</p></li>
-							<li class="col-md-4">
-								<input class="form-control" type="text" id="sel_ciudadesI" maxlength="20" value="" disabled>
-							</li>
-							</div>
-						</ul>
-						<ul class="container-fluid">
-							<div class="row w-100">
-								<li class="col-md-2"><p class="float-right subtitle">Sector:</p></li>
-							<li class="col-md-4">
-								<input class="form-control" type="text" id="sectorI" maxlength="20" value="" disabled>
-							</li>
-							<li class="col-md-2"><p class="float-right subtitle">Correo:</p></li>
-							<li class="col-md-4"><input class="form-control" type="email" id="correoI" maxlength="40" value="" disabled></li>
-							</div>
-						</ul>
-						<ul class="container-fluid">
-							<div class="row w-100">
-							<li class="col-md-6">
+									</li>
+									<li class="col-md-2">
+										<p class="float-right subtitle">Celular:*</p>
+									</li>
+									<li class="col-md-4"><input class="form-control" type="number" id="celular"
+											max="9999999999" value="" required></li>
+								</div>
+							</ul>
+							<ul class="container-fluid">
+								<div class="row w-100">
+									<li class="col-md-2">
+										<p class="float-right subtitle">Empresa:</p>
+									</li>
+									<li class="col-md-4"><input class="form-control" type="text" id="empresa"
+											maxlength="20" value=""></li>
+									<li class="col-md-2">
+										<p class="float-right subtitle">Cargo:</p>
+									</li>
+									<li class="col-md-4"><input class="form-control" type="text" id="cargo"
+											maxlength="20" value=""></li>
+								</div>
+							</ul>
+							<ul class="container-fluid">
+								<div class="row w-100">
+									<li class="col-md-2">
+										<p class="float-right subtitle">Departamento:*</p>
+									</li>
+									<!-- <li class="col-md-4"><input class="form-control" type="text" name="ciudad" id=""></li> -->
+									<li class="col-md-4">
+										<select name="departamento" id="sel_departamentos" class="form-control">
 
-							</li>
-							<li class="col-md-2">
-								<p class="float-right subtitle">Asistencia</p>
-							</li>
-							<li class="col-md-4">
-								<input type="text" class="form-control" id="asis" value="" disabled>
-							</li>
+										</select>
+									</li>
+									<li class="col-md-2">
+										<p class="float-right subtitle">Ciudad:*</p>
+									</li>
+									<li class="col-md-4">
+										<select class="form-control" name="ciudad" id="sel_ciudades">
+
+										</select>
+									</li>
+								</div>
+							</ul>
+							<ul class="container-fluid">
+								<div class="row w-100">
+									<li class="col-md-2">
+										<p class="float-right subtitle">Sector:</p>
+									</li>
+									<li class="col-md-4"><select id="sector" class="form-control">
+											<option value="-1">Seleccione..</option>
+											<option value="Gubernamental" id="gubernamental">Gubernamental</option>
+											<option value="Institucional" id="institucional">Institucional</option>
+											<option value="Empresarial" id="empresarial">Empresarial</option>
+											<option value="Social" id="social">Social</option>
+											<option value="General" id="general">General</option>
+										</select></li>
+									<li class="col-md-2">
+										<p class="float-right subtitle">Correo:</p>
+									</li>
+									<li class="col-md-4"><input class="form-control" type="email" id="correo"
+											maxlength="40" value=""></li>
+								</div>
+							</ul>
+							<div class="container-fluid" style="display: flex; justify-content: center;">
+								<div class="row w-50" style=" margin-top: 5px;">
+									<button class="col-md-12 btn btn-danger"
+										style=" color: white; margin-bottom: 20px; display: flex; justify-content: center;">Actualizar</button>
+								</div>
 							</div>
-						</ul>
-					</div>
-				</form>
-	
-			</div>
-			</div>
-		</div>
-	</div>
-			<!-- -------------MODAL INFO--------------- -->
-			<!-- -------------MODAL INSERTAR--------------- -->
-<!-- Modal -->
-<div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-	<div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 80% !important;">
-	  <div class="modal-content">
-		<div class="modal-header">
-		  <h5 class="modal-title" style="text-align: center; width:100%;">Insertar Nuevo</h5>
-		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-			<span aria-hidden="true">&times;</span>
-		  </button>
-		</div>
-		<div class="modal-body">
-				  <form id="formIns">
-					  <div class="c">
-					  <ul class="container-fluid">
-						  <div class="row w-100">
-						  <li class="col-md-2"><p class="float-right subtitle">Primer nombre:*</p></li>
-						  <li class="col-md-4"><input class="form-control" type="text" id="nombreA" minlength="1" maxlength="20" value="" required></li> 
-						  <li class="col-md-2"><p class="float-right subtitle">Segundo nombre:</p></li> 
-						  <li class="col-md-4"><input class="form-control" type="text" maxlength="20" id="nombre2A" value=""></li>
-						  </div>
-					  </ul>
-					  <ul class="container-fluid">
-						  <div class="row w-100">
-						  <li class="col-md-2"><p class="float-right subtitle"> Primer apellido:*</p></li>
-						  <li class="col-md-4"><input class="form-control" type="text" id="apellidoA" minlength="1" maxlength="20" value="" required></li>
-						  <li class="col-md-2"><p class="float-right subtitle"> Segundo apellido:</p></li>
-						  <li class="col-md-4"><input class="form-control" type="text" maxlength="20" id="apellido2A" value=""></li>
-						  </div>
-					  </ul>
-				  </div>
-				  <div class="c2">
-					  <ul class="container-fluid">
-						  <div class="row w-100">
-							  <li class="col-md-2"><p class="float-right subtitle">Identificación:*</p></li>
-							  <li class="col-md-4">
-								  <div class="row">
-									  <div class="col-md-4">
-										  <select id="sel_tipo_idA" class="form-control">
-											  <option value="CC" >CC</option>
-											  <option value="CE" >CE</option>
-											  <option value="NIT" >NIT</option>
-										  </select>							
-									  </div>
-									  <div class="col-md-8">
-										  <input class="form-control" type="number" id="identificacionA" max="9999999999" value="" required>
-									  </div>
-								  </div>
-							  </li>
-							  <li class="col-md-2"><p class="float-right subtitle">Celular:*</p></li>
-							  <li class="col-md-4"><input class="form-control" type="number" id="celularA" max="9999999999" value="" required></li>
-						  </div>
-					  </ul>
-					  <ul class="container-fluid">
-						  <div class="row w-100">
-						  <li class="col-md-2"><p class="float-right subtitle">Empresa:</p></li>
-						  <li class="col-md-4"><input class="form-control" type="text" id="empresaA" maxlength="20" value=""></li>
-						  <li class="col-md-2"><p class="float-right subtitle">Cargo:</p></li>
-						  <li class="col-md-4"><input class="form-control" type="text" id="cargoA" maxlength="20" value=""></li>
-						  </div>
-					  </ul>
-					  <ul class="container-fluid">
-						  <div class="row w-100">
-						  <li class="col-md-2"><p class="float-right subtitle">Departamento:*</p></li>
-						  <li class="col-md-4">
-							  <select name="departamento" id="sel_departamentosA" class="form-control">
-				  
-							  </select>
-						  </li>
-						  <li class="col-md-2"><p class="float-right subtitle">Ciudad:*</p></li>
-						  <li class="col-md-4">
-							  <select class="form-control" name="ciudad" id="sel_ciudadesA">
-								  
-							  </select>
-						  </li>
-						  </div>
-					  </ul>
-					  <ul class="container-fluid">
-						  <div class="row w-100">
-							  <li class="col-md-2"><p class="float-right subtitle">Sector:</p></li>
-						  <li class="col-md-4"><select id="sectorA" class="form-control">
-							  <option value="-1">Seleccione..</option>
-							  <option value="Gubernamental">Gubernamental</option>
-							  <option value="Institucional">Institucional</option>
-							  <option value="Empresarial">Empresarial</option>
-							  <option value="Social">Social</option>
-							  <option value="General">General</option>
-						  </select></li>
-						  <li class="col-md-2"><p class="float-right subtitle">Correo:</p></li>
-						  <li class="col-md-4"><input class="form-control" type="email" id="correoA" maxlength="40" value=""></li>
-						  </div>
-					  </ul>
-					  <div class="container-fluid" style="display: flex; justify-content: center;">
-						  <div class="row w-50" style=" margin-top: 5px;">
-					  <button class="col-md-12 btn btn-primary" style="  margin-bottom: 20px; display: flex; justify-content: center;"
-					  >Insertar</button>
-						  </div>
-					  </div>
-				  </div>
-			  </form>
-  
-		  </div>
-	  </div>
-	</div>
-  </div>
-		  <!-- -------------MODAL INSERTAR--------------- -->
-		<div>
-			<ul class="menu">
-				<a href="#">
-				<li class="item-menu menu-activate">
-						<i class="material-icons">person_pin</i>
-						<h5>Personas</h5>
-				</li>
-				</a>
-				<a href="#">
-				<li class="item-menu">
-						<i class="material-icons">assignment_late</i>
-						<h5>Reportes</h5>
-				</li>
-				</a>
-				<a href="verificacion.html">
-				<li class="item-menu">
-						<i class="material-icons">done_all</i>
-						<h5>Verificación</h5>
-				</li>
-				</a>
-			</ul>
-		</div>
-		<div class="container info">
-			<h1>Personas registradas</h1>
-			<div class="header-registros">
-				<form class="form-inline my-2 my-lg-0" onsubmit="return buscar(this)">
-					<input class="form-control mr-sm-2" type="search" placeholder="Identificacion" aria-label="Search" id="bCed" onkeyup="ce(this)" maxlength="15">
-					<input class="form-control mr-sm-2" type="search" placeholder="Nombre" aria-label="Search" id="bNom" onkeyup="no(this)" maxlength="20">
-					<input class="form-control mr-sm-2" type="search" placeholder="Ciudad" aria-label="Search" id="bCiu" onkeyup="ci(this)" maxlength="20">
-					<button type="submit" tooltip="Buscar" class="btn btn-outline-danger my-2 my-sm-0 material-icons">search</button>
-					<button type="button" tooltip="Ver Todos" class="btn btn-outline-success ml-2 my-2 my-sm-0 material-icons" onclick="cargar(0)"><i class="material-icons"></i>autorenew</button>
-				</form>
-				<div class="btn-datos">
-					<button class="btn" onclick="Insertar()" data-target='#exampleModalCenter3' data-toggle='modal'><i class="material-icons">account_circle</i>Insertar Nuevo</button>
-					<button class="btn" onclick="descarga()"><i class="material-icons">cloud_download</i>Descargar Datos</button>
-					<button class="btn" onclick="sincronizar()"><i class="material-icons">cloud_upload</i>Sincronizar Datos</button>
+						</div>
+					</form>
+
 				</div>
 			</div>
-			<table class="table">
-				<thead>
-					<tr>
-						<th scope="col">Identificación</th>
-						<th scope="col">Nombre</th>
-						<th scope="col">Ciudad</th>
-						<th scope="col">Acciones</th>
-					</tr>
-				</thead>
-				<tbody id="result">
+		</div>
+	</div>
+	<!-- -------------MODAL EDITAR--------------- -->
+	<!-- -------------MODAL INFO--------------- -->
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 80% !important;">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalCenterTitle" style="text-align: center; width:100%;">Ver
+						información</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form id="formUpd">
+						<div class="c">
+							<ul class="container-fluid">
+								<div class="row w-100">
+									<li class="col-md-2">
+										<p class="float-right subtitle">Primer nombre:</p>
+									</li>
+									<li class="col-md-4"><input class="form-control" type="text" id="nombreI"
+											maxlength="20" value="" disabled></li>
+									<li class="col-md-2">
+										<p class="float-right subtitle">Segundo nombre:</p>
+									</li>
+									<li class="col-md-4"><input class="form-control" type="text" maxlength="20"
+											id="nombre2I" value="" disabled></li>
+								</div>
+							</ul>
+							<ul class="container-fluid">
+								<div class="row w-100">
+									<li class="col-md-2">
+										<p class="float-right subtitle"> Primer apellido:</p>
+									</li>
+									<li class="col-md-4"><input class="form-control" type="text" id="apellidoI"
+											maxlength="20" value="" disabled></li>
+									<li class="col-md-2">
+										<p class="float-right subtitle"> Segundo apellido:</p>
+									</li>
+									<li class="col-md-4"><input class="form-control" type="text" maxlength="20"
+											id="apellido2I" value="" disabled></li>
+								</div>
+							</ul>
+						</div>
+						<div class="c2">
+							<ul class="container-fluid">
+								<div class="row w-100">
+									<li class="col-md-2">
+										<p class="float-right subtitle">Identificación:</p>
+									</li>
+									<li class="col-md-4">
+										<div class="row">
+											<div class="col-md-3">
+												<input class="form-control" type="text" maxlength="20" id="sel_tipo_idI"
+													value="" disabled>
+											</div>
+											<div class="col-md-9">
+												<input class="form-control" type="text" id="identificacionI"
+													maxlength="20" value="" disabled>
+											</div>
+										</div>
+									</li>
+									<li class="col-md-2">
+										<p class="float-right subtitle">Celular:</p>
+									</li>
+									<li class="col-md-4"><input class="form-control" type="text" id="celularI"
+											maxlength="10" value="" disabled></li>
+								</div>
+							</ul>
+							<ul class="container-fluid">
+								<div class="row w-100">
+									<li class="col-md-2">
+										<p class="float-right subtitle">Empresa:</p>
+									</li>
+									<li class="col-md-4"><input class="form-control" type="text" id="empresaI"
+											maxlength="20" value="" disabled></li>
+									<li class="col-md-2">
+										<p class="float-right subtitle">Cargo:</p>
+									</li>
+									<li class="col-md-4"><input class="form-control" type="text" id="cargoI"
+											maxlength="20" value="" disabled></li>
+								</div>
+							</ul>
+							<ul class="container-fluid">
+								<div class="row w-100">
+									<li class="col-md-2">
+										<p class="float-right subtitle">Departamento:</p>
+									</li>
+									<li class="col-md-4">
+										<input class="form-control" type="text" id="sel_departamentosI" maxlength="20"
+											value="" disabled>
+									</li>
+									<li class="col-md-2">
+										<p class="float-right subtitle">Ciudad:</p>
+									</li>
+									<li class="col-md-4">
+										<input class="form-control" type="text" id="sel_ciudadesI" maxlength="20"
+											value="" disabled>
+									</li>
+								</div>
+							</ul>
+							<ul class="container-fluid">
+								<div class="row w-100">
+									<li class="col-md-2">
+										<p class="float-right subtitle">Sector:</p>
+									</li>
+									<li class="col-md-4">
+										<input class="form-control" type="text" id="sectorI" maxlength="20" value=""
+											disabled>
+									</li>
+									<li class="col-md-2">
+										<p class="float-right subtitle">Correo:</p>
+									</li>
+									<li class="col-md-4"><input class="form-control" type="email" id="correoI"
+											maxlength="40" value="" disabled></li>
+								</div>
+							</ul>
+							<ul class="container-fluid">
+								<div class="row w-100">
+									<li class="col-md-6">
 
-				</tbody>
-				
-			</table>
-			<nav aria-label="...">
-				<ul class=" container pagination" style="flex-flow: row wrap">
-					<script>
-						var knex = require("knex")({
-							client: "sqlite3",
-							connection: {
-								filename: "./database.sqlite3"
-							},
-							useNullAsDefault: true
-						});
+									</li>
+									<li class="col-md-2">
+										<p class="float-right subtitle">Asistencia</p>
+									</li>
+									<li class="col-md-4">
+										<input type="text" class="form-control" id="asis" value="" asisa="" disabled>
+									</li>
+								</div>
+							</ul>
+						</div>
+					</form>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- -------------MODAL INFO--------------- -->
+	<!-- -------------MODAL INSERTAR--------------- -->
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 80% !important;">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" style="text-align: center; width:100%;">Registar Persona</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form id="formIns">
+						<div class="c">
+							<ul class="container-fluid">
+								<div class="row w-100">
+									<li class="col-md-2">
+										<p class="float-right subtitle">Primer nombre:*</p>
+									</li>
+									<li class="col-md-4"><input class="form-control" type="text" id="nombreA"
+											minlength="1" maxlength="20" value="" required></li>
+									<li class="col-md-2">
+										<p class="float-right subtitle">Segundo nombre:</p>
+									</li>
+									<li class="col-md-4"><input class="form-control" type="text" maxlength="20"
+											id="nombre2A" value=""></li>
+								</div>
+							</ul>
+							<ul class="container-fluid">
+								<div class="row w-100">
+									<li class="col-md-2">
+										<p class="float-right subtitle"> Primer apellido:*</p>
+									</li>
+									<li class="col-md-4"><input class="form-control" type="text" id="apellidoA"
+											minlength="1" maxlength="20" value="" required></li>
+									<li class="col-md-2">
+										<p class="float-right subtitle"> Segundo apellido:</p>
+									</li>
+									<li class="col-md-4"><input class="form-control" type="text" maxlength="20"
+											id="apellido2A" value=""></li>
+								</div>
+							</ul>
+						</div>
+						<div class="c2">
+							<ul class="container-fluid">
+								<div class="row w-100">
+									<li class="col-md-2">
+										<p class="float-right subtitle">Identificación:*</p>
+									</li>
+									<li class="col-md-4">
+										<div class="row">
+											<div class="col-md-4">
+												<select id="sel_tipo_idA" class="form-control">
+													<option value="CC">CC</option>
+													<option value="CE">CE</option>
+													<option value="NIT">NIT</option>
+												</select>
+											</div>
+											<div class="col-md-8">
+												<input class="form-control" type="number" id="identificacionA"
+													max="9999999999" value="" required>
+											</div>
+										</div>
+									</li>
+									<li class="col-md-2">
+										<p class="float-right subtitle">Celular:*</p>
+									</li>
+									<li class="col-md-4"><input class="form-control" type="number" id="celularA"
+											max="9999999999" value="" required></li>
+								</div>
+							</ul>
+							<ul class="container-fluid">
+								<div class="row w-100">
+									<li class="col-md-2">
+										<p class="float-right subtitle">Empresa:</p>
+									</li>
+									<li class="col-md-4"><input class="form-control" type="text" id="empresaA"
+											maxlength="20" value=""></li>
+									<li class="col-md-2">
+										<p class="float-right subtitle">Cargo:</p>
+									</li>
+									<li class="col-md-4"><input class="form-control" type="text" id="cargoA"
+											maxlength="20" value=""></li>
+								</div>
+							</ul>
+							<ul class="container-fluid">
+								<div class="row w-100">
+									<li class="col-md-2">
+										<p class="float-right subtitle">Departamento:*</p>
+									</li>
+									<li class="col-md-4">
+										<select name="departamento" id="sel_departamentosA" class="form-control">
+
+										</select>
+									</li>
+									<li class="col-md-2">
+										<p class="float-right subtitle">Ciudad:*</p>
+									</li>
+									<li class="col-md-4">
+										<select class="form-control" name="ciudad" id="sel_ciudadesA">
+
+										</select>
+									</li>
+								</div>
+							</ul>
+							<ul class="container-fluid">
+								<div class="row w-100">
+									<li class="col-md-2">
+										<p class="float-right subtitle">Sector:</p>
+									</li>
+									<li class="col-md-4"><select id="sectorA" class="form-control">
+											<option value="-1">Seleccione..</option>
+											<option value="Gubernamental">Gubernamental</option>
+											<option value="Institucional">Institucional</option>
+											<option value="Empresarial">Empresarial</option>
+											<option value="Social">Social</option>
+											<option value="General">General</option>
+										</select></li>
+									<li class="col-md-2">
+										<p class="float-right subtitle">Correo:</p>
+									</li>
+									<li class="col-md-4"><input class="form-control" type="email" id="correoA"
+											maxlength="40" value=""></li>
+								</div>
+							</ul>
+							<div class="container-fluid" style="display: flex; justify-content: center;">
+								<div class="row w-50" style=" margin-top: 5px;">
+									<button class="col-md-12 btn btn-primary"
+										style="  margin-bottom: 20px; display: flex; justify-content: center;">Registrar</button>
+								</div>
+							</div>
+						</div>
+					</form>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- -------------MODAL INSERTAR--------------- -->
+	<div>
+		<ul class="menu">
+			<a href="#">
+				<li class="item-menu menu-activate">
+					<i class="material-icons">person_pin</i>
+					<h5>Personas</h5>
+				</li>
+			</a>
+			<a href="verificacion.html">
+				<li class="item-menu">
+					<i class="material-icons">done_all</i>
+					<h5>Verificación</h5>
+				</li>
+			</a>
+		</ul>
+	</div>
+	<div class="container info">
+		<h1>Personas registradas</h1>
+		<div class="header-registros">
+			<form class="form-inline my-2 my-lg-0" onsubmit="return buscar(this)">
+				<input class="form-control mr-sm-2" type="search" placeholder="Identificacion" aria-label="Search"
+					id="bCed" onkeyup="ce(this)" maxlength="15">
+				<input class="form-control mr-sm-2" type="search" placeholder="Nombre" aria-label="Search" id="bNom"
+					onkeyup="no(this)" maxlength="20">
+				<input class="form-control mr-sm-2" type="search" placeholder="Ciudad" aria-label="Search" id="bCiu"
+					onkeyup="ci(this)" maxlength="20">
+				<button type="submit" tooltip="Buscar"
+					class="btn btn-outline-danger my-2 my-sm-0 material-icons">search</button>
+				<button type="button" tooltip="Ver Todos"
+					class="btn btn-outline-success ml-2 my-2 my-sm-0 material-icons" onclick="cargar(0)"><i
+						class="material-icons"></i>autorenew</button>
+			</form>
+			<div class="btn-datos">
+				<button class="btn" onclick="Insertar()" data-target='#exampleModalCenter3' data-toggle='modal'><i
+						class="material-icons">account_circle</i>Registrar</button>
+				<button class="btn" onclick="descarga()"><i class="material-icons">cloud_download</i>Descargar
+					Datos</button>
+				<button class="btn" onclick="sincronizar()"><i class="material-icons">cloud_upload</i>Sincronizar
+					Datos</button>
+				<button class="btn" onclick="EliminarTodos()"><i class="material-icons">cancel</i>Eliminar
+					Todos</button>
+			</div>
+		</div>
+		<table class="table">
+			<thead>
+				<tr>
+					<th scope="col">Identificación</th>
+					<th scope="col">Nombre</th>
+					<th scope="col">Ciudad</th>
+					<th scope="col">Acciones</th>
+				</tr>
+			</thead>
+			<tbody id="result">
+
+			</tbody>
+
+		</table>
+		<nav aria-label="...">
+			<ul class=" container pagination" style="flex-flow: row wrap">
+				<script>
+					var knex = require("knex")({
+						client: "sqlite3",
+						connection: {
+							filename: "./database.sqlite3"
+						},
+						useNullAsDefault: true
+					});
 
 					knex
-					.from("suroeste")
-					.select("*")
-					.then(rows => {
-						const contPag = document.querySelector(".pagination");
-						var listado = Math.ceil(rows.length/50);
-						var pagitem ;
-						for (let i = 0; i < listado; i++) {
-							if(i == 0){
-								pagitem = `
+						.from("suroeste")
+						.select("*")
+						.then(rows => {
+							const contPag = document.querySelector(".pagination");
+							var listado = Math.ceil(rows.length / 50);
+							var pagitem;
+							for (let i = 0; i < listado; i++) {
+								if (i == 0) {
+									pagitem = `
 							<li class=" page-item active" onclick="pagination(this)" style="cursor:pointer;">
 								<a class="page-link" onclick="cargar(${i*50})">${i+1}</a>
 							</li>`;
-							}else{
-								pagitem = `
+								} else {
+									pagitem = `
 							<li class=" page-item" onclick="pagination(this)" style="cursor:pointer;">
 								<a class="page-link" onclick="cargar(${i*50})">${i+1}</a>
 							</li>`;
+								}
+
+								contPag.innerHTML += pagitem;
+
 							}
-							
-							contPag.innerHTML += pagitem;
-							
-						}	
-							})
-							.catch(err => {
-								console.log(err);
-								throw err;
-							})
-							.finally(() => {
-								knex.destroy();
-							});
-					</script>
-				</ul>
-			</nav>
-		</div>
+						})
+						.catch(err => {
+							console.log(err);
+							throw err;
+						})
+						.finally(() => {
+							knex.destroy();
+						});
+				</script>
+			</ul>
+		</nav>
+	</div>
 
-
-		<script src="./js/sweetalert.min.js"></script>
-		<script src="./js/sweetalert2@8.js"></script>
-    <script>window.$ = window.jQuery = require('./js/jquery-3.4.1.min.js');</script>
-    <script src="./js/jquery.flipster.min.js"></script>
-    <script src="./js/popper.min.js"></script>
-		<script src="./js/bootstrap.min.js"></script>
-		<script src="./scripts.js"></script>
-		<script src="./colombia.js"></script>
-		<script>
-			
-			function descarga() {
-				Swal.fire({
+	<script src="./js/sweetalert.min.js"></script>
+	<script src="./js/sweetalert2@8.js"></script>
+	<script>
+		window.$ = window.jQuery = require('./js/jquery-3.4.1.min.js');
+	</script>
+	<script src="./js/jquery.flipster.min.js"></script>
+	<script src="./js/popper.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./scripts.js"></script>
+	<script src="./colombia.js"></script>
+	<script>
+		function descarga() {
+			Swal.fire({
 				title: 'Descargando...',
 				showConfirmButton: false,
 				allowOutsideClick: false
 
 			})
-				Swal.showLoading();
-				$.ajax({
-					url: 'https://encuentrodelsuroeste.herokuapp.com/personas',
-					success: function(respuesta) {
-						const lista = respuesta.lista;
-						ipcRenderer.send('insert',lista);
-						// ipcRenderer.send('pagina',lista);
-						setTimeout(()=>{
-							Swal.close()
-						},7000)
-					},
-					error: function() {
-								console.log("No se ha podido obtener la información");
-					}
-					
-				});
-				
-				Swal.fire({
-				title: 'Descargando...',
-				showConfirmButton: false,
-				allowOutsideClick: false
-
-			})
-				Swal.showLoading();
-			}
-
-			// -----------------------Sincronizar---------------------
-
-	function sincronizar(){
-
-		var knex = require("knex")({
-		client: "sqlite3",
-		connection: {
-			filename: "./database.sqlite3"
-		},
-		useNullAsDefault: true
-		});
-
-		knex
-		.from("suroeste")
-		.select("*")
-		.then(rows => {
-			for(row of rows){
+			Swal.showLoading();
 			$.ajax({
-				type: "POST",
-				url: 'datos.txt',
-				data: row, // Adjuntar los campos del formulario enviado.
-				
-				}).done(function(respuesta){
-					// var resultado = $.parseJSON(respuesta);
-					console.log(respuesta);
-					
+				url: 'https://encuentrodelsuroeste.herokuapp.com/personas',
+				success: function (respuesta) {
+					const lista = respuesta.lista;
+					ipcRenderer.send('insert', lista);
+					setTimeout(() => {
+						Swal.close()
+					}, 7000)
+				},
+				error: function () {
+					console.log("No se ha podido obtener la información");
+				}
+
+			});
+
+			Swal.fire({
+				title: 'Descargando...',
+				showConfirmButton: false,
+				allowOutsideClick: false
+
+			})
+			Swal.showLoading();
+		}
+
+		// -----------------------Sincronizar Eliminados---------------------
+		 function sincronizar_eliminados() {
+			var knex = require("knex")({
+				client: "sqlite3",
+				connection: {
+					filename: "./database.sqlite3"
+				},
+				useNullAsDefault: true
+			});
+			knex
+				.from("eliminados")
+				.select("*")
+				.then(rows => {
+					var informa = [];
+
+					rows.forEach(e => {
+						informa.push(e)
+					});
+
+					let si = false
+
+					 $.ajax({
+						url: 'https://encuentrodelsuroeste.herokuapp.com/eliminar/datos/personas',
+						method: "POST",
+						dataType: "json",
+						data: informa,
+						success: function (respuesta) {
+							// const lista = respuesta.lista;
+							console.log(respuesta);
+							console.log(informa);
+							if (respuesta.ok) {
+								si = true
+							}
+						},
+						error: function () {
+							console.log("No se ha podido obtener la información");
+						}
+
+					})
+					if (si) {
+						Swal.fire("Excelente", "Sí llegué", "success")
+					} else {
+						Swal.fire("Error", "No llegué", "error")
+					}
+				})
+				.catch(err => {
+					console.log(err);
+					throw err;
+				})
+				.finally(() => {
+					knex.destroy();
 				});
 
-		
-			}
-		})
-		.catch(err => {
-		console.log(err);
-		throw err;
-		})
-		.finally(() => {
-			knex.destroy();
-			// setTimeout(()=>{
-			// 	Swal.close()
-			// },7000)
-		});
-			// 	Swal.fire({
-			// 	title: 'Sincronizando...',
-			// 	showConfirmButton: false,
-			// 	allowOutsideClick: false
+		}
 
-			// })
-			// 	Swal.showLoading();
+		// -----------------------Sincronizar---------------------
 
-				
-	}
+		function sincronizar() {
+			var knex = require("knex")({
+				client: "sqlite3",
+				connection: {
+					filename: "./database.sqlite3"
+				},
+				useNullAsDefault: true
+			});
+			knex
+				.from("suroeste")
+				.select("*")
+				.then(rows => {
+					var informa = [];
 
-		</script>
-  </body>
+					rows.forEach(e => {
+						delete e.gen;
+						delete e.estado;
+						delete e.ciudad;
+						delete e.departamento;
+						delete e.__v;
+						delete e._id;
+						informa.push(e)
+					});
+					let si = false
+
+					$.ajax({
+						url: 'https://encuentrodelsuroeste.herokuapp.com/sincronizar/datos/personas',
+						method: "POST",
+						dataType: "json",
+						data: informa,
+						success: function (respuesta) {
+							// const lista = respuesta.lista;
+							console.log(respuesta);
+							console.log(informa);
+							if (respuesta.ok) {
+								si = true
+							}
+						},
+						error: function () {
+							console.log("No se ha podido obtener la información");
+						}
+
+					})
+					if (si) {
+						Swal.fire("Excelente", "Sí llegué", "success")
+					} else {
+						Swal.fire("Error", "No llegué", "error")
+					}
+				})
+				.catch(err => {
+					console.log(err);
+					throw err;
+				})
+				.finally(() => {
+					knex.destroy();
+				});
+
+		}
+	</script>
+</body>
+
 </html>

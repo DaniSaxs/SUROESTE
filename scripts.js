@@ -291,9 +291,7 @@ function Insertar() {
           'Esta cédula ya está registrada',
           'warning'
         )
-      }
-
-        if(ciuI == "" || ciuI == "-1"){
+      }else if(ciuI == "" || ciuI == "-1"){
         
           Swal.fire(
             'Atención',
@@ -306,8 +304,8 @@ function Insertar() {
     //-----------------------Sweet Alert-----------------//
     let timerInterval
     Swal.fire({
-      title: 'Insertar Nuevo',
-      html: 'Insertando...',
+      title: 'Registrar Persona',
+      html: 'Registrando persona...',
       timer: 1000,
       onBeforeOpen: () => {
         Swal.showLoading()
@@ -333,24 +331,24 @@ function Insertar() {
   });
 }
 
-// function EliminarTodos() {
-//   //-----------------------Sweet Alert-----------------//
-//   Swal.fire({
-//     title: '¿Estás seguro?',
-//     text: "No podrás revertir esta acción",
-//     type: 'warning',
-//     showCancelButton: true,
-//     confirmButtonColor: '#d33',
-//     cancelButtonColor: '#3085d6',
-//     confirmButtonText: 'Sí, Eliminar Todos!',
-//     cancelButtonText: 'Cancelar!'
-//   }).then((result) => {
-//     if (result.value) {
-//       ipcRenderer.send('deleteAll');
-//     }
-//   })
-//   //----------------------------------------------------//
-// }
+function EliminarTodos() {
+  //-----------------------Sweet Alert-----------------//
+  Swal.fire({
+    title: '¿Estás seguro?',
+    text: "No podrás revertir esta acción",
+    type: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#d33',
+    cancelButtonColor: '#3085d6',
+    confirmButtonText: 'Sí, Eliminar Todos!',
+    cancelButtonText: 'Cancelar!'
+  }).then((result) => {
+    if (result.value) {
+      ipcRenderer.send('deleteAll');
+    }
+  })
+  //----------------------------------------------------//
+}
 
 function eliminar(infoD,Mongo) {
   //-----------------------Sweet Alert-----------------//
@@ -365,7 +363,15 @@ function eliminar(infoD,Mongo) {
     cancelButtonText: 'Cancelar!'
   }).then((result) => {
     if (result.value) {
-      ipcRenderer.send('delete', infoD, Mongo);
+      Swal.fire(
+        'Excelente!',
+        'Se ha eliminado e insertado en la tabla "Eliminados"',
+        'success'
+      )
+      .then(() =>{
+        ipcRenderer.send('delete', infoD, Mongo);
+      })
+      
     }
   })
   //----------------------------------------------------//
@@ -681,12 +687,16 @@ function ver(elemento, infoE) {
   corre.setAttribute('value', correo);
   const asis = botonAct.getAttribute('asistencia');
   const asisI = document.getElementById('asis');
-  asisI.setAttribute('value', asis);
-  if(asisI.value == "1"){
+  asisI.setAttribute('asisa', asis);
+  const asisA = asisI.getAttribute('asisa');
+  console.log(asisA);
+  if(asisA == "1"){
     asisI.style.backgroundColor = "rgb(28, 221, 70)";
+    asisI.value = "Sí ingresó";
   }else{
     asisI.style.backgroundColor = "rgb(221, 28, 28)";
     asisI.style.color = "white";
+    asisI.value = "No ingresó";
   }
 }
 
