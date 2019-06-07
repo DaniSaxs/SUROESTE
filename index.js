@@ -60,6 +60,7 @@ app.on("ready", () => {
         if(dato.sector == null){dato.sector = ""}
         if(dato.__v == null){dato.__v = ""}
         if(dato.asistencia == null){dato.asistencia = false}
+        if(dato.sincronizar == null){dato.sincronizar = false}
       data.push({
         id_Mongo: dato._id,
         gen: dato.gen,
@@ -78,7 +79,8 @@ app.on("ready", () => {
         cargo: dato.cargo,
         sector: dato.sector,
         __v: dato.__v,
-        asistencia: false
+        asistencia: false,
+        sincronizar: false
       })
 
       
@@ -200,7 +202,8 @@ app.on("ready", () => {
         departamento: allE.departamento,
         ciudad: allE.ciudad,
         sector: allE.sector,
-        correo: allE.correo
+        correo: allE.correo,
+        sincronizar: true
       })
       .then(() => console.log(" Actualizado"))
       .catch(err => {
@@ -240,7 +243,9 @@ app.on("ready", () => {
         ciudad: allI.ciudad,
         sector: allI.sector,
         correo: allI.correo,
-        __v: "0"
+        __v: "0",
+        asistencia: true,
+        sincronizar: true
       })
       .then(() => console.log(" Insertado Correctamente"))
       .catch(err => {
@@ -253,7 +258,7 @@ app.on("ready", () => {
     mainWindow.reload();
   });
 
-  ipcMain.on("updateAsis", (e, idenAct, AsisAct) => {
+  ipcMain.on("updateAsis", (e, idenAct, AsisAct, SincroAct) => {
 
     var knex = require("knex")({
       client: "sqlite3",
@@ -268,7 +273,8 @@ app.on("ready", () => {
         identificacion: idenAct
       })
       .update({
-        asistencia: true
+        asistencia: true,
+        sincronizar: true
       })
       .then(() => console.log("Asistencia Actualizada"))
       .catch(err => {

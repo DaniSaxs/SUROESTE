@@ -17,6 +17,7 @@ var knex = require("knex")({
   var idens = [];
   var gens = [];
   var asis = [];
+  var sincro = [];
 
   knex
   .from("suroeste")
@@ -27,6 +28,7 @@ var knex = require("knex")({
         idens[row['identificacion']] = row['identificacion'];
         gens[row['identificacion']] = row['gen'];
         asis[row['identificacion']] = row['asistencia'];
+        sincro[row['identificacion']] = row['sincronizar'];
          
     }
   })
@@ -69,7 +71,9 @@ function verifi(c){
 
       var idenAct = idens[c.value];
       var AsisAct = asis[c.value];
-      ipcRenderer.send('updateAsis', idenAct, AsisAct);
+      var SincroAct = sincro[c.value];
+      
+      ipcRenderer.send('updateAsis', idenAct, AsisAct,SincroAct);
 
       setTimeout(function(){
       c.value = "";
