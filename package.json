@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "electron": "^5.0.1",
+    "electron": "^15.5.5",
     "fs": "0.0.1-security",
     "knex": "^0.16.5",
     "postinstall": "^0.4.2",
